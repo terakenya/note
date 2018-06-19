@@ -25,15 +25,15 @@
 
 ### Association
 - belongs_to :user
-- has_many :comment
+- has_many :comments
 - has_many :magazines
 - belongs_to :text
-- has_many :image
+- has_many :images
 - belongs_to :tweet
 - belongs_to :sound
 - belongs_to :movie
 
-## magazinテーブル
+## magazinsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -43,7 +43,7 @@
 ### Association
 - has_many :notes
 
-## movieテーブル
+## moviesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -53,9 +53,9 @@
 |notes_id|id|null: false|
 
 ### Association
-- belongs_to :notes
+- belongs_to :note
 
-## soundテーブル
+## soundsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -64,7 +64,7 @@
 |notes_id|id|null: false|
 
 ### Association
-- belongs_to :notes
+- belongs_to :note
 
 ##Tweetsテーブル
 
@@ -75,7 +75,7 @@
 |note_id|id|null: false|
 
 ### Association
-- belongs_to :notes
+- belongs_to :note
 
 ##Imagesテーブル
 
@@ -87,4 +87,4 @@
 |note_id|id|null: false|
 
 ### Association
-- belongs_to :notes
+- belongs_to :note

@@ -66,7 +66,7 @@
 ### Association
 - belongs_to :note
 
-##Tweetsテーブル
+##tweetsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -77,7 +77,7 @@
 ### Association
 - belongs_to :note
 
-##Imagesテーブル
+##imagesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -88,3 +88,22 @@
 
 ### Association
 - belongs_to :note
+
+## commentsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|content|text| null: false|
+|note_id|id| null: false |
+
+## association
+belongs_to  note
+
+## textsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|image|text| null: false|
+|title|string|null: false|
+|text|string|
+|note_id|id| null: false |
+## association
+belongs_to note

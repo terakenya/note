@@ -37,6 +37,79 @@ body.ns-note {
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    float:;
 }
 
+.ns-note .header-container {
+    position: relative;
+    z-index: 11;
+}
+
+
+.ns-note .renewal-l-header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 1px rgba(0,0,0,0.08);
+}
+
+.ns-note .renewal-l-header__inner {
+    background: #fff;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+.ns-note .renewal-l-header__global {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    height: 64px;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.ns-note .p-globalNavigation__item {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.ns-note .p-globalNavigation__item--help {
+    margin-left: auto;
+}
+
+.ns-note .p-dropNavigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.ns-note .renewal-l-header__global {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    height: 64px;
+    width: 940px;
+    margin: 0px auto;
+}
+
+.ns-note .renewal-l-header__right {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.ns-note .renewal-p-buttonSet {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}

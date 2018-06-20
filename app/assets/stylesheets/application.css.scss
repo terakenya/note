@@ -1,0 +1,42 @@
+.ns-note.bg-default {
+  background-color: #f7f9f9;
+}
+body.ns-note {
+  overflow-x: hidden;
+  color: #222222;
+  height: 100%;
+  margin: 0;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", Arial, "メイリオ", Meiryo, sans-serif;
+  word-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  .ns-note .header-container {
+    position: relative;
+    z-index: 11;
+  }
+}
+
+.ns-note .p-globalNavigation__menu {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.ns-note .p-globalNavigation__submenu {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    float:;
+}
+

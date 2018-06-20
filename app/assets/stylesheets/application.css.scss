@@ -113,3 +113,136 @@ body.ns-note {
     -webkit-box-align: center;
     align-items: center;
 }
+
+.ns-note .renewal-p-buttonSet {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.ns-note .renewal-p-buttonSet__item:first-child {
+    margin-left: 0px;
+}
+
+.ns-note .renewal-p-icon--search {
+    width: 30px;
+    height: 30px;
+    background: url(https://d2l930y2yx77uc.cloudfront.net/assets/renewal/icon_30_search-ecd6e84….svg) no-repeat;
+}
+
+.ns-note .renewal-p-buttonSet__item {
+    margin-left: 10px;
+    font-size: 0px;
+    cursor: pointer;
+}
+
+.ns-note .renewal-p-buttonSet__item a {
+    overflow: visible;
+}
+
+.ns-note .renewal-p-icon--notification {
+    width: 30px;
+    height: 30px;
+    background: url(https://d2l930y2yx77uc.cloudfront.net/assets/renewal/icon_30_notification-8d3ad00….svg) no-repeat;
+}
+
+.ns-note .renewal-c-popover--notification {
+    z-index: 12;
+    display: none;
+    top: 60px;
+    right: 174px;
+    width: 300px;
+}
+
+.ns-note .renewal-p-notificationList {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.ns-note .renewal-p-buttonSet__item--mlL {
+    margin-left: 20px;
+}
+
+.ns-note .c-avatar--small {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.ns-note img {
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+}
+
+.ns-note .renewal-c-popover--mymenu {
+    z-index: 12;
+    display: none;
+    top: 60px;
+    right: 134px;
+    width: 220px;
+}
+
+.ns-note .renewal-c-button--navBarPostNote {
+    margin-left: 25px;
+    font-weight: bold;
+    padding: 0px;
+}
+
+.ns-note .renewal-c-button--navBarPostNote {
+    margin-left: 25px;
+    font-weight: bold;
+    padding: 0px;
+}
+
+.ns-note .renewal-p-buttonSet__postPopover > a {
+    color: rgb(255, 255, 255);
+}
+
+.ns-note a, .ns-note li {
+    transition: all 0.1s 0s;
+}
+
+.ns-note .renewal-p-buttonSet__postPopover > a .inner {
+    padding: 0.5em 0.7em;
+}
+
+.ns-note .renewal-p-buttonSet__postPopover > a span {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.ns-note .renewal-c-button--navBarPostNote .renewal-p-icon--postNote {
+    pointer-events: none;
+}
+
+.ns-note .renewal-p-buttonSet__postPopover > a i {
+    margin-right: 2px;
+}
+
+.ns-note .renewal-p-icon--postNote {
+    width: 16px;
+    height: 16px;
+    background: url(https://d2l930y2yx77uc.cloudfront.net/assets/renewal/icon_post_note-e3a56e1….svg) no-repeat;
+}
+
+ns-note .renewal-p-postNoteFromNavBarList {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.ns-note .renewal-p-buttonSet__postPopover > a {
+    color: rgb(255, 255, 255);
+}
+
+button--navBarPostNote {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border-color: rgb(44, 182, 150);
+  background: rgb(44, 182, 150);
+}

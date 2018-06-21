@@ -9,8 +9,13 @@
             %i.fa.fa-search
           %li.renewal-img
             %i.fa.fa-bell
-          %li.renewal-img
 
+          %li.renewal-img{"ng-if" => "(isPC || isTablet || isSmartPhone) && isLoggedIn && isCdUser()", :style => ""}
+            %post-note-from-nav-bar.renewal-p-buttonSet__postPopover
+              %a#js-post-note-toggle{"analytics-category" => "button", "analytics-event" => "create-note-from-home", "analytics-label" => "link", "analytics-on" => "click", "ng-click" => "checkNoUrlnameUser()"}
+                %span.inner
+                  %i.renewal-p-icon--postNote
+                  %span ノートを投稿
           %li.renewal-img
 
 

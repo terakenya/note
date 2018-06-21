@@ -1,20 +1,25 @@
 .header-container{
   width:100vw;
-  height:199px;
-  box-sizing: border-box !important;
+  height:166px;
+
 }
 .header-container-up{
   height:165px;
   border-bottom: 2px solid #e8eceb;
+
 }
-.header-container-dawn{
-  height:32px;
-}
+
 .renewal-l-header__global{
   height:64px;
+  width:880px;
+  margin:0 auto;
+
 }
+
 .l-header__nav{
   height:102px;
+  width:880px;
+  margin:0 auto;
 }
 
 .p-globalNavigation__item{
@@ -22,19 +27,30 @@
   float:left;
 }
 .p-globalNavigation__menu{
-  height: 48px;
+  height: 47px;
   border-bottom: 1px solid #e8eceb;
 }
 
 .p-globalNavigation__item__help{
-
+  vertical-align: middle;
 }
 
 .p-dropNavigation__item{
-
-}
-
-.p-dropNavigation__submit{
+  float:left;
   margin:0px 15px 0px 15px;
 }
 
+.p-globalNavigation__submit{
+  height: 54px;
+
+}
+.p-globalNavigation__item__help_link{
+    float:right;
+}
+.renewal-title{
+
+}
+
+.renewal-title-img{
+    padding:20px 0 0 0;
+}

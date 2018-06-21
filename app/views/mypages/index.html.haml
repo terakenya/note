@@ -1,0 +1,348 @@
+%body.ns-note.bg-default{"data-status" => "", "ng-class" => "{'bg-white':isNotePage, 'bg-default':!isNotePage, 'preview-page':isPreview}", :style => ""}
+  %header.header-container{"ng-controller" => "NavBarCtrl", "ng-hide" => "hide_navbar", "ng-init" => "initNavBar()", :style => ""}
+    %div
+      .renewal-l-container
+        .renewal-l-header
+          .renewal-l-header__inner
+            .renewal-l-header__global
+              %h1.renewal-l-header__logo
+                %a
+                  %img#note-logo{:src => "https://d2l930y2yx77uc.cloudfront.net/assets/renewal/logo-b84a1f9687168286cb1ca588b5aa4d761cd3f46e79d4ac36f0d331dfb1ed21ba.svg"}/
+              .renewal-l-header__right
+                %ul.renewal-p-buttonSet
+                  %li.renewal-p-buttonSet__item
+                    .p-searchForm--header
+                      %renewal-hashtag-search
+                        %button.icon-30.icon-30-search{"ng-click" => "searchClickHandler()", :type => "submit"}
+                        %angucomplete-alt
+                          .angucomplete-holder{"ng-class" => "{'angucomplete-dropdown-visible': showDropdown}"}
+                            %input#hashtag_search_autocomplete_value{:autocapitalize => "off", :autocomplete => "off", :autocorrect => "off", :maxlength => "20", :name => "", "ng-blur" => "hideResults($event)", "ng-change" => "inputChangeHandler(searchStr)", "ng-class" => "{'angucomplete-input-not-empty': notEmpty}", "ng-disabled" => "disableInput", "ng-focus" => "onFocusHandler()", "ng-model" => "searchStr", :placeholder => "キーワードや作者名で検索", :type => "text"}/
+                            #hashtag_search_autocomplete_dropdown.angucomplete-dropdown.ng-hide{"ng-show" => "showDropdown"}
+                    %i.renewal-p-icon--search{"ng-click" => "toggleSearch()"}
+                  %li.renewal-p-buttonSet__item{"analytics-category" => "header-nav", "analytics-event" => "notification", "analytics-label" => "notification", "analytics-on" => "click", "ng-if" => "isLoggedIn === true", :style => ""}
+                    %renewal-notification-bell
+                      %a{"ng-click" => "notificationModel.click()", :style => "position: relative; display: block;"}
+                        %span.renewal-p-icon--notification
+                        %span.renewal-p-count.ng-hide{"ng-show" => "notificationModel.notificationNum > 0", :style => ""} 0
+                        %span.renewal-p-count.ng-hide{"ng-show" => "notificationModel.notificationNum > 99"} 99+
+                      .renewal-c-popover--notification{"ng-class" => "{'show-ec-cart':showEcCart}", :style => "display: none;"}
+                        %ul.renewal-p-notificationList
+                          .loading-animation.ng-hide{"ng-show" => "!load_ok", :style => ""}
+                          %li.renewal-p-notificationList__item{"ng-repeat" => "notification in notificationModel.notifications", :style => ""}
+                            / ngIf: !notification.notified_user.withdrawal
+                            %div{"ng-if" => "!notification.notified_user.withdrawal"}
+                              %div{"ng-switch" => "notification.action_type"}
+                                .renewal-p-notificationList__itemInner{"ng-switch-when" => "like"}
+                                  %a{"ng-click" => "notificationModel.navElemClicked(notification.note, $event)"}
+                                    .renewal-p-notificationList__userAvatar{"ng-click" => "$event.stopPropagation();$state.go('creator.home', { urlname: notification.notified_user.urlname })"}
+                                      .c-avatar.c-avatar--boxShadow
+                                        %img.c-avatar--small{:alt => "", "ng-src" => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/5672283/profile_118e8d9f40e7bd455530435b7c1a5592.jpg", :src => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/5672283/profile_118e8d9f40e7bd455530435b7c1a5592.jpg"}/
+                                    .renewal-p-notificationList__userData
+                                      %p.renewal-p-notificationList__text{"compile-notification-message" => "あなたのノートに対して<a class=\"renewal-p-notificationList__link action-user-urlname\" href=\"/cutboss\" ng-click=\"$event.stopPropagation()\">CUTBOSS</a>さんがスキしました"}
+                                        %span あなたのノートに対して
+                                        %a.renewal-p-notificationList__link.action-user-urlname{:href => "/cutboss", "ng-click" => "$event.stopPropagation()"} CUTBOSS
+                                        %span さんがスキしました
+                                      %p.renewal-p-notificationList__date{"ng-bind" => "notification.created_at | date:'yyyy/MM/dd HH:mm'"} 2018/06/19 20:53
+                          %li.renewal-p-notificationList__item{"ng-repeat" => "notification in notificationModel.notifications", :style => ""}
+                            %div{"ng-if" => "!notification.notified_user.withdrawal"}
+                              %div{"ng-switch" => "notification.action_type"}
+                                .renewal-p-notificationList__itemInner{"ng-switch-when" => "follow"}
+                                  %a{"ng-click" => "notificationModel.navUserElemClicked(notification.notified_user, $event)"}
+                                    .renewal-p-notificationList__userAvatar
+                                      .c-avatar.c-avatar--boxShadow
+                                        %img.c-avatar--small{"ng-src" => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/5093475/profile_e320dfce1273c3ef15abc57dd0d93ab1.jpg", :src => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/5093475/profile_e320dfce1273c3ef15abc57dd0d93ab1.jpg"}/
+                                    .renewal-p-notificationList__userData
+                                      %p.renewal-p-notificationList__text{"ng-bind-html" => "::notification.message"}
+                                        %a.renewal-p-notificationList__link.action-user-urlname{:href => "/lineq_str"}> 雑学屋 プラナリ
+                                        さんがあなたをフォローしました
+                                      %p.renewal-p-notificationList__date{"ng-bind" => "notification.created_at | date:'yyyy/MM/dd HH:mm'"} 2018/06/19 16:11
+                          %li.renewal-p-notificationList__item{"ng-repeat" => "notification in notificationModel.notifications", :style => ""}
+                            %div{"ng-if" => "!notification.notified_user.withdrawal"}
+                              %div{"ng-switch" => "notification.action_type"}
+                                .renewal-p-notificationList__itemInner{"ng-switch-when" => "like"}
+                                  %a{"ng-click" => "notificationModel.navElemClicked(notification.note, $event)"}
+                                    .renewal-p-notificationList__userAvatar{"ng-click" => "$event.stopPropagation();$state.go('creator.home', { urlname: notification.notified_user.urlname })"}
+                                      .c-avatar.c-avatar--boxShadow
+                                        %img.c-avatar--small{:alt => "", "ng-src" => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/6255059/profile_368a03d9967218ffa8e3742d7e9cfcda.jpg", :src => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/6255059/profile_368a03d9967218ffa8e3742d7e9cfcda.jpg"}/
+                                    .renewal-p-notificationList__userData
+                                      %p.renewal-p-notificationList__text{"compile-notification-message" => "あなたのノートに対して<a class=\"renewal-p-notificationList__link action-user-urlname\" href=\"/healthmanagement\" ng-click=\"$event.stopPropagation()\">健康をマネジメントするノート</a>さんがスキしました"}
+                                        %span あなたのノートに対して
+                                        %a.renewal-p-notificationList__link.action-user-urlname{:href => "/healthmanagement", "ng-click" => "$event.stopPropagation()"} 健康をマネジメントするノート
+                                        %span さんがスキしました
+                                      %p.renewal-p-notificationList__date{"ng-bind" => "notification.created_at | date:'yyyy/MM/dd HH:mm'"} 2018/06/19 15:02
+                          %li.renewal-p-notificationList__item{"ng-repeat" => "notification in notificationModel.notifications", :style => ""}
+                            / ngIf: !notification.notified_user.withdrawal
+                            %div{"ng-if" => "!notification.notified_user.withdrawal"}
+                              %div{"ng-switch" => "notification.action_type"}
+                                .renewal-p-notificationList__itemInner{"ng-switch-when" => "like"}
+                                  %a{"ng-click" => "notificationModel.navElemClicked(notification.note, $event)"}
+                                    .renewal-p-notificationList__userAvatar{"ng-click" => "$event.stopPropagation();$state.go('creator.home', { urlname: notification.notified_user.urlname })"}
+                                      .c-avatar.c-avatar--boxShadow
+                                        %img.c-avatar--small{:alt => "", "ng-src" => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/6255059/profile_368a03d9967218ffa8e3742d7e9cfcda.jpg", :src => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/6255059/profile_368a03d9967218ffa8e3742d7e9cfcda.jpg"}/
+                                    .renewal-p-notificationList__userData
+                                      %p.renewal-p-notificationList__text{"compile-notification-message" => "あなたのノートに対して<a class=\"renewal-p-notificationList__link action-user-urlname\" href=\"/healthmanagement\" ng-click=\"$event.stopPropagation()\">健康をマネジメントするノート</a>さんがスキしました"}
+                                        %span あなたのノートに対して
+                                        %a.renewal-p-notificationList__link.action-user-urlname{:href => "/healthmanagement", "ng-click" => "$event.stopPropagation()"} 健康をマネジメントするノート
+                                        %span さんがスキしました
+                                      %p.renewal-p-notificationList__date{"ng-bind" => "notification.created_at | date:'yyyy/MM/dd HH:mm'"} 2018/06/19 15:02
+                          %li.renewal-p-notificationList__item{"ng-repeat" => "notification in notificationModel.notifications", :style => ""}
+                            %div{"ng-if" => "!notification.notified_user.withdrawal"}
+                              %div{"ng-switch" => "notification.action_type"}
+                                .renewal-p-notificationList__itemInner{"ng-switch-when" => "like"}
+                                  %a{"ng-click" => "notificationModel.navElemClicked(notification.note, $event)"}
+                                    .renewal-p-notificationList__userAvatar{"ng-click" => "$event.stopPropagation();$state.go('creator.home', { urlname: notification.notified_user.urlname })"}
+                                      .c-avatar.c-avatar--boxShadow
+                                        %img.c-avatar--small{:alt => "", "ng-src" => "https://d2l930y2yx77uc.cloudfront.net/assets/default/default_profile-2f533b6a0048b61b8d761198d14cbb4c603f89edb03577f061efc7393b85d811.png", :src => "https://d2l930y2yx77uc.cloudfront.net/assets/default/default_profile-2f533b6a0048b61b8d761198d14cbb4c603f89edb03577f061efc7393b85d811.png"}/
+                                    .renewal-p-notificationList__userData
+                                      %p.renewal-p-notificationList__text{"compile-notification-message" => "あなたのノートに対して<a class=\"renewal-p-notificationList__link action-user-urlname\" href=\"/tera719\" ng-click=\"$event.stopPropagation()\">tera</a>さんがスキしました"}
+                                        %span あなたのノートに対して
+                                        %a.renewal-p-notificationList__link.action-user-urlname{:href => "/tera719", "ng-click" => "$event.stopPropagation()"} tera
+                                        %span さんがスキしました
+                                      %p.renewal-p-notificationList__date{"ng-bind" => "notification.created_at | date:'yyyy/MM/dd HH:mm'"} 2018/06/19 10:29
+                          %li.renewal-p-notificationList__item{"ng-repeat" => "notification in notificationModel.notifications", :style => ""}
+                            %div{"ng-if" => "!notification.notified_user.withdrawal"}
+                              %div{"ng-switch" => "notification.action_type"}
+                                .renewal-p-notificationList__itemInner{"ng-switch-when" => "like"}
+                                  %a{"ng-click" => "notificationModel.navElemClicked(notification.note, $event)"}
+                                    .renewal-p-notificationList__userAvatar{"ng-click" => "$event.stopPropagation();$state.go('creator.home', { urlname: notification.notified_user.urlname })"}
+                                      .c-avatar.c-avatar--boxShadow
+                                        %img.c-avatar--small{:alt => "", "ng-src" => "https://d2l930y2yx77uc.cloudfront.net/assets/default/default_profile-2f533b6a0048b61b8d761198d14cbb4c603f89edb03577f061efc7393b85d811.png", :src => "https://d2l930y2yx77uc.cloudfront.net/assets/default/default_profile-2f533b6a0048b61b8d761198d14cbb4c603f89edb03577f061efc7393b85d811.png"}/
+                                    .renewal-p-notificationList__userData
+                                      %p.renewal-p-notificationList__text{"compile-notification-message" => "あなたのノートに対して<a class=\"renewal-p-notificationList__link action-user-urlname\" href=\"/tera719\" ng-click=\"$event.stopPropagation()\">tera</a>さんがスキしました"}
+                                        %span あなたのノートに対して
+                                        %a.renewal-p-notificationList__link.action-user-urlname{:href => "/tera719", "ng-click" => "$event.stopPropagation()"} tera
+                                        %span さんがスキしました
+                                      %p.renewal-p-notificationList__date{"ng-bind" => "notification.created_at | date:'yyyy/MM/dd HH:mm'"} 2018/06/19 10:29
+                          %li.renewal-p-notificationList__item{"ng-repeat" => "notification in notificationModel.notifications", :style => ""}
+                            %div{"ng-if" => "!notification.notified_user.withdrawal"}
+                              %div{"ng-switch" => "notification.action_type"}
+                                .renewal-p-notificationList__itemInner{"ng-switch-when" => "like"}
+                                  %a{"ng-click" => "notificationModel.navElemClicked(notification.note, $event)"}
+                                    .renewal-p-notificationList__userAvatar{"ng-click" => "$event.stopPropagation();$state.go('creator.home', { urlname: notification.notified_user.urlname })"}
+                                      .c-avatar.c-avatar--boxShadow
+                                        %img.c-avatar--small{:alt => "", "ng-src" => "https://d2l930y2yx77uc.cloudfront.net/assets/default/default_profile-2f533b6a0048b61b8d761198d14cbb4c603f89edb03577f061efc7393b85d811.png", :src => "https://d2l930y2yx77uc.cloudfront.net/assets/default/default_profile-2f533b6a0048b61b8d761198d14cbb4c603f89edb03577f061efc7393b85d811.png"}/
+                                    .renewal-p-notificationList__userData
+                                      %p.renewal-p-notificationList__text{"compile-notification-message" => "あなたのノートに対して<a class=\"renewal-p-notificationList__link action-user-urlname\" href=\"/tera719\" ng-click=\"$event.stopPropagation()\">tera</a>さんがスキしました"}
+                                        %span あなたのノートに対して
+                                        %a.renewal-p-notificationList__link.action-user-urlname{:href => "/tera719", "ng-click" => "$event.stopPropagation()"} tera
+                                        %span さんがスキしました
+                                      %p.renewal-p-notificationList__date{"ng-bind" => "notification.created_at | date:'yyyy/MM/dd HH:mm'"} 2018/06/19 10:29
+                          %li.renewal-p-notificationList__item{"ng-repeat" => "notification in notificationModel.notifications", :style => ""}
+                            %div{"ng-if" => "!notification.notified_user.withdrawal"}
+                              %div{"ng-switch" => "notification.action_type"}
+                                .renewal-p-notificationList__itemInner{"ng-switch-when" => "like"}
+                                  %a{"ng-click" => "notificationModel.navElemClicked(notification.note, $event)"}
+                                    .renewal-p-notificationList__userAvatar{"ng-click" => "$event.stopPropagation();$state.go('creator.home', { urlname: notification.notified_user.urlname })"}
+                                      .c-avatar.c-avatar--boxShadow
+                                        %img.c-avatar--small{:alt => "", "ng-src" => "https://d2l930y2yx77uc.cloudfront.net/assets/default/default_profile-2f533b6a0048b61b8d761198d14cbb4c603f89edb03577f061efc7393b85d811.png", :src => "https://d2l930y2yx77uc.cloudfront.net/assets/default/default_profile-2f533b6a0048b61b8d761198d14cbb4c603f89edb03577f061efc7393b85d811.png"}/
+                                    .renewal-p-notificationList__userData
+                                      %p.renewal-p-notificationList__text{"compile-notification-message" => "あなたのノートに対して<a class=\"renewal-p-notificationList__link action-user-urlname\" href=\"/tera719\" ng-click=\"$event.stopPropagation()\">tera</a>さんがスキしました"}
+                                        %span あなたのノートに対して
+                                        %a.renewal-p-notificationList__link.action-user-urlname{:href => "/tera719", "ng-click" => "$event.stopPropagation()"} tera
+                                        %span さんがスキしました
+                                      %p.renewal-p-notificationList__date{"ng-bind" => "notification.created_at | date:'yyyy/MM/dd HH:mm'"} 2018/06/19 10:28
+                          %li.renewal-p-notificationList__item{"ng-repeat" => "notification in notificationModel.notifications", :style => ""}
+                            %div{"ng-if" => "!notification.notified_user.withdrawal"}
+                              %div{"ng-switch" => "notification.action_type"}
+                                .renewal-p-notificationList__itemInner{"ng-switch-when" => "like"}
+                                  %a{"ng-click" => "notificationModel.navElemClicked(notification.note, $event)"}
+                                    .renewal-p-notificationList__userAvatar{"ng-click" => "$event.stopPropagation();$state.go('creator.home', { urlname: notification.notified_user.urlname })"}
+                                      .c-avatar.c-avatar--boxShadow
+                                        %img.c-avatar--small{:alt => "", "ng-src" => "https://d2l930y2yx77uc.cloudfront.net/assets/default/default_profile-2f533b6a0048b61b8d761198d14cbb4c603f89edb03577f061efc7393b85d811.png", :src => "https://d2l930y2yx77uc.cloudfront.net/assets/default/default_profile-2f533b6a0048b61b8d761198d14cbb4c603f89edb03577f061efc7393b85d811.png"}/
+                                    .renewal-p-notificationList__userData
+                                      %p.renewal-p-notificationList__text{"compile-notification-message" => "あなたのノートに対して<a class=\"renewal-p-notificationList__link action-user-urlname\" href=\"/tera719\" ng-click=\"$event.stopPropagation()\">tera</a>さんがスキしました"}
+                                        %span あなたのノートに対して
+                                        %a.renewal-p-notificationList__link.action-user-urlname{:href => "/tera719", "ng-click" => "$event.stopPropagation()"} tera
+                                        %span さんがスキしました
+                                      %p.renewal-p-notificationList__date{"ng-bind" => "notification.created_at | date:'yyyy/MM/dd HH:mm'"} 2018/06/19 10:28
+                          %li.renewal-p-notificationList__item{"ng-repeat" => "notification in notificationModel.notifications", :style => ""}
+                            %div{"ng-if" => "!notification.notified_user.withdrawal"}
+                              %div{"ng-switch" => "notification.action_type"}
+                                .renewal-p-notificationList__itemInner{"ng-switch-when" => "like"}
+                                  %a{"ng-click" => "notificationModel.navElemClicked(notification.note, $event)"}
+                                    .renewal-p-notificationList__userAvatar{"ng-click" => "$event.stopPropagation();$state.go('creator.home', { urlname: notification.notified_user.urlname })"}
+                                      .c-avatar.c-avatar--boxShadow
+                                        %img.c-avatar--small{:alt => "", "ng-src" => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/6115145/profile_f5f65f446db84e242d4fc051dcc61aa6.jpg", :src => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/6115145/profile_f5f65f446db84e242d4fc051dcc61aa6.jpg"}/
+                                    .renewal-p-notificationList__userData
+                                      %p.renewal-p-notificationList__text{"compile-notification-message" => "あなたのノートに対して<a class=\"renewal-p-notificationList__link action-user-urlname\" href=\"/shin_cuisine\" ng-click=\"$event.stopPropagation()\">料理人 心之助</a>さんがスキしました"}
+                                        %span あなたのノートに対して
+                                        %a.renewal-p-notificationList__link.action-user-urlname{:href => "/shin_cuisine", "ng-click" => "$event.stopPropagation()"} 料理人 心之助
+                                        %span さんがスキしました
+                                      %p.renewal-p-notificationList__date{"ng-bind" => "notification.created_at | date:'yyyy/MM/dd HH:mm'"} 2018/06/18 20:17
+                          %li.renewal-p-notificationList__item{"ng-repeat" => "notification in notificationModel.notifications", :style => ""}
+                            %div{"ng-if" => "!notification.notified_user.withdrawal"}
+                              %div{"ng-switch" => "notification.action_type"}
+                                .renewal-p-notificationList__itemInner{"ng-switch-when" => "like"}
+                                  %a{"ng-click" => "notificationModel.navElemClicked(notification.note, $event)"}
+                                    .renewal-p-notificationList__userAvatar{"ng-click" => "$event.stopPropagation();$state.go('creator.home', { urlname: notification.notified_user.urlname })"}
+                                      .c-avatar.c-avatar--boxShadow
+                                        %img.c-avatar--small{:alt => "", "ng-src" => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/6115145/profile_f5f65f446db84e242d4fc051dcc61aa6.jpg", :src => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/6115145/profile_f5f65f446db84e242d4fc051dcc61aa6.jpg"}/
+                                    .renewal-p-notificationList__userData
+                                      %p.renewal-p-notificationList__text{"compile-notification-message" => "あなたのノートに対して<a class=\"renewal-p-notificationList__link action-user-urlname\" href=\"/shin_cuisine\" ng-click=\"$event.stopPropagation()\">料理人 心之助</a>さんがスキしました"}
+                                        %span あなたのノートに対して
+                                        %a.renewal-p-notificationList__link.action-user-urlname{:href => "/shin_cuisine", "ng-click" => "$event.stopPropagation()"} 料理人 心之助
+                                        %span さんがスキしました
+                                      %p.renewal-p-notificationList__date{"ng-bind" => "notification.created_at | date:'yyyy/MM/dd HH:mm'"} 2018/06/18 20:17
+                          %li.renewal-p-notificationList__item{"ng-repeat" => "notification in notificationModel.notifications", :style => ""}
+                            %div{"ng-if" => "!notification.notified_user.withdrawal"}
+                              %div{"ng-switch" => "notification.action_type"}
+                                .renewal-p-notificationList__itemInner{"ng-switch-when" => "follow"}
+                                  %a{"ng-click" => "notificationModel.navUserElemClicked(notification.notified_user, $event)"}
+                                    .renewal-p-notificationList__userAvatar
+                                      .c-avatar.c-avatar--boxShadow
+                                        %img.c-avatar--small{"ng-src" => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/6727669/profile_f91ebb8658b1caa67c7e53886a1edebe.jpg", :src => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/6727669/profile_f91ebb8658b1caa67c7e53886a1edebe.jpg"}/
+                                    .renewal-p-notificationList__userData
+                                      %p.renewal-p-notificationList__text{"ng-bind-html" => "::notification.message"}
+                                        %a.renewal-p-notificationList__link.action-user-urlname{:href => "/ryoosuke"}> Ryosuke  Okubo
+                                        さんがあなたをフォローしました
+                                      %p.renewal-p-notificationList__date{"ng-bind" => "notification.created_at | date:'yyyy/MM/dd HH:mm'"} 2018/06/18 19:48
+                  %li.renewal-p-buttonSet__item.renewal-p-buttonSet__item--mlL{"analytics-category" => "header-nav", "analytics-event" => "user-menu", "analytics-label" => "user-menu", "analytics-on" => "click", "ng-if" => "isLoggedIn === true", :style => ""}
+                    %renewal-setting-menu{:user => "currentUser"}
+                      %a.c-avatar.c-avatar--boxShadow
+                        %img.c-avatar--small{"ng-src" => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/6872559/profile_d227b8ba49f78d2420ed6f945630fce3.jpg", :src => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/6872559/profile_d227b8ba49f78d2420ed6f945630fce3.jpg"}/
+                      .renewal-c-popover--mymenu{"ng-class" => "{'show-ec-cart':showEcCart}", :style => "display: none;"}
+                        %ul.renewal-p-mymenuList
+                          %li.renewal-p-mymenuList__item
+                            %a.u-textBold.ng-hide{"ng-click" => "checkNoUrlnameUser()", "ng-show" => "user.no_urlname_user"} さとう
+                            .renewal-p-mymenuList__cart.ng-hide{"ng-show" => "isSmartPhone && showEcCart"}
+                              %a{:href => "/cart", "ui-sref" => "ecStore.cart"}
+                                %i.renewal-p-icon.renewal-p-icon--cart.u-mlrAuto
+                                %span
+                                  ¥0
+                            %content-link{:analytics => "{ on: 'click', event: 'dropdown', category: 'button', label: 'dropdown-magazine' }", "ng-show" => "!user.no_urlname_user", "style-class" => "u-textBold", :type => "user", :user => "user"}
+                              %a.u-textBold{"analytics-category" => "button", "analytics-event" => "dropdown", "analytics-label" => "dropdown-magazine", "analytics-on" => "click", "data-content-link" => "true", :href => "/arikun", "ng-attr-class" => "{{::$ctrl.styleClass}}", "ng-attr-id" => "{{::$ctrl.styleId}}", "ng-attr-ng-class" => "{{::$ctrl.attrs.ngClass}}", "ng-attr-target" => "{{::$ctrl.target}}", "ng-if" => "$ctrl.linkMethod == 'state' && $ctrl.analytics", "ng-transclude" => "", "ng-ui-sref-active" => "", "ui-sref" => "creator.home({\"urlname\":\"arikun\"})"}
+                                %span さとう
+                                %span.renewal-p-mymenuList__span マイページを表示
+                          %li.renewal-c-popover__separator
+                          %li.renewal-p-mymenuList__item{"ng-show" => "!user.no_urlname_user"}
+                            %a{"analytics-category" => "button", "analytics-event" => "dropdown", "analytics-label" => "dropdown-note", "analytics-on" => "click", :href => "/notes", "ui-sref" => "note_list"} ノートを一覧で管理
+                          %li.renewal-p-mymenuList__item
+                            %a{"analytics-category" => "button", "analytics-event" => "dropdown", "analytics-label" => "dropdown-magazine", "analytics-on" => "click", :href => "/magazines", "ui-sref" => "home.magazines"} マガジンを一覧で管理
+                          %li.renewal-p-mymenuList__item{"ng-show" => "isPC&&!user.no_urlname_user"}
+                            %a{"analytics-category" => "button", "analytics-event" => "dropdown", "analytics-label" => "dropdown-gallery", "analytics-on" => "click", :href => "/creator_gallery", "ui-sref" => "creatorGallery"} 画像を一覧で管理
+                          %li.renewal-c-popover__separator
+                          %li.renewal-p-mymenuList__item
+                            %a{"analytics-category" => "button", "analytics-event" => "dropdown", "analytics-label" => "dropdown-libraries", "analytics-on" => "click", :href => "/library/purchased", "ui-sref" => "home.libraries.purchased"} 購入 / スキをしたノート
+                          %li.renewal-c-popover__separator.ng-hide{"ng-show" => "user.is_premium_user"}
+                          %li.renewal-p-mymenuList__item.ng-hide{"ng-show" => "user.is_premium_user"}
+                            %a{"analytics-category" => "button", "analytics-event" => "dropdown", "analytics-label" => "dropdown-premium-settings", "analytics-on" => "click", :href => "/settings/premium", "ui-sref" => "settings.premium"} プレミアム設定
+                          %li.renewal-c-popover__separator
+                          %li.renewal-p-mymenuList__item
+                            %a{"analytics-category" => "button", "analytics-event" => "dropdown", "analytics-label" => "dropdown-account-settings", "analytics-on" => "click", :href => "/settings/account", "ui-sref" => "settings.account"} アカウント設定
+                          %li.renewal-p-mymenuList__item{"ng-show" => "!user.no_urlname_user"}
+                            %a{"analytics-category" => "button", "analytics-event" => "dropdown", "analytics-label" => "dropdown-dashboard", "analytics-on" => "click", :href => "/sitesettings/stats", "ui-sref" => "sitesettings.stats"} ダッシュボード
+                          %li.renewal-p-mymenuList__item
+                            %a{"analytics-category" => "button", "analytics-event" => "dropdown", "analytics-label" => "dropdown-logout", "analytics-on" => "click", "ng-click" => "logout()", "ng-controller" => "SessionsCtrl"} ログアウト
+                          %li.renewal-c-popover__separator{"ng-show" => "!user.is_premium_user"}
+                          %li.renewal-p-mymenuList__item.renewal-p-mymenuList__item--button{"ng-show" => "!user.is_premium_user"}
+                            %a.renewal-c-button--primaryFull{"analytics-category" => "button", "analytics-event" => "dropdown", "analytics-label" => "dropdown-premium", "analytics-on" => "click", :href => "/premium", "ui-sref" => "premium"} noteプレミアムサービス
+                  %li.renewal-c-button--navBarPostNote{"ng-if" => "(isPC || isTablet || isSmartPhone) && isLoggedIn && isCdUser()", :style => ""}
+                    %post-note-from-nav-bar.renewal-p-buttonSet__postPopover
+                      %a#js-post-note-toggle{"analytics-category" => "button", "analytics-event" => "create-note-from-home", "analytics-label" => "link", "analytics-on" => "click", "ng-click" => "checkNoUrlnameUser()"}
+                        %span.inner
+                          %i.renewal-p-icon--postNote
+                          %span ノートを投稿
+                      .renewal-c-popover--postNote{:style => "display: none;"}
+                        %ul.renewal-p-postNoteFromNavBarList
+                          %li.renewal-p-postNoteFromNavBarList__item{"ng-class" => "{'is-disabled': isSmartPhone || isTablet}"}
+                            %a{"analytics-category" => "header-nav", "analytics-event" => "create-textNote", "analytics-label" => "create-textNote", "analytics-on" => "click", :href => "/notes/new", "ui-sref" => "newTextNote"}
+                              .renewal-p-icon--textnote{"ng-class" => "{'is-disabled': isSmartPhone || isTablet}"}
+                              %span テキスト
+                          %li.renewal-p-postNoteFromNavBarList__item
+                            %a{"analytics-category" => "header-nav", "analytics-event" => "create-imageNote", "analytics-label" => "create-imageNote", "analytics-on" => "click", "image-note-modal" => "new"}
+                              .renewal-p-icon--imagenote
+                              %span 画像
+                          %li.renewal-p-postNoteFromNavBarList__item
+                            %a{"analytics-category" => "header-nav", "analytics-event" => "create-talkNote", "analytics-label" => "create-talkNote", "analytics-on" => "click", "talk-note-modal" => "new"}
+                              .renewal-p-icon--talknote
+                              %span つぶやき
+                          %li.renewal-p-postNoteFromNavBarList__item{"ng-class" => "{'is-disabled': isSmartPhone || isTablet}"}
+                            %a{"analytics-category" => "header-nav", "analytics-event" => "create-soundNote", "analytics-label" => "create-soundNote", "analytics-on" => "click", "sound-note-modal" => "new"}
+                              .renewal-p-icon--soundnote{"ng-class" => "{'is-disabled': isSmartPhone || isTablet}"}
+                              %span 音声
+                          %li.renewal-p-postNoteFromNavBarList__item
+                            %a{"analytics-category" => "header-nav", "analytics-event" => "create-movieNote", "analytics-label" => "create-movieNote", "analytics-on" => "click", "movie-note-modal" => "new"}
+                              .renewal-p-icon--movienote
+                              %span 動画
+            .l-header__nav{"ng-if" => "showCategoryNavPage", :style => ""}
+              %nav.p-globalNavigation
+                .p-globalNavigation__menu
+                  .p-globalNavigation__item.is--active{"ng-class" => "{'is--active': $state.is('home.home') || $state.is('timeline') || $state.is('categories') || $state.is('hashtag.home')}", "ng-if" => "isLoggedIn === true"}
+                    %a.p-globalNavigation__link{"analytics-category" => "button", "analytics-event" => "category-nav", "analytics-label" => "category-nav-timeline", "analytics-on" => "click", :href => "/", "ui-sref" => "home.home"}
+                      ホーム
+                  .p-globalNavigation__item{"ng-class" => "{'is--active': $state.is('home.recommend') || $state.is('home.recommended_magazines')}", "ng-if" => "isLoggedIn === true"}
+                    %a.p-globalNavigation__link{"analytics-category" => "button", "analytics-event" => "category-nav", "analytics-label" => "category-nav-recommend", "analytics-on" => "click", :href => "/recommend", "ui-sref" => "home.recommend"}
+                      おすすめ
+                  .p-globalNavigation__item{"ng-class" => "{'is--active': $state.is('contests.home')}"}
+                    %a.p-globalNavigation__link{"analytics-category" => "button", "analytics-event" => "category-nav", "analytics-label" => "category-nav-contests", "analytics-on" => "click", :href => "/contests", "ui-sref" => "contests.home"}
+                      募集中
+                      .p-globalNavigation__notification
+                        1
+                  .p-globalNavigation__item{"ng-class" => "{'is--active': $state.is('pickups')}"}
+                    %a.p-globalNavigation__link{"analytics-category" => "button", "analytics-event" => "category-nav", "analytics-label" => "category-nav-pickup", "analytics-on" => "click", :href => "/pickups/sort1", "ui-sref" => "pickups({ pickup_key: 'sort1' })"}
+                      ピックアップ
+                  .p-globalNavigation__item{"ng-class" => "{'is--active': $state.is('categoriesHome')}"}
+                    %a.p-globalNavigation__link{"analytics-category" => "button", "analytics-event" => "category-nav", "analytics-label" => "category-nav-categories", "analytics-on" => "click", :href => "/categories", "ui-sref" => "categoriesHome"}
+                      注目カテゴリ
+                  .p-globalNavigation__item{"ng-class" => "{'is--active': $state.is('hashtag.index')}", "ng-mouseenter" => "openMegaMenu($event, 'hashtags')", "ng-mouseleave" => "closeMegaMenu($event, 'hashtags')"}
+                    %a.p-globalNavigation__link.p-globalNavigation__link--drop{"analytics-category" => "button", "analytics-event" => "category-nav", "analytics-label" => "category-nav-hashtag", "analytics-on" => "click", :href => "/hashtag", "ng-href" => "/hashtag"}
+                      人気タグ
+                      .p-globalNavigation__dropIcon
+                        %i.c-icon.c-icon--arrowdropdown
+                  .p-globalNavigation__item.p-globalNavigation__item--help
+                    %a.p-globalNavigation__link.p-globalNavigation__link--help{"analytics-category" => "button", "analytics-event" => "header", "analytics-label" => "header-help", "analytics-on" => "click", :href => "/help", "ui-sref" => "help", "ui-sref-active" => "is-active"}
+                      %i.c-icon.c-icon--help
+                .p-globalNavigation__submenu
+                  .p-dropNavigation{"ng-if" => "showCagegoriesFlag()", "ng-show" => "!megaMenu.hashtags"}
+                    .p-dropNavigation__item{"ng-if" => "category.order > 0", "ng-repeat" => "category in categories", "ui-sref-active" => "is--active"}
+                      %a.p-dropNavigation__link{"analytics-category" => "header-nav", "analytics-event" => "sub-nav-categories", "analytics-label" => "manga", "analytics-on" => "click", :href => "/categories/manga", "ui-sref" => "categories({ category: category.eng_name })"}
+                        マンガ
+                    .p-dropNavigation__item{"ng-if" => "category.order > 0", "ng-repeat" => "category in categories", "ui-sref-active" => "is--active"}
+                      %a.p-dropNavigation__link{"analytics-category" => "header-nav", "analytics-event" => "sub-nav-categories", "analytics-label" => "column", "analytics-on" => "click", :href => "/categories/column", "ui-sref" => "categories({ category: category.eng_name })"}
+                        コラム
+                    .p-dropNavigation__item{"ng-if" => "category.order > 0", "ng-repeat" => "category in categories", "ui-sref-active" => "is--active"}
+                      %a.p-dropNavigation__link{"analytics-category" => "header-nav", "analytics-event" => "sub-nav-categories", "analytics-label" => "novel", "analytics-on" => "click", :href => "/categories/novel", "ui-sref" => "categories({ category: category.eng_name })"}
+                        小説
+                    .p-dropNavigation__item{"ng-if" => "category.order > 0", "ng-repeat" => "category in categories", "ui-sref-active" => "is--active"}
+                      %a.p-dropNavigation__link{"analytics-category" => "header-nav", "analytics-event" => "sub-nav-categories", "analytics-label" => "photo", "analytics-on" => "click", :href => "/categories/photo", "ui-sref" => "categories({ category: category.eng_name })"}
+                        写真
+                    .p-dropNavigation__item{"ng-if" => "category.order > 0", "ng-repeat" => "category in categories", "ui-sref-active" => "is--active"}
+                      %a.p-dropNavigation__link{"analytics-category" => "header-nav", "analytics-event" => "sub-nav-categories", "analytics-label" => "music", "analytics-on" => "click", :href => "/categories/music", "ui-sref" => "categories({ category: category.eng_name })"}
+                        サウンド
+                    .p-dropNavigation__item{"ng-if" => "category.order > 0", "ng-repeat" => "category in categories", "ui-sref-active" => "is--active"}
+                      %a.p-dropNavigation__link{"analytics-category" => "header-nav", "analytics-event" => "sub-nav-categories", "analytics-label" => "business", "analytics-on" => "click", :href => "/categories/business", "ui-sref" => "categories({ category: category.eng_name })"}
+                        ビジネス
+                    .p-dropNavigation__item{"ng-if" => "category.order > 0", "ng-repeat" => "category in categories", "ui-sref-active" => "is--active"}
+                      %a.p-dropNavigation__link{"analytics-category" => "header-nav", "analytics-event" => "sub-nav-categories", "analytics-label" => "lifestyle", "analytics-on" => "click", :href => "/categories/lifestyle", "ui-sref" => "categories({ category: category.eng_name })"}
+                        ライフスタイル
+                    .p-dropNavigation__item{"ng-if" => "category.order > 0", "ng-repeat" => "category in categories", "ui-sref-active" => "is--active"}
+                      %a.p-dropNavigation__link{"analytics-category" => "header-nav", "analytics-event" => "sub-nav-categories", "analytics-label" => "tech", "analytics-on" => "click", :href => "/categories/tech", "ui-sref" => "categories({ category: category.eng_name })"}
+                        テクノロジー
+                    .p-dropNavigation__item{"ng-if" => "category.order > 0", "ng-repeat" => "category in categories", "ui-sref-active" => "is--active"}
+                      %a.p-dropNavigation__link{"analytics-category" => "header-nav", "analytics-event" => "sub-nav-categories", "analytics-label" => "entertainment", "analytics-on" => "click", :href => "/categories/entertainment", "ui-sref" => "categories({ category: category.eng_name })"}
+                        エンタメ
+  .minimum-controller
+    .note-list
+      .renewal-l-pageContainer
+        %h1{:class => "u-flexboxBasic"}
+          .p-pageTitle__text
+            ノート一覧
+        %ul{:class => "p-headingWithBorder"}
+          %li{:class => "notecount"} 6 ノート
+          %li{:class => "u-mlAuto"}
+            %ul{:class => "p-sortNav"}
+              %li
+                %span{:class => "status-tab"} 公開ステータス
+                %i{:class => "status-tab-icon"}
+              %li
+                %span{:class => "status-tab"} 日時
+                %i{:class => "status-tab-icon"}
+              %li
+                %span{:class => "status-tab"} マガジン
+                %i{:class => "status-tab-icon"}
+
+
+
+
+        .p-articlelist
+          %li{:class => "notecount"}

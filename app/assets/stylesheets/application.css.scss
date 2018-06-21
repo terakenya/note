@@ -1,0 +1,250 @@
+@import "./text";
+
+.ns-note.bg-default {
+  background-color: #f7f9f9;
+}
+body.ns-note {
+  overflow-x: hidden;
+  color: #222222;
+  height: 100%;
+  margin: 0;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", Arial, "メイリオ", Meiryo, sans-serif;
+  word-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  .ns-note .header-container {
+    position: relative;
+    z-index: 11;
+  }
+}
+
+.ns-note .p-globalNavigation__menu {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.ns-note .p-globalNavigation__submenu {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.ns-note .header-container {
+    position: relative;
+    z-index: 11;
+}
+
+
+.ns-note .renewal-l-header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 1px rgba(0,0,0,0.08);
+}
+
+.ns-note .renewal-l-header__inner {
+    background: #fff;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+.ns-note .renewal-l-header__global {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    height: 64px;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.ns-note .p-globalNavigation__item {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.ns-note .p-globalNavigation__item--help {
+    margin-left: auto;
+}
+
+.ns-note .p-dropNavigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.ns-note .renewal-l-header__global {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    height: 64px;
+    width: 940px;
+    margin: 0px auto;
+}
+
+.ns-note .renewal-l-header__right {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.ns-note .renewal-p-buttonSet {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.ns-note .renewal-p-buttonSet {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.ns-note .renewal-p-buttonSet__item:first-child {
+    margin-left: 0px;
+}
+
+.ns-note .renewal-p-icon--search {
+    width: 30px;
+    height: 30px;
+    background: url(https://d2l930y2yx77uc.cloudfront.net/assets/renewal/icon_30_search-ecd6e84….svg) no-repeat;
+}
+
+.ns-note .renewal-p-buttonSet__item {
+    margin-left: 10px;
+    font-size: 0px;
+    cursor: pointer;
+}
+
+.ns-note .renewal-p-buttonSet__item a {
+    overflow: visible;
+}
+
+.ns-note .renewal-p-icon--notification {
+    width: 30px;
+    height: 30px;
+    background: url(https://d2l930y2yx77uc.cloudfront.net/assets/renewal/icon_30_notification-8d3ad00….svg) no-repeat;
+}
+
+.ns-note .renewal-c-popover--notification {
+    z-index: 12;
+    display: none;
+    top: 60px;
+    right: 174px;
+    width: 300px;
+}
+
+.ns-note .renewal-p-notificationList {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.ns-note .renewal-p-buttonSet__item--mlL {
+    margin-left: 20px;
+}
+
+.ns-note .c-avatar--small {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.ns-note img {
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+}
+
+.ns-note .renewal-c-popover--mymenu {
+    z-index: 12;
+    display: none;
+    top: 60px;
+    right: 134px;
+    width: 220px;
+}
+
+.ns-note .renewal-c-button--navBarPostNote {
+    margin-left: 25px;
+    font-weight: bold;
+    padding: 0px;
+}
+
+.ns-note .renewal-c-button--navBarPostNote {
+    margin-left: 25px;
+    font-weight: bold;
+    padding: 0px;
+}
+
+.ns-note .renewal-p-buttonSet__postPopover > a {
+    color: rgb(255, 255, 255);
+}
+
+.ns-note a, .ns-note li {
+    transition: all 0.1s 0s;
+}
+
+.ns-note .renewal-p-buttonSet__postPopover > a .inner {
+    padding: 0.5em 0.7em;
+}
+
+.ns-note .renewal-p-buttonSet__postPopover > a span {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.ns-note .renewal-c-button--navBarPostNote .renewal-p-icon--postNote {
+    pointer-events: none;
+}
+
+.ns-note .renewal-p-buttonSet__postPopover > a i {
+    margin-right: 2px;
+}
+
+.ns-note .renewal-p-icon--postNote {
+    width: 16px;
+    height: 16px;
+    background: url(https://d2l930y2yx77uc.cloudfront.net/assets/renewal/icon_post_note-e3a56e1….svg) no-repeat;
+}
+
+ns-note .renewal-p-postNoteFromNavBarList {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.ns-note .renewal-p-buttonSet__postPopover > a {
+    color: rgb(255, 255, 255);
+}
+
+button--navBarPostNote {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border-color: rgb(44, 182, 150);
+  background: rgb(44, 182, 150);
+}

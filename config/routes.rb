@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root 'notes#text'
+  root 'notes#index'
 
 end

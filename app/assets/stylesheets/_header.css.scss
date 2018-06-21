@@ -27,6 +27,7 @@
   font-size: 14px;
   font-weight: bold;
   float:left;
+  color: #787c7b;
 }
 .p-globalNavigation__menu{
   height: 47px;
@@ -45,7 +46,7 @@
 .p-globalNavigation__submit{
   height: 54px;
   font-size: 14px;
-  color:#222222;
+  color: #787c7b;
 }
 .p-globalNavigation__item__help_link{
     float:right;
@@ -73,6 +74,29 @@
 }
 .renewa-menu-img{
     float:right;
+}
+
+.inner {
+    border-color: #2cb696;
+    color: #fff;
+    background: #2cb696;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0.7em 1em;
+    border: 1px solid #e8eceb;
+    border-radius: 4px;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.notepost{
+  color:white;
+  font-size:10px;
 }
 
 

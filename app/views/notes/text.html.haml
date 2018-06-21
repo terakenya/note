@@ -1,0 +1,42 @@
+.ns-note
+  .note-container
+    .fude-content
+      .note-wrapper
+        .note-name
+          %h1.editable
+            test
+        .note-header
+          .p-articleNoteInfo.note-user-name
+            .p-articleNoteInfo__user
+              Aritomi
+            .p-articleNoteInfo__status
+              %ul.u-mlXS{"ng-if" => "$ctrl.note.can_update  $ctrl.note.status != 'deleted'"}  編集
+              .renewal-c-button--secondarySmall
+        .note-body
+          .body-wrapper
+      .p-supportFunding
+      .renewal-c-article__action
+
+
+
+  .p-comments
+    .p-comments-container
+      %h2.p-comments__title
+      .p-comments__body
+        .p-comments__item
+          %a.p-comments__avatar
+          .p-comments__name
+          .p-comments__status
+          .p-comments__message
+          .p-comments__action
+            .p-comments__actionIcon
+              .c-icon
+              .p-comments__actionPopover
+        .p-comments__add
+          .p-comments__input
+            .p-comments__inputAvatar
+              .c-avatar
+            %textarea#commentarea4130605.p-comments__inputMessage.ng-valid.ng-dirty.ng-touched{"commentable-id" => "4130605", :commentables => "notes", "msd-elastic" => "true", "ng-blur" => "commentFormBlur()", "ng-focus" => "commentFormFocus()", "ng-model" => "commentForm.body", :placeholder => "コメントする...", :style => "overflow: hidden; word-wrap: break-word; resize: none; height: 39px;", :tabindex => "1"}
+
+
+

@@ -1,0 +1,114 @@
+.p-timeline {
+  margin-top: 16px;
+}
+
+.feeds{
+
+}
+
+.feed{
+
+}
+
+.renewal-l-main {
+  width: 580px;
+  margin: 0 auto;
+}
+
+.renewal-c-card{
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  background: #fff;
+  margin-bottom: 15px;
+}
+
+.renewal-c-card__head {
+  width:578px;
+  height:76px;
+}
+
+.renewal-c-card__head>ul {
+    // display: -webkit-box;
+    // display: -ms-flexbox;
+  display: flex;
+    // -webkit-box-align: center;
+    // -ms-flex-align: center;
+  align-items: center;
+  list-style:none;
+}
+
+.renewal-c-card__head>li {
+  margin-right: 8px;
+}
+
+.c-avator{
+  overflow: hidden;
+
+}
+
+.image-class{
+}
+
+.c-avatar--timeline {
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+}
+
+p.renewal-c-card__userName{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+p.renewal-c-card__date{
+  font-size:11px;
+}
+
+
+.renewal-c-card__body {
+  padding: 0 20px 20px;
+}
+
+.renewal-p-cardItem__eyecatch {
+  margin: 0 -20px 20px;
+  background-color:black;
+  height:303px;
+  width:578px;
+  color:yellow;
+}
+
+.renewal-p-cardItem__title{
+  margin-bottom: 13px;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", Arial, "メイリオ", Meiryo, sans-serif;
+  font-feature-settings: 'palt' 1;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+.renewal-p-cardItem__description {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.renewal-p-cardItem__more{
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #249f80;
+}
+
+.renewal-c-card__foot {
+  margin: 0 20px;
+  padding: 12px 0 15px;
+  border-top: 1px solid #e8eceb;
+}
+
+.renewal-p-action{
+}
+
+.renewal-p-action>ul {
+  display: flex;
+  align-items: center;
+}
+

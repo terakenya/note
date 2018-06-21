@@ -1,5 +1,6 @@
 .p-timeline {
   padding-top: 16px;
+  padding-bottom: 16px;
   background-color: #f7f9f9;
 }
 
@@ -71,7 +72,7 @@ p.renewal-c-card__date{
   background-color:black;
   height:303px;
   width:578px;
-  color:yellow;
+  // color:yellow;
 }
 
 .renewal-p-cardItem__title{
@@ -102,10 +103,28 @@ p.renewal-c-card__date{
 }
 
 .renewal-p-action{
-}
-
-.renewal-p-action>ul {
+  color:black;
   display: flex;
-  align-items: center;
+  padding-left:5px;
 }
 
+// .renewal-p-action>ul {
+//   display: flex;
+//   align-items: center;
+//   width:30px;
+//   height:30px;
+// }
+
+.renewal-p-action>li {
+    position: relative;
+    margin-right: 35px;
+    float:right
+}
+
+.fa.fa-heart-o.fa-1x{
+  margin-right: 35px;
+}
+
+.renewal-p-action__comment{
+  margin-right:35px;
+}

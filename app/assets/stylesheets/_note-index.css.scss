@@ -1,5 +1,6 @@
 .p-timeline {
   margin-top: 16px;
+  background-color: rgb(247, 249, 249);
 }
 
 .feeds{
@@ -23,27 +24,23 @@
 }
 
 .renewal-c-card__head {
-  width:578px;
-  height:76px;
+  padding:20px;
 }
 
 .renewal-c-card__head>ul {
-    // display: -webkit-box;
-    // display: -ms-flexbox;
   display: flex;
-    // -webkit-box-align: center;
-    // -ms-flex-align: center;
   align-items: center;
   list-style:none;
 }
 
 .renewal-c-card__head>li {
-  margin-right: 8px;
 }
 
 .c-avator{
   overflow: hidden;
-
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
 }
 
 .image-class{

@@ -3,7 +3,7 @@ class NotesController < ApplicationController
   def index
   end
 
-  def text
+  def show
   end
 
 

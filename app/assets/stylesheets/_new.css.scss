@@ -1,0 +1,192 @@
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+.main{
+  display:block;
+}
+
+.header-new{
+  display: block;
+  position: fixed;
+  width:100%;
+  background-color:white;
+}
+
+.header-new__inner{
+  height:48px;
+  padding: 0 20px;
+  // position: relative;
+  border-bottom: 1px solid #e8eceb;
+
+}
+
+h2.logo{
+  color:black;
+  font-weight:bold;
+  font-size:23px;
+  width:70px;
+  height:20px;
+  margin:0 auto;
+  margin-top: 6px;
+  position: absolute;
+  left: 50%;
+  margin-left: -32px;
+  background-size: 64px 20px;
+}
+
+.account-menu{
+  float: right;
+  padding-top: 8px;
+}
+
+li{
+  margin-left: 10px;
+  display: inline-block
+}
+
+.btn-small-left{
+  box-sizing: border-box;
+  font-size: 12px;
+  border-radius: 4px;
+  text-align: center;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  background: #FFF;
+  border: 1px solid #D9D9D9;
+  width: 80px;
+  height: 31px;
+  line-height: 31px;
+  background-color:white;
+}
+
+.btn-small-right{
+  box-sizing: border-box;
+  font-size: 12px;
+  border-radius: 4px;
+  text-align: center;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  background: #FFF;
+  border: 1px solid #D9D9D9;
+  width: 80px;
+  height: 31px;
+  line-height: 31px;
+  background-color:white;
+}
+
+.editor-screen{
+  padding-top: 70px;
+}
+
+.p-editorTips__btn{
+
+}
+
+.p-editorTips {
+  width:162px;
+  height:40px;
+  background-color:blue;
+  float:right;
+}
+
+i.fa.fa-lightbulb.fa-1x{
+  color:red;
+}
+
+span.c-button__label{
+  font-size: 14px;
+  color: #787c7b;
+}
+
+.note-container{
+  margin-top: 20px;
+  height:800px;
+  width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fude-content{
+  padding-bottom: 120px;
+  min-height: 450px;
+}
+
+.icon-xlarge{
+  width: 620px;
+  height:70px;
+}
+
+.icon-image{
+  height:50px;
+  width:50px;
+  // background-color:green;
+  vertical-align: middle;
+}
+
+.fa-image{
+}
+
+// .icon-image:after{
+
+// }
+
+i.fa.fa-image.fa-2x{
+
+}
+
+.note-name{
+  min-height: 48px;
+  width:620px;
+  background-color:gray;
+}
+
+
+h1{
+  font-size: 32px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  margin-top: 72px;
+  margin-bottom: 18px;
+  min-height: 1em;
+  font-weight:bold;
+}
+
+input{
+  min-height: 48px;
+  width:620px;
+  border:none;
+  background-color:white;
+}
+
+input[type="text"]:focus {
+  outline: 0;
+}
+
+textarea:focus{
+  outline: none;
+}
+
+textarea{
+  border:none;
+  resize: none;
+  // overflow: auto;
+}
+
+.note-body{
+  min-height: 48px;
+  // background-color:red;
+}
+
+.body-wrapper{
+  font-size: 18px;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+p.OeiGn{
+  line-height: 36px;
+}

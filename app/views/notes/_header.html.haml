@@ -13,8 +13,9 @@
           %li.renewal-img
             %span.inner
               %i.renewal-p-icon--postNote
-              %span.notepost ノートを投稿
-
+              %span.notepost
+                = link_to new_note_path(current_user) do
+                  ノートを投稿
 
 
 

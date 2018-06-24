@@ -1,0 +1,59 @@
+.fude-content{
+  width:660px;
+  height:100vh;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.note-cover-img{
+  height:325px;
+  width:660px;
+  background-color:yellow;
+  margin: 0 auto;
+}
+.note-name{
+  width:620px;
+  height:33px;
+}
+.title-wrapper{
+  font-size:32px;
+  margin-top: 72px;
+}
+
+.note-header{
+  margin-bottom: 36px;
+}
+
+.p-articleNoteInfo.note-user-name{
+  width:660px;
+  height:33px;
+}
+.p-articleNoteInfo__status{
+  float:right;
+}
+.p-articleNoteInfo__user{
+  float:left;
+}
+.p-supportFunding.u-mbm{
+  width:620px;
+  height:154px;
+  background: #f2f4f4;
+  padding: 16px;
+}
+.p-supportFunding__heading{
+  font-size: 8px;
+  text-align: left;
+}
+
+.p-supportFunding__contents{
+    width: 588px;
+    height: 88px;
+    background: #fff;
+    border-radius: 12px;
+}
+.u-flexboxCenter{
+  border-color: #2cb696;
+  color: #fff;
+  background: #2cb696;
+  font-weight: bold;
+}

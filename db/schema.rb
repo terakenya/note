@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 20180624050828) do
 
   create_table "articles", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "title"
-    t.text     "text",       limit: 65535
+    t.text     "content",    limit: 65535
     t.text     "image",      limit: 65535
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false

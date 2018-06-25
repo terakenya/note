@@ -32,9 +32,8 @@
                 = f.file_field :image, class: 'imageform', style: 'display:none'
             .note-name
               %h1
-                %input{:name => "text", :type => "text",:placeholder => "ノートタイトル", :size => "620"}/
+                = f.text_field :title, class: "titleform", placeholder: 'ノートタイトル'
             .note-body
               .body-wrapper
                 %OeiGn
-                %textarea{:cols => "50", :name => "お問い合わせ内容", :rows => "10",:placeholder => "ノートタイトル"}
-
+                = f.text_field :content, class: "contentform", placeholder: 'コメント'

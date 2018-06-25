@@ -1,0 +1,40 @@
+= form_for @article do |f|
+  .main
+    .header-new
+      .header-new__inner
+        %h2.logo
+          note
+        .account-menu
+          %ul.inline-wrap
+            %li.inline-child
+              .btn-small-left
+                = f.submit '公開設定', class: 'sendbutton'
+
+            %li.inline-child
+              .btn-small-right
+                キャンセル
+    .editor-screen
+      .p-editorTips
+        .p-editorTips__btn
+          .c-button__icon
+          %i.fa.fa-lightbulb.fa-1x
+          .c-button__label
+          %span.c-button__label
+            ノートヒント
+      .note-container
+        .fude-content
+          .note
+            .icon-xlarge
+              / = form_for @article do |f|
+              =f.label :image, class: "icon" do
+                = fa_icon 'picture-o', class: 'icon'
+                //i.fa.fa-image.fa-2xこの画像に置き換えたい
+                = f.file_field :image, class: 'imageform', style: 'display:none'
+            .note-name
+              %h1
+                %input{:name => "text", :type => "text",:placeholder => "ノートタイトル", :size => "620"}/
+            .note-body
+              .body-wrapper
+                %OeiGn
+                %textarea{:cols => "50", :name => "お問い合わせ内容", :rows => "10",:placeholder => "ノートタイトル"}
+

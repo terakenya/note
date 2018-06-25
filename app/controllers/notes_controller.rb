@@ -7,7 +7,9 @@ class NotesController < ApplicationController
   end
 
   def new
+    @article = Article.new
   end
+
 
 
 end

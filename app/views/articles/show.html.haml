@@ -1,0 +1,25 @@
+= render "header"
+
+.main_contents
+  .note-container.space--under-header
+    .fude-content
+      .note-cover-img
+      .note-name
+        %h1.editable.title-wrapper aaa
+      .note-header
+        .p-articleNoteInfo.note-user-name
+          .p-articleNoteInfo__user
+            =render "userinfoIcon"
+          .p-articleNoteInfo__status
+            編集
+      .p-supportFunding.u-mbm
+        %p.p-supportFunding__heading
+          この記事が気に入ったら、サポートをしてみませんか？気軽にクリエイターを支援できます。
+        .p-supportFunding__body
+          .p-supportFunding__contents
+            .p-supportFunding__button
+              =render "suportbutton"
+
+
+
+

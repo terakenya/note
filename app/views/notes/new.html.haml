@@ -22,14 +22,16 @@
     .note-container
       .fude-content
         .note
-          .icon-xlarge
-            .icon-image
-              %i.fa.fa-image.fa-2x
-          .note-name
-            %h1
-              %input{:name => "name", :type => "text",:placeholder => "ノートタイトル", :size => "620"}/
-          .note-body
-            .body-wrapper
-              %OeiGn
-              %textarea{:cols => "50", :name => "お問い合わせ内容", :rows => "10",:placeholder => "ノートタイトル"}
+          = form_for [@article] do |f|
+            .icon-xlarge
+              %label.icon-image{:for => "article_image"}
+                %i.fa.fa-image.fa-2x
+                %input{:type => "image", :id => "article_image", :type => "file", :style => "display:none"}
+            .note-name
+              %h1
+                %input{:name => "name", :type => "text",:placeholder => "ノートタイトル", :size => "620"}/
+            .note-body
+              .body-wrapper
+                %OeiGn
+                %textarea{:cols => "50", :name => "お問い合わせ内容", :rows => "10",:placeholder => "ノートタイトル"}
 

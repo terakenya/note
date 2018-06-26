@@ -1,0 +1,55 @@
+.main
+  .whole-area
+    .header
+      %h2.logo
+        %img{:alt => "", "data-src" => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/3476076/profile_ca83c7d69e2f0874c29f42d51dab3b7f.jpg", :src => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/3476076/profile_ca83c7d69e2f0874c29f42d51dab3b7f.jpg", :style => "", :title => "",:width => "100", :height => "80"}/
+    .register-container.whole
+      .register-container
+        .register__title-container
+          %p.register__title
+            noteに登録する
+        .space-reset
+          .form-whole
+            .form-datail
+              .space-bottom-2
+                %label{:for => "user_nickname"} ニックネーム(登録後に変更可能)
+                %input#user_nickname{:autocomplete => "nickname", :autofocus => "autofocus", :name => "user[nickname]", :type => "text", :value => ""}/
+
+              .space-bottom-2
+                %label{:for => "user_email"} メールアドレス
+                %input#user_email{:autocomplete => "email", :autofocus => "autofocus", :name => "user[email]", :type => "email", :value => ""}/
+
+
+              .space-bottom-2
+                %label{:for => "user_password"} パスワード
+                %input#user_password{:autocomplete => "off", :name => "user[password]", :type => "password"}/
+
+              .txt-center
+                %input.ng-valid.ng-dirty.ng-valid-parse.ng-touched{"delayed-validation" => "true", :name => "terms", "ng-model" => "terms", :style => "", :tabindex => "1", :type => "checkbox"}/
+                %span.txt-xsmall
+                  %a.link-green
+                    利用規約に同意する
+
+
+
+        / %h2 Sign up
+        = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+          = devise_error_messages!
+          .field
+            = f.label :email
+            %br/
+            = f.email_field :email, autofocus: true, autocomplete: "email"
+          .field
+            = f.label :password
+            - if @minimum_password_length
+              %em
+                (#{@minimum_password_length} characters minimum)
+            %br/
+            = f.password_field :password, autocomplete: "off"
+          .field
+            = f.label :password_confirmation
+            %br/
+            = f.password_field :password_confirmation, autocomplete: "off"
+          .actions
+            = f.submit "Sign up"
+        = render "devise/shared/links"

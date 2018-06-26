@@ -1,0 +1,1413 @@
+/*
+
+
+ */
+/* line 1, /Users/teradakenya/projects/note/app/assets/stylesheets/_devise.css.scss */
+.main {
+  background-color: #f7f9f9;
+}
+
+/* line 5, /Users/teradakenya/projects/note/app/assets/stylesheets/_devise.css.scss */
+.whole-area {
+  padding-top: 40px;
+}
+
+/* line 9, /Users/teradakenya/projects/note/app/assets/stylesheets/_devise.css.scss */
+.header {
+  min-height: 90px;
+  position: relative;
+  width: 90%;
+  min-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 23, /Users/teradakenya/projects/note/app/assets/stylesheets/_devise.css.scss */
+.register-container.whole {
+  padding: 30px;
+}
+
+/* line 27, /Users/teradakenya/projects/note/app/assets/stylesheets/_devise.css.scss */
+.register-container {
+  width: 360px;
+  background: #fff;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* line 34, /Users/teradakenya/projects/note/app/assets/stylesheets/_devise.css.scss */
+.register__title-container {
+  margin-bottom: 15px;
+}
+
+/* line 38, /Users/teradakenya/projects/note/app/assets/stylesheets/_devise.css.scss */
+p.register__title {
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding: 25px 16px 0 16px;
+  margin-bottom: 30px;
+}
+
+/* line 48, /Users/teradakenya/projects/note/app/assets/stylesheets/_devise.css.scss */
+.space-reset {
+  font-size: 12px;
+}
+
+/* line 52, /Users/teradakenya/projects/note/app/assets/stylesheets/_devise.css.scss */
+.form-whole {
+  margin: 0;
+}
+
+/* line 56, /Users/teradakenya/projects/note/app/assets/stylesheets/_devise.css.scss */
+.space-bottom-2 {
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+/* line 61, /Users/teradakenya/projects/note/app/assets/stylesheets/_devise.css.scss */
+input#user_nickname {
+  min-height: 31px;
+  width: 100%;
+  border: 1px solid #e1e5e7;
+  border-radius: 4px;
+}
+
+/* line 68, /Users/teradakenya/projects/note/app/assets/stylesheets/_devise.css.scss */
+input#user_email {
+  min-height: 31px;
+  width: 100%;
+  border: 1px solid #e1e5e7;
+  border-radius: 4px;
+}
+
+/* line 75, /Users/teradakenya/projects/note/app/assets/stylesheets/_devise.css.scss */
+input#user_password {
+  min-height: 31px;
+  width: 100%;
+  border: 1px solid #e1e5e7;
+  border-radius: 4px;
+}
+
+/* line 81, /Users/teradakenya/projects/note/app/assets/stylesheets/_devise.css.scss */
+.txt-center {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* line 86, /Users/teradakenya/projects/note/app/assets/stylesheets/_devise.css.scss */
+input[type="checkbox"] {
+  margin: 1px 2px 0 0;
+  vertical-align: text-top;
+}
+
+/* line 91, /Users/teradakenya/projects/note/app/assets/stylesheets/_devise.css.scss */
+span.txt-xsmall {
+  font-size: 11px !important;
+}
+/* line 2, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.header-container {
+  width: 100vw;
+  height: 166px;
+}
+
+/* line 7, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.header-container-up {
+  height: 165px;
+  border-bottom: 2px solid #e8eceb;
+}
+
+/* line 13, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.renewal-l-header__global {
+  height: 64px;
+  width: 950px;
+  margin: 0 auto;
+}
+
+/* line 20, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.l-header__nav {
+  height: 102px;
+  width: 950px;
+  margin: 0 auto;
+}
+
+/* line 26, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.p-globalNavigation__item {
+  margin: 0px 15px 0px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  float: left;
+  color: #787c7b;
+}
+
+/* line 33, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.p-globalNavigation__menu {
+  height: 47px;
+  border-bottom: 1px solid #e8eceb;
+}
+
+/* line 38, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.p-globalNavigation__item__help {
+  vertical-align: middle;
+}
+
+/* line 42, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.p-dropNavigation__item {
+  float: left;
+  margin: 0px 15px 0px 15px;
+}
+
+/* line 47, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.p-globalNavigation__submit {
+  height: 54px;
+  font-size: 14px;
+  color: #787c7b;
+}
+
+/* line 52, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.p-globalNavigation__item__help_link {
+  float: right;
+}
+
+/* line 58, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.renewal-title-img {
+  padding: 20px 0 0 0;
+  float: left;
+}
+
+/* line 62, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.renewal-l-header__right {
+  width: 50px;
+  height: 50px;
+}
+
+/* line 67, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.renewal-img {
+  list-style: none;
+  float: left;
+  padding: 20px 0 0 0;
+  margin-left: 20px;
+}
+
+/* line 73, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.fa.fa-heart-o.fa-1x {
+  float: left;
+}
+
+/* line 76, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.renewa-menu-img {
+  float: right;
+}
+
+/* line 80, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.inner {
+  border-color: #2cb696;
+  color: #fff;
+  background: #2cb696;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0.7em 1em;
+  border: 1px solid #e8eceb;
+  border-radius: 4px;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* line 98, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.notepost {
+  color: white;
+  font-size: 10px;
+}
+/* line 1, /Users/teradakenya/projects/note/app/assets/stylesheets/_new.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* line 6, /Users/teradakenya/projects/note/app/assets/stylesheets/_new.css.scss */
+.main {
+  display: block;
+}
+
+/* line 10, /Users/teradakenya/projects/note/app/assets/stylesheets/_new.css.scss */
+.header-new {
+  display: block;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+
+/* line 17, /Users/teradakenya/projects/note/app/assets/stylesheets/_new.css.scss */
+.header-new__inner {
+  height: 48px;
+  padding: 0 20px;
+  border-bottom: 1px solid #e8eceb;
+}
+
+/* line 25, /Users/teradakenya/projects/note/app/assets/stylesheets/_new.css.scss */
+h2.logo {
+  color: black;
+  font-weight: bold;
+  font-size: 23px;
+  width: 70px;
+  height: 20px;
+  margin: 0 auto;
+  margin-top: 6px;
+  position: absolute;
+  left: 50%;
+  margin-left: -32px;
+  background-size: 64px 20px;
+}
+
+/* line 39, /Users/teradakenya/projects/note/app/assets/stylesheets/_new.css.scss */
+.account-menu {
+  float: right;
+  padding-top: 8px;
+}
+
+/* line 44, /Users/teradakenya/projects/note/app/assets/stylesheets/_new.css.scss */
+li {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+/* line 49, /Users/teradakenya/projects/note/app/assets/stylesheets/_new.css.scss */
+.btn-small-left {
+  box-sizing: border-box;
+  font-size: 12px;
+  border-radius: 4px;
+  text-align: center;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  background: #FFF;
+  border: 1px solid #D9D9D9;
+  width: 80px;
+  height: 31px;
+  line-height: 31px;
+  background-color: white;
+}
+
+/* line 65, /Users/teradakenya/projects/note/app/assets/stylesheets/_new.css.scss */
+.btn-small-right {
+  box-sizing: border-box;
+  font-size: 12px;
+  border-radius: 4px;
+  text-align: center;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  background: #FFF;
+  border: 1px solid #D9D9D9;
+  width: 80px;
+  height: 31px;
+  line-height: 31px;
+  background-color: white;
+}
+
+/* line 81, /Users/teradakenya/projects/note/app/assets/stylesheets/_new.css.scss */
+.editor-screen {
+  padding-top: 70px;
+}
+
+/* line 89, /Users/teradakenya/projects/note/app/assets/stylesheets/_new.css.scss */
+.p-editorTips {
+  width: 162px;
+  height: 40px;
+  background-color: blue;
+  float: right;
+}
+
+/* line 96, /Users/teradakenya/projects/note/app/assets/stylesheets/_new.css.scss */
+i.fa.fa-lightbulb.fa-1x {
+  color: red;
+}
+
+/* line 100, /Users/teradakenya/projects/note/app/assets/stylesheets/_new.css.scss */
+span.c-button__label {
+  font-size: 14px;
+  color: #787c7b;
+}
+
+/* line 105, /Users/teradakenya/projects/note/app/assets/stylesheets/_new.css.scss */
+.note-container {
+  margin-top: 20px;
+  width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 113, /Users/teradakenya/projects/note/app/assets/stylesheets/_new.css.scss */
+.fude-content {
+  padding-bottom: 120px;
+  min-height: 450px;
+}
+
+/* line 118, /Users/teradakenya/projects/note/app/assets/stylesheets/_new.css.scss */
+.icon-xlarge {
+  width: 620px;
+  height: 70px;
+}
+
+/* line 123, /Users/teradakenya/projects/note/app/assets/stylesheets/_new.css.scss */
+.icon-image {
+  height: 50px;
+  width: 50px;
+  vertical-align: middle;
+}
+
+/* line 141, /Users/teradakenya/projects/note/app/assets/stylesheets/_new.css.scss */
+.note-name {
+  min-height: 48px;
+  width: 620px;
+  background-color: gray;
+}
+
+/* line 148, /Users/teradakenya/projects/note/app/assets/stylesheets/_new.css.scss */
+h1 {
+  font-size: 32px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  margin-top: 72px;
+  margin-bottom: 18px;
+  min-height: 1em;
+  font-weight: bold;
+}
+
+/* line 158, /Users/teradakenya/projects/note/app/assets/stylesheets/_new.css.scss */
+input {
+  min-height: 48px;
+  width: 620px;
+  border: none;
+  background-color: white;
+}
+
+/* line 165, /Users/teradakenya/projects/note/app/assets/stylesheets/_new.css.scss */
+input[type="text"]:focus {
+  outline: 0;
+}
+
+/* line 169, /Users/teradakenya/projects/note/app/assets/stylesheets/_new.css.scss */
+textarea:focus {
+  outline: none;
+}
+
+/* line 173, /Users/teradakenya/projects/note/app/assets/stylesheets/_new.css.scss */
+textarea {
+  border: none;
+  resize: none;
+}
+
+/* line 179, /Users/teradakenya/projects/note/app/assets/stylesheets/_new.css.scss */
+.note-body {
+  min-height: 48px;
+}
+
+/* line 184, /Users/teradakenya/projects/note/app/assets/stylesheets/_new.css.scss */
+.body-wrapper {
+  font-size: 18px;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+/* line 190, /Users/teradakenya/projects/note/app/assets/stylesheets/_new.css.scss */
+p.OeiGn {
+  line-height: 36px;
+}
+@charset "UTF-8";
+/* line 1, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.p-timeline {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #f7f9f9;
+}
+
+/* line 7, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.renewal-l-main {
+  width: 580px;
+  margin: 0 auto;
+}
+
+/* line 12, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.renewal-c-card {
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  background: #fff;
+  margin-bottom: 15px;
+}
+
+/* line 19, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.renewal-c-card__head {
+  padding: 20px;
+}
+
+/* line 23, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.renewal-c-card__head > ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+/* line 32, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.c-avator {
+  overflow: hidden;
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
+}
+
+/* line 42, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.c-avatar--timeline {
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+}
+
+/* line 48, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+p.renewal-c-card__userName {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* line 53, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+p.renewal-c-card__date {
+  font-size: 11px;
+}
+
+/* line 58, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.renewal-c-card__body {
+  padding: 0 20px 20px;
+}
+
+/* line 62, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.renewal-p-cardItem__eyecatch {
+  margin: 0 -20px 20px;
+  background-color: black;
+  height: 303px;
+  width: 578px;
+}
+
+/* line 69, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.renewal-p-cardItem__title {
+  margin-bottom: 13px;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", Arial, "メイリオ", Meiryo, sans-serif;
+  font-feature-settings: 'palt' 1;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+/* line 78, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.renewal-p-cardItem__description {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* line 83, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.renewal-p-cardItem__more {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #249f80;
+}
+
+/* line 90, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.renewal-c-card__foot {
+  margin: 0 20px;
+  padding: 15px 0 18px;
+  border-top: 1px solid #e8eceb;
+}
+
+/* line 96, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.renewal-p-action {
+  color: black;
+  display: flex;
+  padding-left: 5px;
+}
+
+/* line 103, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.fa.fa-heart-o.fa-1x {
+  margin-right: 35px;
+  padding-top: 4px;
+}
+
+/* line 108, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.fa.fa-share.fa-1x {
+  color: black;
+  margin-right: 35px;
+}
+
+/* line 113, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.fa.fa-plus.fa-1x {
+  color: black;
+  margin-right: 35px;
+}
+
+/* line 118, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.fa.fa-ellipsis-h {
+  margin-right: 35px;
+}
+
+/* line 122, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.renewal-p-action__comment {
+  margin-right: 35px;
+  margin-left: auto;
+  color: #249f80;
+  font-size: 12px;
+}
+/*!
+ * YUI 3.5.0 - reset.css (http://developer.yahoo.com/yui/3/cssreset/)
+ * http://cssreset.com
+ * Copyright 2012 Yahoo! Inc. All rights reserved.
+ * http://yuilibrary.com/license/
+ */
+/*
+    TODO will need to remove settings on HTML since we can't namespace it.
+    TODO with the prefix, should I group by selector or property for weight savings?
+*/
+/* line 12, /Users/teradakenya/projects/note/app/assets/stylesheets/_reset.css.scss */
+html {
+  color: #000;
+  background: #FFF;
+}
+
+/*
+    TODO remove settings on BODY since we can't namespace it.
+*/
+/*
+    TODO test putting a class on HEAD.
+        - Fails on FF.
+*/
+/* line 23, /Users/teradakenya/projects/note/app/assets/stylesheets/_reset.css.scss */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 51, /Users/teradakenya/projects/note/app/assets/stylesheets/_reset.css.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 55, /Users/teradakenya/projects/note/app/assets/stylesheets/_reset.css.scss */
+fieldset,
+img {
+  border: 0;
+}
+
+/*
+    TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+/* line 62, /Users/teradakenya/projects/note/app/assets/stylesheets/_reset.css.scss */
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 75, /Users/teradakenya/projects/note/app/assets/stylesheets/_reset.css.scss */
+ol,
+ul {
+  list-style: none;
+}
+
+/* line 80, /Users/teradakenya/projects/note/app/assets/stylesheets/_reset.css.scss */
+caption,
+th {
+  text-align: left;
+}
+
+/* line 84, /Users/teradakenya/projects/note/app/assets/stylesheets/_reset.css.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* line 93, /Users/teradakenya/projects/note/app/assets/stylesheets/_reset.css.scss */
+q:before,
+q:after {
+  content: '';
+}
+
+/* line 97, /Users/teradakenya/projects/note/app/assets/stylesheets/_reset.css.scss */
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* to preserve line-height and selector appearance */
+/* line 103, /Users/teradakenya/projects/note/app/assets/stylesheets/_reset.css.scss */
+sup {
+  vertical-align: text-top;
+}
+
+/* line 106, /Users/teradakenya/projects/note/app/assets/stylesheets/_reset.css.scss */
+sub {
+  vertical-align: text-bottom;
+}
+
+/* line 109, /Users/teradakenya/projects/note/app/assets/stylesheets/_reset.css.scss */
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*to enable resizing for IE*/
+/* line 117, /Users/teradakenya/projects/note/app/assets/stylesheets/_reset.css.scss */
+input,
+textarea,
+select {
+  *font-size: 100%;
+}
+
+/*because legend doesn't inherit in IE */
+/* line 123, /Users/teradakenya/projects/note/app/assets/stylesheets/_reset.css.scss */
+legend {
+  color: #000;
+}
+
+/* YUI CSS Detection Stamp */
+/* line 127, /Users/teradakenya/projects/note/app/assets/stylesheets/_reset.css.scss */
+#yui3-css-stamp.cssreset {
+  display: none;
+}
+/* line 1, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.note-container {
+  width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 8, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.note-content {
+  width: 620px;
+  background-color: white;
+  margin: 0 auto;
+  min-height: 450px;
+}
+
+/* line 15, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.textnote {
+  margin-bottom: 72px;
+}
+
+/* line 25, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.note-title {
+  min-height: 48px;
+  width: 620px;
+  height: 33px;
+  margin-bottom: 18px;
+}
+
+/* line 33, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.title-wrapper {
+  font-size: 32px;
+  margin-top: 72px;
+  margin-bottom: 50px;
+}
+
+/* line 39, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+h1.editable.title-wrapper {
+  margin-bottom: 18px;
+  font-size: 32px;
+}
+
+/* line 44, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.note-header {
+  margin-bottom: 36px;
+}
+
+/* line 48, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.p-articleNoteInfo.note-user-name {
+  width: 620px;
+  height: 33px;
+}
+
+/* line 52, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.p-articleNoteInfo__status {
+  float: right;
+  border: 1px solid #2cb696;
+  color: #249f80;
+  font-size: 12px;
+  padding: 0.7em 1em;
+  border-radius: 4px;
+  line-height: 1;
+  text-align: center;
+}
+
+/* line 62, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.p-articleNoteInfo__user {
+  float: left;
+}
+
+/* line 66, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+p.note-body {
+  font-size: 18px;
+  line-height: 36px;
+}
+
+/* line 74, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.p-supportFunding {
+  margin-bottom: 30px;
+  padding: 16px;
+  background-color: #f2f4f4;
+}
+
+/* line 81, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+p.p-supportFunding__heading {
+  margin-bottom: 16px;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* line 89, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.p-supportFunding__contents {
+  padding: 24px 24px 16px;
+  background: #fff;
+  border-radius: 12px;
+}
+
+/* line 95, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.p-supportFunding__button {
+  max-height: 48px;
+}
+
+/* line 99, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.u-alignCenter {
+  text-align: center;
+}
+
+/* line 103, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.renewal-c-button--primaryMedium {
+  display: inline-block;
+  padding: 0.7em 1em;
+  border: 1px solid #e8eceb;
+  line-height: 1;
+  text-align: center;
+  font-size: 14px;
+  border-color: #2cb696;
+  background: #2cb696;
+  font-weight: bold;
+  color: white;
+}
+
+/* line 119, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+i.renewal-p-icon--present {
+  width: 20px;
+  height: 20px;
+}
+
+/* line 124, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.renewal-c-article__action {
+  margin-bottom: 30px;
+}
+
+/* line 128, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+i.fa.fa-heart-o.fa-1x {
+  margin-right: 45px;
+}
+
+/* line 135, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.p-comments {
+  border-top: solid 1px #e6e6e6;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.05);
+}
+
+/* line 140, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.p-comments__container {
+  width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 146, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.p-comments__body {
+  box-sizing: border-box !important;
+}
+
+/* line 150, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.p-comments__add {
+  border: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+/* line 157, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.p-comments__input {
+  padding-bottom: 48px;
+  position: relative;
+  padding-left: 48px;
+}
+
+/* line 163, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.p-comments__inputAvatar {
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+
+/* line 169, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.c-avatar--small {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+
+/* line 175, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.c-avatar__img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 180, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.p-comments__inputMessage {
+  height: 32px;
+  min-height: 32px;
+  resize: none;
+  width: 100%;
+  border: none;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 8px;
+  color: #444444;
+  border-radius: 4px;
+  -webkit-tap-highlight-color: transparent;
+  border: 1px solid transparent;
+}
+
+/* line 196, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.p-comments__inputAction {
+  opacity: 1;
+  display: flex;
+  margin-top: 8px;
+  pointer-events: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: none;
+}
+
+/* line 207, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.p-comments__inputButton {
+  box-sizing: border-box !important;
+}
+
+/* line 212, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.c-button--size_small {
+  width: 100px;
+  height: 32px;
+  color: #ffffff;
+  background-color: #2cb696;
+  border-radius: 4px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 224, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.c-button__label {
+  font-size: 12px;
+}
+
+/* line 229, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.p-related {
+  padding: 24px 24px;
+  background-color: #F7F9F9;
+}
+
+/* line 234, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+h2.p-related__title {
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+/* line 244, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.p-related__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+/* line 265, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.p-related__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(50% - 8px);
+  margin-bottom: 16px;
+}
+
+/* line 273, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.p-note--small {
+  position: relative;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding: 16px 16px 56px;
+  cursor: pointer;
+}
+
+/* line 285, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.p-note__eyecatch {
+  float: right;
+  margin-left: 16px;
+  margin-bottom: 8px;
+}
+
+/* line 291, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.c-eyecatch {
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+  height: 56px;
+  width: 56px;
+}
+
+/* line 300, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+h3.p-note__title {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: bold;
+  margin-bottom: 8px;
+  -webkit-font-feature-settings: 'palt' 1;
+  font-feature-settings: 'palt' 1;
+  letter-spacing: 0.06em;
+}
+
+/* line 311, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.c-noteStatus__like {
+  position: relative;
+  color: #EA3F60;
+  padding-left: 16px;
+  font-size: 12px;
+  line-height: 1;
+  margin-right: 16px;
+}
+
+/* line 320, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.c-noteStatus__comment {
+  position: relative;
+  color: #787c7b;
+  padding-left: 16px;
+  font-size: 12px;
+  line-height: 1;
+  margin-right: 16px;
+}
+
+/* line 329, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.p-note__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  z-index: 2;
+  width: calc(100% - 32px);
+}
+
+/* line 344, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.c-authorInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 0;
+}
+
+/* line 357, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.c-authorInfo__avatar {
+  width: 24px;
+  margin-right: 8px;
+}
+
+/* line 363, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.c-authorInfo__body {
+  width: calc(100% - 32px);
+  vertical-align: middle;
+}
+
+/* line 368, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.c-authorInfo__name {
+  color: #787c7b;
+  font-size: 11px;
+}
+
+/* line 379, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+.footer-article {
+  padding: 16px 0 104px;
+  position: relative;
+}
+
+/* line 384, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+ul.create_page {
+  margin: 20px 0 25px 0;
+  text-align: center;
+  font-size: 0;
+}
+
+/* line 390, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+li {
+  margin-right: 3px;
+  font-size: 11px;
+  display: inline-block !important;
+  letter-spacing: normal;
+  vertical-align: middle;
+}
+
+/* line 398, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+a {
+  color: #898D8C;
+}
+
+/* line 402, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+a.kaizen {
+  font-weight: bold;
+}
+
+/* line 406, /Users/teradakenya/projects/note/app/assets/stylesheets/_show.css.scss */
+a.recommendation {
+  font-weight: bold;
+}
+@charset "UTF-8";
+/* line 2, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.header-container {
+  width: 100vw;
+  height: 166px;
+}
+
+/* line 7, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.header-container-up {
+  height: 165px;
+  border-bottom: 2px solid #e8eceb;
+}
+
+/* line 13, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.renewal-l-header__global {
+  height: 64px;
+  width: 950px;
+  margin: 0 auto;
+}
+
+/* line 20, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.l-header__nav {
+  height: 102px;
+  width: 950px;
+  margin: 0 auto;
+}
+
+/* line 26, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.p-globalNavigation__item {
+  margin: 0px 15px 0px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  float: left;
+  color: #787c7b;
+}
+
+/* line 33, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.p-globalNavigation__menu {
+  height: 47px;
+  border-bottom: 1px solid #e8eceb;
+}
+
+/* line 38, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.p-globalNavigation__item__help {
+  vertical-align: middle;
+}
+
+/* line 42, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.p-dropNavigation__item {
+  float: left;
+  margin: 0px 15px 0px 15px;
+}
+
+/* line 47, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.p-globalNavigation__submit {
+  height: 54px;
+  font-size: 14px;
+  color: #787c7b;
+}
+
+/* line 52, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.p-globalNavigation__item__help_link {
+  float: right;
+}
+
+/* line 58, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.renewal-title-img {
+  padding: 20px 0 0 0;
+  float: left;
+}
+
+/* line 62, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.renewal-l-header__right {
+  width: 50px;
+  height: 50px;
+}
+
+/* line 67, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.renewal-img {
+  list-style: none;
+  float: left;
+  padding: 20px 0 0 0;
+  margin-left: 20px;
+}
+
+/* line 73, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.fa.fa-heart-o.fa-1x {
+  float: left;
+}
+
+/* line 76, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.renewa-menu-img {
+  float: right;
+}
+
+/* line 80, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.inner {
+  border-color: #2cb696;
+  color: #fff;
+  background: #2cb696;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0.7em 1em;
+  border: 1px solid #e8eceb;
+  border-radius: 4px;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* line 98, /Users/teradakenya/projects/note/app/assets/stylesheets/_header.css.scss */
+.notepost {
+  color: white;
+  font-size: 10px;
+}
+
+/* line 1, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.p-timeline {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #f7f9f9;
+}
+
+/* line 7, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.renewal-l-main {
+  width: 580px;
+  margin: 0 auto;
+}
+
+/* line 12, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.renewal-c-card {
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  background: #fff;
+  margin-bottom: 15px;
+}
+
+/* line 19, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.renewal-c-card__head {
+  padding: 20px;
+}
+
+/* line 23, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.renewal-c-card__head > ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+/* line 32, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.c-avator {
+  overflow: hidden;
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
+}
+
+/* line 42, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.c-avatar--timeline {
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+}
+
+/* line 48, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+p.renewal-c-card__userName {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* line 53, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+p.renewal-c-card__date {
+  font-size: 11px;
+}
+
+/* line 58, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.renewal-c-card__body {
+  padding: 0 20px 20px;
+}
+
+/* line 62, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.renewal-p-cardItem__eyecatch {
+  margin: 0 -20px 20px;
+  background-color: black;
+  height: 303px;
+  width: 578px;
+}
+
+/* line 69, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.renewal-p-cardItem__title {
+  margin-bottom: 13px;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", Arial, "メイリオ", Meiryo, sans-serif;
+  font-feature-settings: 'palt' 1;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+/* line 78, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.renewal-p-cardItem__description {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* line 83, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.renewal-p-cardItem__more {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #249f80;
+}
+
+/* line 90, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.renewal-c-card__foot {
+  margin: 0 20px;
+  padding: 15px 0 18px;
+  border-top: 1px solid #e8eceb;
+}
+
+/* line 96, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.renewal-p-action {
+  color: black;
+  display: flex;
+  padding-left: 5px;
+}
+
+/* line 103, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.fa.fa-heart-o.fa-1x {
+  margin-right: 35px;
+  padding-top: 4px;
+}
+
+/* line 108, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.fa.fa-share.fa-1x {
+  color: black;
+  margin-right: 35px;
+}
+
+/* line 113, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.fa.fa-plus.fa-1x {
+  color: black;
+  margin-right: 35px;
+}
+
+/* line 118, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.fa.fa-ellipsis-h {
+  margin-right: 35px;
+}
+
+/* line 122, /Users/teradakenya/projects/note/app/assets/stylesheets/_note-index.css.scss */
+.renewal-p-action__comment {
+  margin-right: 35px;
+  margin-left: auto;
+  color: #249f80;
+  font-size: 12px;
+}

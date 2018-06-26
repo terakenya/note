@@ -5,18 +5,23 @@
     .note-content
       .textnote
         .note-cover-img
+          = image_tag @article.image
         .note-title
-          %h1.editable.title-wrapper 広まるQRコードの利用、その安全性は？
+          %h1.editable.title-wrapper
+            = @article.title
         .note-header
           .p-articleNoteInfo.note-user-name
             .p-articleNoteInfo__user
               =render "userinfoIcon"
             .p-articleNoteInfo__status
               編集
+            .p-articleNoteInfo__status
+              = link_to "削除", params[:id],method: :delete
+
         .note-body
           .body-wrapper
             %p.note-body
-              電子決済や広告などに広く利用されている「ＱＲコード」に、偽の情報を仕込むことができるセキュリティ上の弱点があることが、神戸大学のグループの研究でわかりました。開発者自身が説明します。
+              = @article.text
 
       .p-supportFunding
         %p.p-supportFunding__heading

@@ -14,7 +14,7 @@
             .p-articleNoteInfo__user
               =render "userinfoIcon"
             .p-articleNoteInfo__status
-              編集
+              = link_to '編集', "/articles/#{params[:id]}/edit", method: :get
             .p-articleNoteInfo__status
               = link_to "削除", params[:id],method: :delete
 

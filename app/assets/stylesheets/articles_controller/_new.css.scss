@@ -19,7 +19,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 20px;
   // position: relative;
   border-bottom: 1px solid #e8eceb;
-
 }
 
 h2.logo{
@@ -45,6 +44,7 @@ li{
   margin-left: 10px;
   display: inline-block
 }
+
 
 .btn-small-left{
   box-sizing: border-box;
@@ -80,6 +80,7 @@ li{
 
 .editor-screen{
   padding-top: 70px;
+  background-color:white;
 }
 
 .p-editorTips__btn{
@@ -89,7 +90,7 @@ li{
 .p-editorTips {
   width:162px;
   height:40px;
-  background-color:blue;
+  background-color:white;
   float:right;
 }
 
@@ -155,11 +156,25 @@ h1{
   font-weight:bold;
 }
 
-input{
+
+.titleform{
   min-height: 48px;
   width:620px;
   border:none;
-  background-color:white;
+  background-color:red;
+
+}
+
+.contentform{
+  min-height: 48px;
+  width:620px;
+  border:none;
+  background-color:red;
+
+}
+
+input{
+  border:none;
 }
 
 input[type="text"]:focus {

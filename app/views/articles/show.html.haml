@@ -13,10 +13,8 @@
           .p-articleNoteInfo.note-user-name
             .p-articleNoteInfo__user
               =render "userinfoIcon"
-            .p-articleNoteInfo__status
+            .p-articleNoteInfo__edit
               = link_to '編集', "/articles/#{params[:id]}/edit", method: :get
-            .p-articleNoteInfo__status
-              = link_to "削除", params[:id],method: :delete
 
         .note-body
           .body-wrapper

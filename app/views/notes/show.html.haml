@@ -1,191 +1,196 @@
 = render "header"
+= form_for([@article, @comment]) do |f|
+  .main_contents
+    .note-container.space--under-header
+      .note-content
+        .textnote
+          .note-cover-img
+            = image_tag @article.image
+          .note-title
+            %h1.editable.title-wrapper
+              = @article.title
+          .note-header
+            .p-articleNoteInfo.note-user-name
+              .p-articleNoteInfo__user
+                =render "userinfoIcon"
+              .p-articleNoteInfo__status
+                = link_to '編集', "/articles/#{params[:id]}/edit", method: :get
+              .p-articleNoteInfo__status
+                = link_to "削除", params[:id],method: :delete
 
-.main_contents
-  .note-container.space--under-header
-    .note-content
-      .textnote
-        .note-cover-img
-        .note-title
-          %h1.editable.title-wrapper 広まるQRコードの利用、その安全性は？
-        .note-header
-          .p-articleNoteInfo.note-user-name
-            .p-articleNoteInfo__user
-              =render "userinfoIcon"
-            .p-articleNoteInfo__status
-              編集
-        .note-body
-          .body-wrapper
-            %p.note-body
-              電子決済や広告などに広く利用されている「ＱＲコード」に、偽の情報を仕込むことができるセキュリティ上の弱点があることが、神戸大学のグループの研究でわかりました。開発者自身が説明します。
+          .note-body
+            .body-wrapper
+              %p.note-body
+                = @article.text
 
-      .p-supportFunding
-        %p.p-supportFunding__heading
-          この記事が気に入ったら、サポートをしてみませんか？ 気軽にクリエイターを支援できます。
-        .p-supportFunding__body
-          .p-supportFunding__contents
-            .p-supportFunding__button
-              .u-alignCenter
-                .renewal-c-button--primaryMedium
-                  .u-flexboxCenter
-                    %i.renewal-p-icon--present
-                      サポートする
-      .renewal-c-article__action
-        .renewal-p-action
-          %ul
-            %li
-              %i.fa.fa-heart-o.fa-1x
-              %i.fa.fa-plus.fa-1x
-
-
-
-  .p-comments
-    .p-comments__container
-      .p-comments__body
-        .p-comments__add
-          .p-comments__input
-            .p-comments__inputAvatar
-              .c-avatar--small
-                .c-avatar__img
-                  %img.c-avatar__img{:alt => "", "data-src" => "https://d2l930y2yx77uc.cloudfront.net/assets/default/default_profile-2f533b6a0048b61b8d761198d14cbb4c603f89edb03577f061efc7393b85d811.png", :src => "https://d2l930y2yx77uc.cloudfront.net/assets/default/default_profile-2f533b6a0048b61b8d761198d14cbb4c603f89edb03577f061efc7393b85d811.png", :style => "", :title => ""}/
-            .p-comments__inputMessage
-              %textarea{"commentable-id" => "4154220", :commentables => "notes", "msd-elastic" => "true", "ng-blur" => "commentFormBlur()", "ng-focus" => "commentFormFocus()", "ng-model" => "commentForm.body", :placeholder => "コメントする...", :style => "overflow: hidden; word-wrap: break-word; resize: none; height: 39px;", :tabindex => "1"}
-
-            .p-comments__inputAction
-              .p-comments__inputButton
-                .c-button--size_small
-                  .c-button__label
-                    送信
-
-
-  %aside
-    .p-related
-      %h2.p-related__title
-        こちらもおすすめ
-      .p-related__container
-        .p-related__item
-          .p-note--small
-            .p-note__eyecatch
-              .c-eyecatch
-            %h3.p-note__title
-              欲望まみれの人間が「誰かのために」と思えるようになる...
-            .p-note__status
-              .c-noteStatus__like
+        .p-supportFunding
+          %p.p-supportFunding__heading
+            この記事が気に入ったら、サポートをしてみませんか？ 気軽にクリエイターを支援できます。
+          .p-supportFunding__body
+            .p-supportFunding__contents
+              .p-supportFunding__button
+                .u-alignCenter
+                  .renewal-c-button--primaryMedium
+                    .u-flexboxCenter
+                      %i.renewal-p-icon--present
+                        サポートする
+        .renewal-c-article__action
+          .renewal-p-action
+            %ul
+              %li
                 %i.fa.fa-heart-o.fa-1x
-              .c-noteStatus__comment
-                %i.fa.fa-heart-o.fa-1x
-            .p-note__footer
-              .c-authorInfo
-                .c-authorInfo__avatar
-                  %img.c-avatar__img{:alt => "", "data-src" => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/2299972/profile_505a702d38afcb5ca29ea8084f2efd76.jpg", :src => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/2299972/profile_505a702d38afcb5ca29ea8084f2efd76.jpg", :style => "", :title => ""}/
-                .c-authorInfo__body
-                  .c-authorInfo__name
-                    立花実咲｜Misaki Tachibana
-              .p-note__actions
-
-        .p-related__item
-          .p-note--small
-            .p-note__eyecatch
-              .c-eyecatch
-            %h3.p-note__title
-              欲望まみれの人間が「誰かのために」と思えるようになる...
-            .p-note__status
-              .c-noteStatus__like
-                %i.fa.fa-heart-o.fa-1x
-              .c-noteStatus__comment
-                %i.fa.fa-heart-o.fa-1x
-            .p-note__footer
-              .c-authorInfo
-                .c-authorInfo__avatar
-                  %img.c-avatar__img{:alt => "", "data-src" => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/2299972/profile_505a702d38afcb5ca29ea8084f2efd76.jpg", :src => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/2299972/profile_505a702d38afcb5ca29ea8084f2efd76.jpg", :style => "", :title => ""}/
-                .c-authorInfo__body
-                  .c-authorInfo__name
-                    立花実咲｜Misaki Tachibana
-              .p-note__actions
-
-        .p-related__item
-          .p-note--small
-            .p-note__eyecatch
-              .c-eyecatch
-            %h3.p-note__title
-              欲望まみれの人間が「誰かのために」と思えるようになる...
-            .p-note__status
-              .c-noteStatus__like
-                %i.fa.fa-heart-o.fa-1x
-              .c-noteStatus__comment
-                %i.fa.fa-heart-o.fa-1x
-            .p-note__footer
-              .c-authorInfo
-                .c-authorInfo__avatar
-                  %img.c-avatar__img{:alt => "", "data-src" => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/2299972/profile_505a702d38afcb5ca29ea8084f2efd76.jpg", :src => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/2299972/profile_505a702d38afcb5ca29ea8084f2efd76.jpg", :style => "", :title => ""}/
-                .c-authorInfo__body
-                  .c-authorInfo__name
-                    立花実咲｜Misaki Tachibana
-              .p-note__actions
-
-        .p-related__item
-          .p-note--small
-            .p-note__eyecatch
-              .c-eyecatch
-            %h3.p-note__title
-              欲望まみれの人間が「誰かのために」と思えるようになる...
-            .p-note__status
-              .c-noteStatus__like
-                %i.fa.fa-heart-o.fa-1x
-              .c-noteStatus__comment
-                %i.fa.fa-heart-o.fa-1x
-            .p-note__footer
-              .c-authorInfo
-                .c-authorInfo__avatar
-                  %img.c-avatar__img{:alt => "", "data-src" => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/2299972/profile_505a702d38afcb5ca29ea8084f2efd76.jpg", :src => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/2299972/profile_505a702d38afcb5ca29ea8084f2efd76.jpg", :style => "", :title => ""}/
-                .c-authorInfo__body
-                  .c-authorInfo__name
-                    立花実咲｜Misaki Tachibana
-              .p-note__actions
+                %i.fa.fa-plus.fa-1x
 
 
-.footer-article
-  %ul.create_page
-    %li
-      %a
-        noteプレミアム
-    %li
-      %a
-        クリエイターの方へ
-    %li
-      %a
-        よくある質問
-    %li
-      %a
-        使い方
-    %li
-      %a
-        ノート
-    %li
-      %a
-        マガジン
-    %li
-      %a
-        ユーザー
-    %li
-      %a
-        ハッシュタグ
-    %li
-      %a
-        プライバシー
-    %li
-      %a
-        ご利用規約
-    %li
-      %a
-        特商法表記
-    %li
-      %a
-        クリエイターへのお問合せ
-    %li
-      %a.kaizen
-        noteカイゼン目安箱
-    %li
-      %a.recommendation
-        クリエイターの推薦
+
+    .p-comments
+      .p-comments__container
+        .p-comments__body
+          .p-comments__add
+            .p-comments__input
+              = render partial: 'comment', collection: @comments
+              .p-comments__inputAvatar
+                .c-avatar--small
+                  .c-avatar__img
+                    %img.c-avatar__img{:alt => "", "data-src" => "https://d2l930y2yx77uc.cloudfront.net/assets/default/default_profile-2f533b6a0048b61b8d761198d14cbb4c603f89edb03577f061efc7393b85d811.png", :src => "https://d2l930y2yx77uc.cloudfront.net/assets/default/default_profile-2f533b6a0048b61b8d761198d14cbb4c603f89edb03577f061efc7393b85d811.png", :style => "", :title => ""}/
+              .p-comments__inputMessage
+                = f.text_field :text, class: "commentform", placeholder: 'コメント'
+                =f.submit '送信' ,class: 'c-button__label'
+              .p-comments__inputAction
+                .p-comments__inputButton
+                  .c-button--size_small
+
+
+
+    %aside
+      .p-related
+        %h2.p-related__title
+          こちらもおすすめ
+        .p-related__container
+          .p-related__item
+            .p-note--small
+              .p-note__eyecatch
+                .c-eyecatch
+              %h3.p-note__title
+                欲望まみれの人間が「誰かのために」と思えるようになる...
+              .p-note__status
+                .c-noteStatus__like
+                  %i.fa.fa-heart-o.fa-1x
+                .c-noteStatus__comment
+                  %i.fa.fa-heart-o.fa-1x
+              .p-note__footer
+                .c-authorInfo
+                  .c-authorInfo__avatar
+                    %img.c-avatar__img{:alt => "", "data-src" => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/2299972/profile_505a702d38afcb5ca29ea8084f2efd76.jpg", :src => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/2299972/profile_505a702d38afcb5ca29ea8084f2efd76.jpg", :style => "", :title => ""}/
+                  .c-authorInfo__body
+                    .c-authorInfo__name
+                      立花実咲｜Misaki Tachibana
+                .p-note__actions
+
+          .p-related__item
+            .p-note--small
+              .p-note__eyecatch
+                .c-eyecatch
+              %h3.p-note__title
+                欲望まみれの人間が「誰かのために」と思えるようになる...
+              .p-note__status
+                .c-noteStatus__like
+                  %i.fa.fa-heart-o.fa-1x
+                .c-noteStatus__comment
+                  %i.fa.fa-heart-o.fa-1x
+              .p-note__footer
+                .c-authorInfo
+                  .c-authorInfo__avatar
+                    %img.c-avatar__img{:alt => "", "data-src" => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/2299972/profile_505a702d38afcb5ca29ea8084f2efd76.jpg", :src => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/2299972/profile_505a702d38afcb5ca29ea8084f2efd76.jpg", :style => "", :title => ""}/
+                  .c-authorInfo__body
+                    .c-authorInfo__name
+                      立花実咲｜Misaki Tachibana
+                .p-note__actions
+
+          .p-related__item
+            .p-note--small
+              .p-note__eyecatch
+                .c-eyecatch
+              %h3.p-note__title
+                欲望まみれの人間が「誰かのために」と思えるようになる...
+              .p-note__status
+                .c-noteStatus__like
+                  %i.fa.fa-heart-o.fa-1x
+                .c-noteStatus__comment
+                  %i.fa.fa-heart-o.fa-1x
+              .p-note__footer
+                .c-authorInfo
+                  .c-authorInfo__avatar
+                    %img.c-avatar__img{:alt => "", "data-src" => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/2299972/profile_505a702d38afcb5ca29ea8084f2efd76.jpg", :src => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/2299972/profile_505a702d38afcb5ca29ea8084f2efd76.jpg", :style => "", :title => ""}/
+                  .c-authorInfo__body
+                    .c-authorInfo__name
+                      立花実咲｜Misaki Tachibana
+                .p-note__actions
+
+          .p-related__item
+            .p-note--small
+              .p-note__eyecatch
+                .c-eyecatch
+              %h3.p-note__title
+                欲望まみれの人間が「誰かのために」と思えるようになる...
+              .p-note__status
+                .c-noteStatus__like
+                  %i.fa.fa-heart-o.fa-1x
+                .c-noteStatus__comment
+                  %i.fa.fa-heart-o.fa-1x
+              .p-note__footer
+                .c-authorInfo
+                  .c-authorInfo__avatar
+                    %img.c-avatar__img{:alt => "", "data-src" => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/2299972/profile_505a702d38afcb5ca29ea8084f2efd76.jpg", :src => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/2299972/profile_505a702d38afcb5ca29ea8084f2efd76.jpg", :style => "", :title => ""}/
+                  .c-authorInfo__body
+                    .c-authorInfo__name
+                      立花実咲｜Misaki Tachibana
+                .p-note__actions
+
+
+  .footer-article
+    %ul.create_page
+      %li
+        %a
+          noteプレミアム
+      %li
+        %a
+          クリエイターの方へ
+      %li
+        %a
+          よくある質問
+      %li
+        %a
+          使い方
+      %li
+        %a
+          ノート
+      %li
+        %a
+          マガジン
+      %li
+        %a
+          ユーザー
+      %li
+        %a
+          ハッシュタグ
+      %li
+        %a
+          プライバシー
+      %li
+        %a
+          ご利用規約
+      %li
+        %a
+          特商法表記
+      %li
+        %a
+          クリエイターへのお問合せ
+      %li
+        %a.kaizen
+          noteカイゼン目安箱
+      %li
+        %a.recommendation
+          クリエイターの推薦
 
 

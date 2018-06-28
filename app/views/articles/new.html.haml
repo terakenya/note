@@ -25,7 +25,7 @@
       .note-container
         .fude-content
           .note
-            .icon-xlarge
+            .iconxlarge
               =f.label :image, class: "icon" do
                 = fa_icon 'picture-o', class: 'icon'
                 //i.fa.fa-image.fa-2xこの画像に置き換えたい
@@ -37,3 +37,10 @@
               .body-wrapper
                 %OeiGn
                 = f.text_field :text, class: "contentform", placeholder: 'コメント'
+
+#modal-content
+  %p 「閉じる」か「背景」をクリックするとモーダルウィンドウを終了します。
+  %p
+    %a#modal-close.button-link 閉じる
+.modal-overlay
+<p><a id="modal-open" class="button-link">クリックするとモーダルウィンドウを開きます。</a></p>

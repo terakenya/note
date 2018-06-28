@@ -308,14 +308,18 @@ h3.p-note__title{
   letter-spacing: 0.06em;
 }
 
+.p-note__status{
+  display: flex;
+}
 
 .c-noteStatus__like{
     position: relative;
     color: #EA3F60;
-    padding-left: 16px;
+    // padding-left: 16px;
     font-size: 12px;
     line-height: 1;
     margin-right: 16px;
+    width:5px;
 }
 
 .c-noteStatus__comment {

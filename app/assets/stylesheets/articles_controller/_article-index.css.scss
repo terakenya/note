@@ -62,16 +62,21 @@ p-articleNoteInfo__status{
    padding-left:3px;
 }
 
-
 .renewal-c-card__body {
   padding: 0 20px 20px;
 }
 
 .renewal-p-cardItem__eyecatch {
-  margin: 0 -20px 20px;
-  background-color:black;
-  height:303px;
-  width:578px;
+  // margin: 0 -20px 20px;
+  // background-color:black;
+  // height:303px;
+  // width:578px;
+  // width:578px;
+}
+
+.renewal-p-cardItem__eyecatch img {
+  width: 100%;
+  // height:303px;
 }
 
 .renewal-p-cardItem__title{
@@ -81,11 +86,15 @@ p-articleNoteInfo__status{
   font-feature-settings: 'palt' 1;
   letter-spacing: 0.04em;
   line-height: 1.5;
+  // padding-left:20px;
+  // padding-right:20px;
 }
 
 .renewal-p-cardItem__description {
   font-size: 14px;
   line-height: 1.8;
+  // padding-left:20px;
+  // padding-right:20px;
 }
 
 .renewal-p-cardItem__more{
@@ -93,6 +102,8 @@ p-articleNoteInfo__status{
   margin-top: 10px;
   font-size: 12px;
   color: #249f80;
+//   padding-left:20px;
+// padding-right:20px;
 }
 
 .renewal-c-card__foot {

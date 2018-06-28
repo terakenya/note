@@ -1,0 +1,22 @@
+.header-container
+  .renewal-l-container
+    .renewal-l-header
+      .renewal-l-header__inner
+        .renewal-l-header__global
+          .renewal-l-header__logo
+            = link_to articles_path do
+              = image_tag "https://d2l930y2yx77uc.cloudfront.net/assets/renewal/logo-b84a1f9687168286cb1ca588b5aa4d761cd3f46e79d4ac36f0d331dfb1ed21ba.svg"
+          .renewal-l-header__right
+            %ul.renewal-p-buttonSet
+              %li.renewal-p-buttonSet__item
+                .p-searchForm--header
+                  %i.fa.fa-search
+              %li.renewal-p-buttonSet__item
+                %i.fa.fa-bell
+              %li.renewal-p-buttonSet__item--mlL
+                .c-avatar-c-avatar--boxShadow
+                  .c-avatar--small
+                    %img.c-avatar--small{"ng-src" => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/6872559/profile_d227b8ba49f78d2420ed6f945630fce3.jpg", :src => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/6872559/profile_d227b8ba49f78d2420ed6f945630fce3.jpg"}/
+              %li.renewal-c-button--navBarPostNote
+                .renewal-p-icon--postNote
+                  %i.fa.fa-edit  ノートを投稿

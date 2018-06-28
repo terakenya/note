@@ -63,7 +63,7 @@ p-articleNoteInfo__status{
 }
 
 .renewal-c-card__body {
-  padding: 0 20px 20px;
+  padding-bottom: 20px;
 }
 
 .renewal-p-cardItem__eyecatch {
@@ -86,15 +86,15 @@ p-articleNoteInfo__status{
   font-feature-settings: 'palt' 1;
   letter-spacing: 0.04em;
   line-height: 1.5;
-  // padding-left:20px;
-  // padding-right:20px;
+  padding-left:20px;
+  padding-right:20px;
 }
 
 .renewal-p-cardItem__description {
   font-size: 14px;
   line-height: 1.8;
-  // padding-left:20px;
-  // padding-right:20px;
+  padding-left:20px;
+  padding-right:20px;
 }
 
 .renewal-p-cardItem__more{
@@ -102,8 +102,8 @@ p-articleNoteInfo__status{
   margin-top: 10px;
   font-size: 12px;
   color: #249f80;
-//   padding-left:20px;
-// padding-right:20px;
+  padding-left:20px;
+  padding-right:20px;
 }
 
 .renewal-c-card__foot {

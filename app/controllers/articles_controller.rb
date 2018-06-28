@@ -7,7 +7,8 @@ class ArticlesController < ApplicationController
   def show
     @article = Article.find(params[:id])
     @comment = Comment.new
-    @comments = Comment.all
+    @comments = Comment.includes(:user)
+    binding.pry
   end
 
   def destroy

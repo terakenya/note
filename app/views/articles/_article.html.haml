@@ -27,4 +27,8 @@
                 %i.fa.fa-plus.fa-1x
                 %i.fa.fa-ellipsis-h
                 %i.renewal-p-action__comment
-                  コメントする
+                  = link_to article_path(current_user), class: 'comment-suru' do
+                    コメントする
+
+
+

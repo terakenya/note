@@ -15,7 +15,8 @@
             %p.renewal-p-cardItem__description
               = article.text
             .renewal-p-cardItem__more
-              もっと見る
+              = link_to article_path(article.id), class: 'motto-miru' do
+                もっと見る
 
 
         .renewal-c-card__foot
@@ -27,7 +28,7 @@
                 %i.fa.fa-plus.fa-1x
                 %i.fa.fa-ellipsis-h
                 %i.renewal-p-action__comment
-                  = link_to article_path(current_user), class: 'comment-suru' do
+                  = link_to article_path(article.id), class: 'comment-suru' do
                     コメントする
 
 / = link_to 'article.titleのIDヲココニイレタイ', "/articles/#{params[:id]}/", method: :get

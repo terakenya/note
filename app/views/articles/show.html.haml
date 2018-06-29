@@ -1,4 +1,4 @@
-= render "header"
+= render "header.top"
 = form_for([@article, @comment]) do |f|
   .main_contents
     .note-container.space--under-header
@@ -14,7 +14,7 @@
               .p-articleNoteInfo__user
                 =render "userinfoIcon"
               .p-articleNoteInfo__edit
-                = link_to '編集', "/articles/#{params[:id]}/edit", method: :get
+                = link_to '編集', "/articles/#{params[:id]}/edit", method: :get, class: 'edit'
 
           .note-body
             .body-wrapper
@@ -43,7 +43,21 @@
 
     .p-comments
       .p-comments__container
+        .p-comments__title
+          コメント1件
         .p-comments__body
+          .p-comments__item
+            .p-comments__avatar
+              .c-avatar.c-avatar--small
+                %img.c-avatar__img{:alt => "", "data-src" => "https://d2l930y2yx77uc.cloudfront.net/assets/default/default_profile-2f533b6a0048b61b8d761198d14cbb4c603f89edb03577f061efc7393b85d811.png", :src => "https://d2l930y2yx77uc.cloudfront.net/assets/default/default_profile-2f533b6a0048b61b8d761198d14cbb4c603f89edb03577f061efc7393b85d811.png", :style => "", :title => ""}/
+            .p-comments__name
+              .p-comments__nameLink
+                さとう
+            .p-comments__status
+              .p-comments__date
+                2018/06/28 19:36
+            .p-comments__message
+              test
           .p-comments__add
             .p-comments__input
               = render partial: 'comment', collection: @comments

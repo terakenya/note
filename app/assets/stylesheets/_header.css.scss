@@ -133,6 +133,15 @@ i.fa.fa-edit{
     padding: 12px 14px;
 }
 
+.p-globalNavigation__link:hover{
+color: #222222;
+border-bottom: solid 2px;
+}
+
+.p-dropNavigation__link:hover{
+  color: #222222;
+}
+
 .p-globalNavigation__item.p-globalNavigation__item--help{
   margin-left: auto;
 }

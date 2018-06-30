@@ -41,13 +41,12 @@
 
 .renewal-p-buttonSet{
   display: flex;
-    -webkit-box-align: center;
-    align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
 }
 
 
 .renewal-p-buttonSet__item{
-  cursor: pointer;
   margin-left: 10px;
   cursor: pointer;
 }
@@ -59,6 +58,7 @@
 
 .renewal-p-buttonSet__item--mlL{
   margin-left:20px;
+  cursor: pointer;
 }
 
 .c-avatar--small{
@@ -134,11 +134,13 @@ i.fa.fa-edit{
 }
 
 .p-globalNavigation__link:hover{
+  cursor: pointer;
 color: #222222;
 border-bottom: solid 2px;
 }
 
 .p-dropNavigation__link:hover{
+  cursor: pointer;
   color: #222222;
 }
 
@@ -154,6 +156,7 @@ border-bottom: solid 2px;
     height: 48px;
     line-height: 1;
     position: relative;
+    cursor:pointer;
 }
 
 

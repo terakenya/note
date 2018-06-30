@@ -81,7 +81,10 @@
     line-height: 2.5;
     text-align: center;
     width:108px;
-    height:30px;
+}
+
+.renewal-c-button--navBarPostNote:hover{
+  background-color:#27aa89;
 }
 
 .fa.fa-edit{
@@ -133,10 +136,22 @@ i.fa.fa-edit{
     padding: 12px 14px;
 }
 
+.p-globalNavigation__link-home{
+  cursor: pointer;
+  color: #222222;
+  border-bottom: solid 2px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 12px 14px;
+}
+
 .p-globalNavigation__link:hover{
   cursor: pointer;
-color: #222222;
-border-bottom: solid 2px;
+  color: #222222;
+  border-bottom: solid 2px;
 }
 
 .p-dropNavigation__link:hover{
@@ -144,8 +159,15 @@ border-bottom: solid 2px;
   color: #222222;
 }
 
+.p-globalNavigation__link--help:hover{
+  // cursor: pointer;
+  // color: #222222;
+  // border-bottom: solid 2px;
+}
+
 .p-globalNavigation__item.p-globalNavigation__item--help{
   margin-left: auto;
+
 }
 
 .p-globalNavigation__link--help{

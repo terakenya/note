@@ -36,6 +36,7 @@
   width: 36px;
   height: 36px;
   margin-right: 8px;
+  cursor:pointer;
 }
 
 .image-class{
@@ -50,11 +51,13 @@
 p.renewal-c-card__userName{
   font-size: 12px;
   font-weight: bold;
+  cursor:pointer;
 }
 
 p.renewal-c-card__date{
   font-size:10px;
   color: #898D8C;
+  cursor:pointer;
 }
 
 p-articleNoteInfo__status{
@@ -77,6 +80,7 @@ p-articleNoteInfo__status{
 .renewal-p-cardItem__eyecatch img {
   width: 100%;
   // height:303px;
+  cursor:pointer;
 }
 
 .renewal-p-cardItem__title{
@@ -88,6 +92,7 @@ p-articleNoteInfo__status{
   line-height: 1.5;
   padding-left:20px;
   padding-right:20px;
+  cursor:pointer;
 }
 
 .renewal-p-cardItem__description {
@@ -154,5 +159,6 @@ p-articleNoteInfo__status{
 
 .motto-miru{
   text-decoration: none;
+  color: #249f80;
 }
 

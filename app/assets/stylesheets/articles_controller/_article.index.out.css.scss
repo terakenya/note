@@ -1,0 +1,491 @@
+.l-container.l-container--column_2column{
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.l-container__header{
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.p-searchHeader__pageTitle{
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.p-searchHeader__title{
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  line-height: 1.5;
+  flex-basis: 90%;
+}
+
+.p-searchHeader__rss{
+  color: #A8ABB1;
+  display: block;
+  line-height: 1;
+}
+
+.c-icon {
+  vertical-align: top;
+  display: inline-block;
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+  line-height: 1;
+  position: relative;
+  // background-color:gray;RSS出すときに表示したい
+}
+
+
+
+// --------------------------------------
+
+.l-container__body {
+  width: 610px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.p-timeline-out{
+  margin-top:16px;
+}
+
+.p-timeline__item{
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+
+.c-card {
+  background: #ffffff;
+  position: relative;
+  cursor: pointer;
+}
+
+.p-cardItem__eyecatch.is-first {
+  float: none;
+  border: none;
+  height: auto;
+  width: auto;
+  margin-left: 0;
+  margin-bottom: 24px;
+  // margin: 0 0 0 16px;
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.p-cardItem__eyecatch.is-first img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.p-cardItem__title.is-first {
+  font-size: 26px;
+  margin-bottom: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", Arial, "メイリオ", Meiryo, sans-serif;
+  font-feature-settings: 'palt' 1;
+  letter-spacing: 0.04em;
+  word-break: break-all;
+  margin-top: -4px;
+  line-height: 1.5;
+  font-weight:bold;
+}
+
+ .p-cardItem__description {
+  word-break: break-all;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+
+.p-cardItem__status {
+  display: flex;
+  width:610px;
+  height:21px;
+}
+
+.p-cardItem__statusItem--like {
+  color: #EA3F60;
+  position: relative;
+  padding-left: 20px;
+  margin-right: 16px;
+}
+
+
+.p-cardItem__statusIcon-heart{
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+
+.p-cardItem__statusIcon-comment{
+  position: absolute;
+  left: 0;
+}
+
+.c-icon--size_small {
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+}
+
+.p-cardItem__statusItem--comment {
+  color: #787c7b;
+  position: relative;
+  padding-left: 20px;
+  margin-right: 16px;
+}
+
+.fa.fa-comment-o.fa-1x {
+  padding-top: 5px;
+}
+
+
+.c-card__foot{
+  border-top: none;
+  padding: 24px 0 0;
+   // 48pxかも
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 4;
+  justify-content: space-between;
+}
+
+.c-card__avatar {
+  position: relative;
+  padding-left: 48px;
+}
+
+.c-card__avatarIcon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.c-avatar{
+  overflow: hidden;
+}
+
+
+.c-avatar--timeline {
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+}
+
+
+.c-card__avatarName {
+  font-size: 12px;
+  line-height: 2;
+  margin-bottom: -2px;
+  font-weight: normal;
+  word-break: break-all;
+  width: 180px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #787c7b;
+}
+
+.c-card__avatarDate {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #787c7b;
+  display: block;
+}
+
+
+.ns-note .p-action {
+  border: none;
+  margin-right: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  width: inherit;
+  margin: 0 10px;
+}
+
+.p-action__item {
+  position: relative;
+  white-space: nowrap;
+  color: #A8ABB1;
+  display: block;
+  line-height: 1;
+}
+
+.p-action__icon {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 4px;
+  color: #A8ABB1;
+}
+.c-icon-heartbreak{
+  vertical-align: top;
+  display: inline-block;
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+  line-height: 1;
+  position: relative;
+}
+
+  .p-cardItem__eyecatch {
+  margin: 0 0 0 16px;
+  float: right;
+  border: 1px solid rgba(0,0,0,0.05);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  width: 104px;
+  height: 104px;
+}
+
+.p-cardItem__eyecatch img {
+  width: 100%;
+}
+
+
+
+.p-cardItem__title.is-secound{
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", Arial, "メイリオ", Meiryo, sans-serif;
+  font-feature-settings: 'palt' 1;
+  letter-spacing: 0.04em;
+  word-break: break-all;
+  font-size: 22px;
+  margin-top: -4px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  font-weight:bold;
+}
+
+// ----------------------------------
+
+
+.l-container__sub {
+  width: 280px;
+  margin-top: 16px;
+    // height:161px;
+}
+
+.p-boosterList {
+  padding-bottom: 40px;
+}
+
+.p-boosterList__item{
+  margin-bottom: 16px;
+}
+
+.renewal-p-magList__item{
+  position: relative;
+  padding-bottom: 60px;
+  background: #fff;
+  border: 1px solid #e8eceb;
+  border-radius: 3px;
+}
+
+.renewal-p-magList__cover{
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px 3px 0px 0px;
+  height:99px;
+  width:278px;
+}
+
+.renewal-p-magList__overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.18;
+  border-radius: 3px 3px 0px 0px;
+}
+
+.renewal-p-magList__title{
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  z-index: 5;
+  width: calc(100% - 30px);
+  transform: translate(-50%, 0);
+}
+
+.magList__title{
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
+  color: #fff;
+  }
+
+.renewal-p-magList__cover img {
+  width: 100%;
+}
+
+.renewal-p-magList__body {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  width: calc(100% - 30px);
+  margin: 0 15px;
+  padding: 15px 0;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  }
+
+
+.renewal-p-magList__avatarList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.renewal-p-magList__avatarList ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.renewal-p-magList__avatarList ul li {
+  margin-right: -16px;
+}
+
+.c-avatar--small {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+
+
+.renewal-p-magList__more{
+  background-color: #f7f9f9;
+  min-width: 30px;
+  // padding: 0 8px;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: #787c7b;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+
+
+.renewal-p-magList__button {
+  min-width: 90px;
+  height: 28px;
+  margin-left: auto;
+  text-align: right;
+}
+
+.renewal-c-button--secondaryXsmall{
+  border-color: #2cb696;
+  color: #249f80;
+  font-size: 11px;
+  padding: 0.7em;
+  display: inline-block;
+  border: 1px solid #2cb696;
+  border-radius: 4px;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  background: #fff;
+  cursor: pointer;
+}
+
+// ------------------------------------
+
+
+.renewal-p-magList__description{
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  margin: 15px;
+  word-break: break-all;
+}
+
+.renewal-p-magList__description>p {
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.magList__description{
+  color: #222222;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+// ------------------------------
+
+a.c-button.c-button--type_basic.c-button--size_small{
+  min-height: 32px;
+  border: 1px solid #e6e6e6;
+  font-size:10px;
+  padding: 0 16px;
+  border-radius: 4px !important;
+  background-color:white;
+  color:black;
+  font-weight:bold;
+  min-width: auto;
+  font-size:12px;
+}
+
+.show-allMag{
+  height: 32px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 32px;
+  border: 1px solid #e6e6e6;
+  padding: 0 16px;
+  border-radius: 4px !important;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  min-width: auto;
+  font-size: 12px;
+}
+
+
+

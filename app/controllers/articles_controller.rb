@@ -7,7 +7,7 @@ class ArticlesController < ApplicationController
   def show
     @article = Article.includes(:user).find(params[:id])
     @comment = Comment.new
-    @comments = Comment.includes(:user)
+    @comments = @article.comments.includes(:user)
   end
 
   def destroy
@@ -15,7 +15,7 @@ class ArticlesController < ApplicationController
     if article.user_id == current_user.id
       article.destroy
     end
-    redirect_to article
+    redirect_to action: 'index'
   end
 
   def new

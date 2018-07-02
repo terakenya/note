@@ -9,4 +9,4 @@
     %p.renewal-c-card__date
       = article[:created_at].strftime("%Y-%m-%d%H:%M")
       %p-articleNoteInfo__status
-        = link_to "削除", params[:id],method: :delete,class: 'delete'
+        = link_to "削除", article_path(article),method: :delete, class: 'delete'

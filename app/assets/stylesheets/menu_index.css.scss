@@ -1,0 +1,270 @@
+.mainmenu{
+  margin-top: 40px;
+  background-color: #f7f9f9;
+}
+.renewal-p-creator__container {
+    width: 100%;
+    background: #fff;
+    margin-top: -20px;
+}
+.renewal-p-creator__content {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    width: 940px;
+    margin: 0 auto;
+    padding: 32px 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", Arial, "メイリオ", Meiryo, sans-serif;
+}
+.renewal-p-creator__profile{
+    position: relative;
+    padding-left: 128px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+.renewal-p-creator__avatar {
+    position: absolute;
+    left: 0;
+    top: -16px;
+    width: 104px;
+    z-index: 2;
+}
+.renewal-p-creator__avatar {
+    position: absolute;
+    left: 0;
+    top: -16px;
+    width: 104px;
+    z-index: 2;
+}
+.renewal-p-creator__name {
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+.c-avatar__img {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.renewal-p-creator__biography {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: normal;
+    margin-bottom: 16px;
+    padding-left: 128px;
+}
+.renewal-p-creator__status{
+  padding-left: 128px;
+  display: flex;
+}
+.renewal-p-creator__follow{
+  display: flex;
+}
+.renewal-p-creator__followItem{
+    margin-right: 8px;
+}
+.renewal-p-creator__followCount {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #222222;
+}
+.renewal-p-creator__followLabel {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #787c7b;
+}
+.renewal-p-creator__snsIcon{
+  color: #787c7b;
+}
+.renewal-p-customNav {
+    width: 100%;
+    background: #fff;
+}
+.renewal-p-customNav__inner {
+    display: flex;
+    width: 940px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+.renewal-p-customNav__nav {
+    height: 67px;
+    flex: 1;
+}
+.home-tab {
+    font-weight: bold;
+    color: #222;
+    border-bottom: 2px solid #222;
+    padding: 24px 20px 22px 20px;
+    font-size: 13px;
+    display: block;
+}
+.magazine-tab {
+    font-weight: bold;
+    color: #222;
+    border-bottom: 2px solid #222;
+    padding: 24px 20px 22px 20px;
+    font-size: 13px;
+    display: block;
+}
+.home-tab-menu{
+  display: flex;
+}
+.renewal-p-customNav__search {
+    display: block;
+    padding: 24px 20px 22px 20px;
+    border-bottom: 2px solid transparent;
+}
+.renewal-l-pageContainer {
+    display: flex;
+    width: 940px;
+    margin: 0 auto;
+    padding: 40px 0;
+    flex-direction: row-reverse;
+}
+.renewal-p-magList__cover img {
+    width: 100%;
+    vertical-align: top;
+}
+.renewal-p-magList__cover {
+    position: relative;
+    border-radius: 3px 3px 0px 0px;
+    width: 100%;
+    position: relative;
+}
+
+.mag-list{
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+.renewal-l-pageContainer__sub {
+    margin-left: auto;
+    width: 280px;
+}
+.renewal-p-magList__title {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    z-index: 5;
+    width: calc(100% - 30px);
+    transform: translate(-50%, 0);
+    color: #fff;
+    font-size: 14px;
+}
+.renewal-p-magList__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.18;
+    border-radius: 3px 3px 0px 0px;
+}
+
+.renewal-p-magList__item {
+    position: relative;
+    padding-bottom: 60px;
+    background: #fff;
+    border: 1px solid #e8eceb;
+    border-radius: 3px;
+}
+.renewal-p-magList__description {
+    -ms-flex-align: stretch;
+    margin: 15px;
+}
+
+.content-link{
+  font-size: 11px;
+}
+.renewal-p-magList__body {
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: calc(100% - 30px);
+    margin: 0 15px;
+    padding: 15px 0;
+    border-top: 1px solid rgba(0,0,0,0.05);
+  }
+.c-avatar--small {
+    margin-right: 8px;
+}
+.p-mgList__avatar__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.renewal-p-magList__button {
+    min-width: 90px;
+    height: 28px;
+    margin-left: auto;
+    text-align: right;
+}
+
+.renewal-c-button--secondaryXsall{
+    display: inline-block;
+    padding: 0.7em 1em;
+    border: 1px solid #e8eceb;
+    border-radius: 4px;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    background: #fff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-transition: none;
+    transition: none;
+    border-color: #2cb696;
+    color: #249f80;
+}
+.renewal-l-pageContainer__main {
+    width: 610px;
+}
+.tabs .is_active {
+  /* 何かタブを変更する設定 */
+}
+.tab-content {
+  display: none;
+}
+.tab-content.is_show {
+  display: block;
+}
+
+.renewal-p-magList {
+    width: 100%;
+}
+
+.renewal-l-pageContainer {
+    width: 940px;
+    margin: 0px auto;
+    padding: 40px 0px;
+}
+.renewal-p-magUl__create{
+  width: calc(50% - 10px);
+  margin: 0 10px 20px 0;
+}
+.renewal-p-magUl__create{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}

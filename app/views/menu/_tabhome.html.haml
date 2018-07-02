@@ -1,0 +1,69 @@
+.renewal-l-pageContainer
+  .renewal-l-pageContainer__sub
+    .renewal-p-magList
+      %ul
+        %li.mag-list
+          .renewal-p-magList__item
+            .content-link
+              .renewal-p-magList__cover
+                .renewal-p-magList__overlay
+                .renewal-p-magList__title
+                  %p
+                    サンプル
+                %img{"ng-src" => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/6882440/magazine_cover_landscape_61f7ae2b5ea4010b6a1ad04cb6458264.jpg", :src => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/6882440/magazine_cover_landscape_61f7ae2b5ea4010b6a1ad04cb6458264.jpg"}/
+
+
+              .renewal-p-magList__description
+                %p
+                  .content-link
+                    %a サンプル
+
+              .renewal-p-magList__body
+                .renewal-p-magList__avatar
+                  %a.p-mgList__avatar__img
+                    %img.c-avatar--small{"ng-src" => "https://d2l930y2yx77uc.cloudfront.net/assets/default/default_profile-2f533b6a0048b61b8d761198d14cbb4c603f89edb03577f061efc7393b85d811.png", :src => "https://d2l930y2yx77uc.cloudfront.net/assets/default/default_profile-2f533b6a0048b61b8d761198d14cbb4c603f89edb03577f061efc7393b85d811.png"}/
+                    %p tera
+
+                .renewal-p-magList__button
+                  .magazine
+                    %a.renewal-c-button--secondaryXsall
+                      設定
+  .renewal-l-pageContainer__main
+    .renewal-l-pageContant
+      .renewal-c-card
+        .renewal-c-card__head
+          %ul
+            %li
+              .c-avator
+                .image-class
+                  %img.c-avatar--timeline{:alt => "", "data-src" => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/3476076/profile_ca83c7d69e2f0874c29f42d51dab3b7f.jpg", :src => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/3476076/profile_ca83c7d69e2f0874c29f42d51dab3b7f.jpg", :style => "", :title => ""}/
+            %li
+              %p.renewal-c-card__userName
+                terada
+              %p.renewal-c-card__date
+                2018/06/28/19:22
+        .renewal-c-card__body
+          .renewal-p-cardItem
+            .renewal-p-cardItem__eyecatch
+              .renewal-p-cardItem__eyecatch.img
+                / = image_tag article.image
+            %h3.renewal-p-cardItem__title
+              / = article.title
+              aaa
+            %p.renewal-p-cardItem__description
+              / = article.text
+              aaa
+            .renewal-p-cardItem__more
+              / = link_to article_path(article.id), class: 'motto-miru' do
+              もっと見る
+        .renewal-c-card__foot
+          .renewal-p-action
+            %ul
+              %li
+                %i.fa.fa-heart-o.fa-1x
+                %i.fa.fa-share.fa-1x
+                %i.fa.fa-plus.fa-1x
+                %i.fa.fa-ellipsis-h
+                %i.renewal-p-action__comment
+                  //= link_to article_path(article.id), class: 'comment-suru' do
+                  コメントする

@@ -4,8 +4,6 @@ Rails.application.routes.draw do
   resources :articles do
     resources :comments, only: [:create]
   end
-  resources :users do
-    resources :menu, only: [:index]
-  end
+  resources :menu, only: [:index]
 
 end

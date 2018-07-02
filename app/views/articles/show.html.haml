@@ -1,4 +1,4 @@
-= render "header.top"
+= render "header_top"
 = form_for([@article, @comment]) do |f|
   .main_contents
     .note-container.space--under-header
@@ -14,7 +14,8 @@
               .p-articleNoteInfo__user
                 = render partial: "userinfoIcon", locals: {article: @article}
               .p-articleNoteInfo__edit
-                = link_to '編集', "/articles/#{params[:id]}/edit", method: :get, class: 'edit'
+                - if user_signed_in? && current_user.id == @article.user_id
+                  = link_to '編集', "/articles/#{params[:id]}/edit", method: :get, class: 'edit'
 
           .note-body
             .body-wrapper

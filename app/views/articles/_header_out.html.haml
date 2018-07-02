@@ -1,0 +1,80 @@
+.header-container
+  .renewal-l-container
+    .renewal-l-header
+      .renewal-l-header__inner
+        .renewal-l-header__global
+          .renewal-l-header__logo
+            = link_to articles_path do
+              = image_tag "https://d2l930y2yx77uc.cloudfront.net/assets/renewal/logo-b84a1f9687168286cb1ca588b5aa4d761cd3f46e79d4ac36f0d331dfb1ed21ba.svg"
+
+          .renewal-l-header__right
+            %ul.renewal-p-buttonSet
+              %li.renewal-p-buttonSet__textLink
+                %a.c-button.c-button--type_none
+                  .c-button__label_login
+                    = link_to new_user_session_path, class:'index-login' do
+                      ログイン
+                %a.c-button.c-button--type_none
+                  .c-button__label_regis
+                    = link_to  new_user_registration_path, class:'index-signup' do
+                      新規登録
+              %li.renewal-p-buttonSet__item
+                %i.fa.fa-edit
+
+        .l-header__nav
+          .p-globalNavigation
+            .p-globalNavigation__menu
+              .p-globalNavigation__item
+                .p-globalNavigation__link-home
+                  ホーム
+              .p-globalNavigation__item
+                .p-globalNavigation__link
+                  おすすめ
+              .p-globalNavigation__item
+                .p-globalNavigation__link
+                  公式マガジン
+              .p-globalNavigation__item
+                .p-globalNavigation__link
+                  募集中
+              .p-globalNavigation__item
+                .p-globalNavigation__link
+                  ピックアップ
+              .p-globalNavigation__item
+                .p-globalNavigation__link
+                  注目カテゴリ
+              .p-globalNavigation__item
+                .p-globalNavigation__link
+                  人気タグ
+              .p-globalNavigation__item.p-globalNavigation__item--help
+                .p-globalNavigation__link--help
+                  %i.fa.fa-question-circle
+
+            .p-globalNavigation__submenu
+              .p-dropNavigation
+                .p-dropNavigation__item
+                  .p-dropNavigation__link
+                    マンガ
+                .p-dropNavigation__item
+                  .p-dropNavigation__link
+                    コラム
+                .p-dropNavigation__item
+                  .p-dropNavigation__link
+                    小説
+                .p-dropNavigation__item
+                  .p-dropNavigation__link
+                    写真
+                .p-dropNavigation__item
+                  .p-dropNavigation__link
+                    サウンド
+                .p-dropNavigation__item
+                  .p-dropNavigation__link
+                    ビジネス
+                .p-dropNavigation__item
+                  .p-dropNavigation__link
+                    ライフスタイル
+                .p-dropNavigation__item
+                  .p-dropNavigation__link
+                    テクノロジー
+                .p-dropNavigation__item
+                  .p-dropNavigation__link
+                    エンタメ

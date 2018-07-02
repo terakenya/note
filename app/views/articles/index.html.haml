@@ -1,5 +1,8 @@
-= render "header"
+- if user_signed_in?
+  = render "header_in"
+  .p-timeline
+  = render partial: 'article', collection: @articles
+- else
+  = render "header_out"
+  = render "index_out"
 
-.p-timeline
-
-= render partial: 'article', collection: @articles

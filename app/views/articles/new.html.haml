@@ -38,10 +38,13 @@
               .body-wrapper
                 %OeiGn
                 = f.text_field :text, class: "contentform", placeholder: 'コメント'
+  .embed-toolbar
+    %ul.embed-toolbar-buttons
+      %li{:style => "display: list-item;"}
+        %button#embed-toolbar-open.button-circle{:type =>"button"}
+          %i.renewal-p-icon--editorAdd
+      %li
+        %button#embed-toolbar-open.button-circle{:type =>"button"}
+          %i.renewal-p-icon--editorAdd
 
-#modal-content
-  %p 「閉じる」か「背景」をクリックするとモーダルウィンドウを終了します。
-  %p
-    %a#modal-close.button-link 閉じる
-.modal-overlay
-<p><a id="modal-open" class="button-link">クリックするとモーダルウィンドウを開きます。</a></p>
+

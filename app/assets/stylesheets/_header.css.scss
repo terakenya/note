@@ -63,9 +63,118 @@
 
 .c-avatar--small{
   width: 30px;
-  height: 30px;
+  height: 30x;
   border-radius: 30px;
 }
+
+
+
+.renewal-c-popover--mymenu{
+  display:none;
+  z-index: 12;
+  top: 60px;
+  right: 134px;
+  width: 220px;
+  position: absolute;
+  z-index: 10;
+  padding: 8px 0;
+  text-align: left;
+  font-weight: normal;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.25), 0 0 1px rgba(0,0,0,0.35);
+}
+
+
+.u-textBold{
+  // position: relative;
+  // display: block;
+  // padding: 6px 25px;
+}
+
+.renewal-p-mymenuList__span{
+  display: block;
+  margin-top: 3px;
+  font-size: 11px;
+  font-weight: normal;
+  color: #787c7b;
+}
+
+
+.renewal-c-popover__separator {
+  margin: 10px 0;
+  padding: 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.renewal-p-mymenuList__item{
+  position: relative;
+    display: block;
+    padding: 6px 25px;
+}
+
+.renewal-p-mymenuList__item--button{
+  padding: 0 10px;
+}
+
+.premier{
+  padding: 0.7em 1em;
+  position: relative;
+  display: block;
+  border-color: #2cb696;
+  color: #fff;
+  background: #2cb696;
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width:180px;
+  margin-left:10px;
+}
+
+
+.renewal-c-popover--mymenu:before{
+    content: "";
+    display: block;
+    position: absolute;
+    right: 18px;
+    top: -13px;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    box-shadow: 1px 1px 1px -1px rgba(0,0,0,0.8);
+     transform: rotate(225deg) translate(-5px, -5px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .renewal-c-button--navBarPostNote {
     margin-left: 25px;

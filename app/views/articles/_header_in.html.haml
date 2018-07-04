@@ -17,6 +17,46 @@
                 .c-avatar-c-avatar--boxShadow
                   .c-avatar--small
                     %img.c-avatar--small{"ng-src" => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/6872559/profile_d227b8ba49f78d2420ed6f945630fce3.jpg", :src => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/6872559/profile_d227b8ba49f78d2420ed6f945630fce3.jpg"}/
+
+                  .renewal-c-popover--mymenu
+                    %ul.renewal-p-mymenuList
+                      .renewal-p-mymenuList__item
+                        %a.u-textBold
+                          %span
+                            さとう
+                          %span.renewal-p-mymenuList__span
+                            マイページを表示
+                      .renewal-c-popover__separator
+                      .renewal-p-mymenuList__item
+                        %a
+                          ノートを一覧で管理
+                      .renewal-p-mymenuList__item
+                        %a
+                          マガジンを一覧で管理
+                      .renewal-p-mymenuList__item
+                        %a
+                          画像を一覧で管理
+                      .renewal-c-popover__separator
+                      .renewal-p-mymenuList__item
+                        %a
+                          購入 / スキをしたノート
+                      .renewal-c-popover__separator
+                      .renewal-p-mymenuList__item
+                        %a
+                          アカウント設定
+                      .renewal-p-mymenuList__item
+                        %a
+                          ダッシュボード
+                      .renewal-p-mymenuList__item
+                        %a
+                          ログアウト
+                      .renewal-c-popover__separator
+                      .renewal-p-mymenuList__item-renewal-p-mymenuList__item--button
+                        %a.premier
+                          noteプレミアムサービス
+
+
+
               %li.renewal-c-button--navBarPostNote
                 .renewal-p-icon--postNote
                   = link_to new_article_path(current_user) do

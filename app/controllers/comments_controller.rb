@@ -3,7 +3,12 @@ class CommentsController < ApplicationController
   def create
     @comment = Comment.new(comment_params)
     @comment.save
-    redirect_to article_path(params[:article_id])
+    respond_to do |format|
+      format.html {
+        redirect_to article_path(params[:article_id])
+      }
+      format.json
+    end
   end
 
   def comment_params

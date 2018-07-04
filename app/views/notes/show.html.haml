@@ -1,5 +1,4 @@
 = render "header"
-= form_for([@article, @comment]) do |f|
   .main_contents
     .note-container.space--under-header
       .note-content
@@ -54,11 +53,12 @@
                   .c-avatar__img
                     %img.c-avatar__img{:alt => "", "data-src" => "https://d2l930y2yx77uc.cloudfront.net/assets/default/default_profile-2f533b6a0048b61b8d761198d14cbb4c603f89edb03577f061efc7393b85d811.png", :src => "https://d2l930y2yx77uc.cloudfront.net/assets/default/default_profile-2f533b6a0048b61b8d761198d14cbb4c603f89edb03577f061efc7393b85d811.png", :style => "", :title => ""}/
               .p-comments__inputMessage
-                = f.text_field :text, class: "commentform", placeholder: 'コメント'
-                =f.submit '送信' ,class: 'c-button__label'
-              .p-comments__inputAction
-                .p-comments__inputButton
-                  .c-button--size_small
+                = form_for([@article, @comment]) do |f|
+                  = f.text_field :text, class: "commentform", placeholder: 'コメント'
+                  =f.submit '送信' ,class: 'c-button__label'
+                .p-comments__inputAction
+                  .p-comments__inputButton
+                    .c-button--size_small
 
 
 

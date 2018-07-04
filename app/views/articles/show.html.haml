@@ -45,7 +45,7 @@
     .p-comments
       .p-comments__container
         .p-comments__title
-          コメント1件
+          コメント
           = render partial: 'comment', collection: @comments
           .p-comments__add
             .p-comments__input
@@ -55,7 +55,7 @@
                   .c-avatar__img
                     %img.c-avatar__img{:alt => "", "data-src" => "https://d2l930y2yx77uc.cloudfront.net/assets/default/default_profile-2f533b6a0048b61b8d761198d14cbb4c603f89edb03577f061efc7393b85d811.png", :src => "https://d2l930y2yx77uc.cloudfront.net/assets/default/default_profile-2f533b6a0048b61b8d761198d14cbb4c603f89edb03577f061efc7393b85d811.png", :style => "", :title => ""}/
               .p-comments__inputMessage
-                = f.text_field :text, class: "commentform", placeholder: 'コメント'
+                = f.text_field :text, class: "commentform", placeholder: 'comment'
               .p-comments__inputAction
                 .p-comments__inputButton
                   .c-button--size_small

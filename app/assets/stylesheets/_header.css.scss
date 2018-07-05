@@ -150,32 +150,6 @@
      transform: rotate(225deg) translate(-5px, -5px);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .renewal-c-button--navBarPostNote {
     margin-left: 25px;
     padding: 0px;
@@ -191,6 +165,105 @@
     text-align: center;
     width:108px;
 }
+
+
+.renewal-c-popover--postNote{
+  top: 60px;
+  right: 0;
+  padding: 30px;
+  cursor: auto;
+  position: absolute;
+  z-index: 10;
+  text-align: left;
+  font-weight: normal;
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.25), 0 0 1px rgba(0,0,0,0.35);
+  width:380px;
+  height:82px;
+  display:none;
+}
+
+.renewal-p-postNoteFromNavBarList{
+}
+
+ .renewal-p-postNoteFromNavBarList__item {
+  margin-right: 16px;
+  margin-left:0px;
+}
+
+.renewal-p-postNoteFromNavBarList__item-last{
+  margin-left:0px;
+  margin-right: 0px;
+}
+.aab{
+  height:60px;
+  width:60px;
+  position:absolute;
+  left:30px;
+}
+
+.aaa{
+  height:60px;
+  width:60px;
+}
+
+.renewal-p-icon--text{
+  color: red;
+  display: block;
+  font-size: 12px;
+  padding-left:10px;
+  float:left;
+}
+.renewal-p-icon--textnote:hover{
+  color:#2cb696;
+}
+
+
+
+
+.renewal-p-icon--textnote{
+  color: rgb(120, 124, 123);
+  text-align:center;
+  display: block;
+  font-size: 12px;
+}
+
+.renewal-c-popover--postNote:before{
+  content: "";
+    display: block;
+    position: absolute;
+    top: -13px;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    box-shadow: 1px 1px 1px -1px rgba(0,0,0,0.8);
+    transform: rotate(225deg) translate(-5px, -5px);
+    right: 46px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .renewal-c-button--navBarPostNote:hover{
   background-color:#27aa89;

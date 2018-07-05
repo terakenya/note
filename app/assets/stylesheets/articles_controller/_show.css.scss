@@ -497,6 +497,9 @@ margin-top:3px;
   right: initial;
   visibility: hidden;
 }
+.embed-toolbar-active{
+  visibility: visible;
+}
 .button-circle{
     width: 36px;
     height: 36px;
@@ -504,4 +507,12 @@ margin-top:3px;
     background: white;
     border: 1px solid #898D8C;
     color: #898D8C;
+    float:left;
+}
+#image{
+  display:none;
+}
+
+#mainasu{
+  display:none;
 }

@@ -37,14 +37,21 @@
             .note-body
               .body-wrapper
                 %OeiGn
-                = f.text_field :text, class: "contentform", placeholder: 'コメント'
+                = f.text_field :text, class: "contentform", placeholder: 'ノート本文'
   .embed-toolbar
     %ul.embed-toolbar-buttons
       %li{:style => "display: list-item;"}
-        %button#embed-toolbar-open.button-circle{:type =>"button"}
+        %button#embed-toolbar-open.button-circle.plus{:type =>"button"}
           %i.renewal-p-icon--editorAdd
+            ＋
       %li
-        %button#embed-toolbar-open.button-circle{:type =>"button"}
+        %button#embed-toolbar-open.button-circle.image#image{:type =>"button"}
           %i.renewal-p-icon--editorAdd
+            x
+      %li
+        %button#embed-toolbar-open.button-circle.mainasu#mainasu{:type =>"button"}
+          %i.renewal-p-icon--editorAdd
+            img
+
 
 

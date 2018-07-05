@@ -1,19 +1,39 @@
-// $(function(){
-//   $('input').on('Focus', function(e){
-//     e.preventDefault();
-//     console.log("aaa")
-//   })
-// })
 $(function(){
+
   $('.contentform').focus(function() {
     $('.embed-toolbar').css('visibility','visible');
-
   });
   $('.embed-toolbar').on('mousedown', function(e){
-    console.log("aaa");
+    $('#image').css({
+      "display" : "inline"
+    })
+    $('#mainasu').css({
+      "display" : "inline"
+    })
+    $('.plus').css({
+      "display" : "none"
+    })
+    $('.embed-toolbar').css('visibility','visible');
   });
-  $('.contentform').blur(function() {
-    $('.embed-toolbar').css('visibility','hidden');
 
+  $(document).on('click', function(e) {
+    if (!$(e.target).closest(".plus ,.contentform,#image").length) {
+      $('.embed-toolbar').css('visibility','hidden');
+      // フェードやスライドなどの処理方法を記述;
+    }
+  });
+  $(document).on('click', function(e) {
+    if ($(e.target).closest("#image").length) {
+      $('.contentform').readOnly = true;
+      $('#image').css({
+        "display" : "none"
+      })
+      $('#mainasu').css({
+        "display" : "none"
+      })
+      $('.plus').css({
+        "display" : "inline"
+      })
+    }
   });
 });

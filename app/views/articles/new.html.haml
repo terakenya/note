@@ -37,21 +37,28 @@
             .note-body
               .body-wrapper
                 %OeiGn
-                = f.text_field :text, class: "contentform", placeholder: 'ノート本文'
-  .embed-toolbar
-    %ul.embed-toolbar-buttons
-      %li{:style => "display: list-item;"}
-        %button#embed-toolbar-open.button-circle.plus{:type =>"button"}
-          %i.renewal-p-icon--editorAdd
-            ＋
-      %li
-        %button#embed-toolbar-open.button-circle.image#image{:type =>"button"}
-          %i.renewal-p-icon--editorAdd
-            x
-      %li
-        %button#embed-toolbar-open.button-circle.mainasu#mainasu{:type =>"button"}
-          %i.renewal-p-icon--editorAdd
-            img
+                = f.text_area :text, class: "contentform", placeholder: 'ノート本文',autocomplete: 'off'
+            .embed-toolbar
+              %ul.embed-toolbar-buttons
+                %li{:style => "display: list-item;"}
+                  %button#embed-toolbar-open.button-circle.plus{:type =>"button"}
+                    %i.renewal-p-icon--editorAdd
+                      ＋
+                %li
+                  %button#embed-toolbar-open.button-circle.image#image{:type =>"button"}
+                    %i.renewal-p-icon--editorAdd
+                      x
+                %li
+                  %button#embed-toolbar-open.button-circle.mainasu#mainasu{:type =>"button"}
+                    %i.renewal-p-icon--editorAdd
+                      =f.label :image, class: "icon" do
+                        img
+            / .note-body
+            /   .body-wrapper
+            /     %OeiGn
+            /     %textarea{:cols => "40", :name => "text", :rows => "4", :class => "contentform", :placeholder=> 'text'}
+
+
 
 
 

@@ -45,4 +45,13 @@ $(function(){
       $('.submit-comment').removeAttr("disabled");
     })
   })
+
+  $('.commentform').focus(function() {
+    $('.c-button--size_small').css('visibility','visible');
+  });
+    $('.commentform').blur(function() {
+      setTimeout(function() {
+        $('.c-button--size_small').css('visibility','hidden');
+      }, 250);
+  });
 })

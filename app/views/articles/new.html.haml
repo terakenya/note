@@ -28,7 +28,6 @@
           .note
             .iconxlarge
               = fa_icon 'picture-o', class: 'icon'
-
               .renewal-c-popover-renewal-c-popover--selectEyecatch
                 %ul
                   %li.new-popover
@@ -39,15 +38,10 @@
                   %li.new-popunder
                     .tes
                       .renewal-p-icon--eyecatchUpload
-                        = image_tag 'screen.png',class:"imagebig",align:"center"
-                          =f.label :image, class: "icon" do
-                            = fa_icon 'picture-o', class: 'icon'
-                              = f.file_field :image, class: 'imageform', style: 'display:none'
-                                画像をアップロード
+                      =f.label :image, class: "icon" do
+                        = f.file_field :image, class: 'imageform', style: 'display:none'
+                        画像をアップロード
 
-                =f.label :image, class: "icon" do
-                = fa_icon 'picture-o', class: 'icon'
-                = f.file_field :image, class: 'imageform', style: 'display:none'
 
 
 
@@ -73,12 +67,5 @@
                     %i.renewal-p-icon--editorAdd
                       =f.label :image, class: "icon" do
                         img
-            / .note-body
-            /   .body-wrapper
-            /     %OeiGn
-            /     %textarea{:cols => "40", :name => "text", :rows => "4", :class => "contentform", :placeholder=> 'text'}
-
-
-
 
 

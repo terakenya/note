@@ -27,10 +27,30 @@
         .fude-content
           .note
             .iconxlarge
-              =f.label :image, class: "icon" do
+              = fa_icon 'picture-o', class: 'icon'
+
+              .renewal-c-popover-renewal-c-popover--selectEyecatch
+                %ul
+                  %li.new-popover
+                    .galally
+                      .renewal-p-icon--stockPhoto
+                        = image_tag 'imagesmall.png',class:"imagesmall",align:"center"
+                        みんなのフォトギャラリー(β)から画像を挿入
+                  %li.new-popunder
+                    .tes
+                      .renewal-p-icon--eyecatchUpload
+                        = image_tag 'screen.png',class:"imagebig",align:"center"
+                          =f.label :image, class: "icon" do
+                            = fa_icon 'picture-o', class: 'icon'
+                              = f.file_field :image, class: 'imageform', style: 'display:none'
+                                画像をアップロード
+
+                =f.label :image, class: "icon" do
                 = fa_icon 'picture-o', class: 'icon'
-                //i.fa.fa-image.fa-2xこの画像に置き換えたい
                 = f.file_field :image, class: 'imageform', style: 'display:none'
+
+
+
             .note-name
               %h1
                 = f.text_field :title, class: "titleform", placeholder: 'ノートタイトル'

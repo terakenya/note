@@ -20,7 +20,9 @@
             .space-bottom-2
               = f.label :メールアドレス
               %br/
-              = f.email_field :email, autofocus: true, autocomplete: "email",class:"user_email",placeholder:"例：mail@note.mu"
+              = f.email_field :email, autofocus: true, autocomplete: "email",class:"user_email",placeholder:"例：mail@note.mu",required: "required"
+              %p.error-message
+                メールアドレスを入力してください。
             .space-bottom-2
               = f.label :パスワード
               - if @minimum_password_length
@@ -28,10 +30,7 @@
                   (#{@minimum_password_length} characters minimum)
               %br/
               = f.password_field :password, autocomplete: "off",class:"user_password",placeholder:"例：6文字以上の半角英数"
-            / .field
-            /   = f.label :password_confirmation
-            /   %br/
-            /   = f.password_field :password_confirmation, autocomplete: "off"
+
             .txt-center.space-t-1h.space-b-1h
               %input.ng-pristine.ng-untouched.ng-valid{"delayed-validation" => "true", :name => "terms", "ng-model" => "terms", :tabindex => "1", :type => "checkbox",:class => "checkbox"}/
               .txt-xsmall

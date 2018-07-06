@@ -267,7 +267,7 @@ i.fa.fa-heart-o.fa-1x{
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  //display:none;
+  cursor:pointer;
   visibility:hidden;
 
 }
@@ -486,10 +486,14 @@ a.others{
 }
 
 .submit-comment{
-font-weight:initial;
-color:white;
-background-color:#2cb696;
-margin-top:3px;
+  font-weight:initial;
+  color:white;
+  background-color:#2cb696;
+  margin-top:3px;
+  width: 100px;
+  height:32px;
+  border-radius: 4px;
+  cursor:pointer;
 }
 
 .embed-toolbar{

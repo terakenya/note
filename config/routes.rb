@@ -5,5 +5,10 @@ Rails.application.routes.draw do
     resources :comments, only: [:create]
   end
   resources :menu, only: [:index]
+  resources :articles do
+    resources :likes, only: [:create, :destroy]
+  end
+  resources :users
 
 end
+

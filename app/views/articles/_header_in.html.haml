@@ -21,14 +21,11 @@
               %li.renewal-c-button--navBarPostNote
                 .renewal-c-popover--postNote
                   %ul.renewal-p-postNoteFromNavBarList
-                    %li.renewal-p-postNoteFromNavBarList__item
-                    = link_to new_article_path(current_user) do
-                      = image_tag 'pencil.png',class:"aab"
+                    %li.wani
+                      = link_to new_article_path(current_user) do
+                        = image_tag 'pencil.png',class:"aab"
                       .renewal-p-icon--text
                         テキスト
-
-
-
                     %li.renewal-p-postNoteFromNavBarList__item
                       = image_tag 'moutain.png',class:"aaa"
                       .renewal-p-icon--textnote

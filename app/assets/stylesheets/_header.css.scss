@@ -192,6 +192,11 @@
   margin-left:0px;
 }
 
+.wani{
+  margin-right: 16px;
+  margin-left:0px;
+}
+
 .renewal-p-postNoteFromNavBarList__item-last{
   margin-left:0px;
   margin-right: 0px;
@@ -201,6 +206,7 @@
   width:60px;
   position:absolute;
   left:30px;
+  top:30px;
 }
 
 .aaa{
@@ -209,13 +215,19 @@
 }
 
 .renewal-p-icon--text{
-  color: red;
+  color: rgb(120, 124, 123);
   display: block;
   font-size: 12px;
   padding-left:10px;
   float:left;
+  padding-top:68px;
+  cursor:pointer;
 }
 .renewal-p-icon--textnote:hover{
+  color:#2cb696;
+}
+
+.renewal-p-icon--text:hover{
   color:#2cb696;
 }
 
@@ -227,6 +239,7 @@
   text-align:center;
   display: block;
   font-size: 12px;
+  cursor:pointer;
 }
 
 .renewal-c-popover--postNote:before{

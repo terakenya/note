@@ -23,7 +23,8 @@
           .renewal-p-action
             %ul
               %li
-                %i.fa.fa-heart-o.fa-1x
+                %span{id: "like-of-#{article.id}"}
+                  = render partial: 'likes/like', locals: { article: article, likes: @likes }
                 %i.fa.fa-share.fa-1x
                 %i.fa.fa-plus.fa-1x
                 %i.fa.fa-ellipsis-h

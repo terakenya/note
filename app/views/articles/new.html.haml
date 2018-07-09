@@ -52,20 +52,10 @@
               .body-wrapper
                 %OeiGn
                 = f.text_area :text, class: "contentform", placeholder: 'ノート本文',autocomplete: 'off'
-            .embed-toolbar
-              %ul.embed-toolbar-buttons
-                %li{:style => "display: list-item;"}
-                  %button#embed-toolbar-open.button-circle.plus{:type =>"button"}
-                    %i.renewal-p-icon--editorAdd
-                      ＋
-                %li
-                  %button#embed-toolbar-open.button-circle.image#image{:type =>"button"}
-                    %i.renewal-p-icon--editorAdd
-                      x
-                %li
-                  %button#embed-toolbar-open.button-circle.mainasu#mainasu{:type =>"button"}
-                    %i.renewal-p-icon--editorAdd
-                      =f.label :image, class: "icon" do
-                        img
+  .toolbar-buttons
+    %ul.toolbutton
+      %li.toolbutton_plus
+        = image_tag 'plus.png' ,class: "plus_button"
+
 
 

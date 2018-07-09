@@ -269,6 +269,7 @@ i.fa.fa-heart-o.fa-1x{
   align-items: center;
   cursor:pointer;
   visibility:hidden;
+  font-size :12px;
 
 }
 
@@ -516,6 +517,7 @@ a.others{
     float:left;
 }
 #image{
+  zindex:50;
   display:none;
 }
 
@@ -532,4 +534,8 @@ input[type="text"]:focus {
     resize: none;
     height: 39px;
     width: 100%;
+}
+
+.toolbar-buttons{
+  position: absolute;
 }

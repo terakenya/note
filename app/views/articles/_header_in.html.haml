@@ -13,13 +13,15 @@
                   = image_tag 'megane.png',class:"icon-30"
                   .angucomplete-holder
                     %input{class: "searchuser",placeholder:'キーワードや作者名で検索',type: "text",id: "usersearch"}
-                    .angucomplete-dropdownA
-                      .angucomplete-row-angucomplete-selected-row
-                        『aaa」で全体を検索
-                    .angucomplete-dropdownB
-                      .angucomplete-row-angucomplete-selected-row
-                        秋野結湖
-                      .user-search
+                    .angucomplete-dropdown
+                      .angucomplete-dropdownA
+                        .angucomplete-row-angucomplete-selected-row
+                          『aaa」で全体を検索
+                      .angucomplete-dropdownB
+                        .angucomplete-row-angucomplete-selected-row
+                          秋野結湖
+
+                        .user-search
                   %i.fa.fa-search
               %li.renewal-p-buttonSet__item
                 %i.fa.fa-bell

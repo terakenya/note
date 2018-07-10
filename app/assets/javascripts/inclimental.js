@@ -1,18 +1,23 @@
 $(function() {
-  var users_list = $("#user-search-result");
-  function appendUser(user) {
+  function appendUser(user ,input) {
     var html = `<div class="angucomplete-dropdownA">
-                  <div class="angucomplete-row-angucomplete-selected-row"></div>
+                  <div class="angucomplete-row-angucomplete-selected-row">${input}で全体を検索</div>
                 </div>
                 <div class="angucomplete-dropdownB">
-                  <div class="angucomplete-row-angucomplete-selected-row"></div>
+                  <div class="angucomplete-row-angucomplete-selected-row">${user.name}</div>
                 </div>`
-    angucomplete-dropdown.append(html);
+    return html
+  }
+  function searchUser(input) {
+    var html = `<div class="angucomplete-dropdownA">
+                  <div class="angucomplete-row-angucomplete-selected-row">${input}で全体を検索</div>
+                </div>
+                `
+    return html
   }
 
   $("#usersearch").on("keyup", function() {
     var input = $.trim($(this).val());
-    console.log(input)
     $.ajax({
       type: 'GET',
       url: '/users',
@@ -20,13 +25,16 @@ $(function() {
       dataType: 'json'
     })
     .done(function(users) {
-      console.log(users)
       $(".angucomplete-dropdown").empty();
-        if(users.length !== 0) {
+        if(users.length != 0 && input!=false) {
           users.forEach(function(user) {
-            appendUser(user);
+            var html = appendUser(user,input);
+            $('.angucomplete-dropdown').append(html);
           });
-        } else {
+        } else if(users.length == 0){
+          console.log(input)
+          var html = searchUser(input);
+          $('.angucomplete-dropdown').append(html);
          // appendNoUser();
         }
     })

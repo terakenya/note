@@ -52,7 +52,7 @@
 }
 
 .p-searchForm--header{
-  position: relative;
+  position: absolute;
   float: left;
 }
 
@@ -400,20 +400,36 @@ i.fa.fa-edit{
   box-sizing: border-box !important;
   padding: 5px 30px 5px 10px;
   width: 200px;
-  height: 32px;
+  height: 28px;
   border: 1px solid rgba(0,0,0,0.05);
   border-radius: 100px;
   background: #f7f9f9;
-  font-size: 12px;
+  position:absolute;
+  top:0px;
+  right:0.1px;
+  display:none;
+  font-size:11px;
+  color:#f4f4f4;
 }
+
+input[type="text"]:focus {
+  outline: 0;
+  border-color:#259f7f;
+  background-color:#ffffff;
+}
+
+input::placeholder {
+  color:#bdc3c7;
+}
+
 .p-searchForm--header{
   position: relative;
+  visibility:visible;
+  padding-right:5px;
 
 }
 .angucomplete-holder{
-
   z-index:99;
 }
 .fa-search{
-
 }

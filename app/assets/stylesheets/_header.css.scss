@@ -396,3 +396,24 @@ i.fa.fa-edit{
     white-space: nowrap;
     font-size: 14px;
 }
+.searchuser{
+  box-sizing: border-box !important;
+  padding: 5px 30px 5px 10px;
+  width: 200px;
+  height: 32px;
+  border: 1px solid rgba(0,0,0,0.05);
+  border-radius: 100px;
+  background: #f7f9f9;
+  font-size: 12px;
+}
+.p-searchForm--header{
+  position: relative;
+
+}
+.angucomplete-holder{
+
+  z-index:99;
+}
+.fa-search{
+
+}

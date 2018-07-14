@@ -52,4 +52,4 @@ production:
   database: note_production
   username: root
   password: <%= ENV['NOTE_DATABASE_PASSWORD'] %>
-  socket: /tmp/mysql.sock
+  socket: /var/lib/mysql/mysql.sock

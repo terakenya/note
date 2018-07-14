@@ -3,7 +3,7 @@
     .ui.labeled.button{:tabindex => "0"}
       .ui.red.button
         %i.heart.icon
-        %i.fa.fa-heart-o.fa-1x
+        = image_tag 'redheart.png',class:"heart-10"
       %a.ui.basic.red.left.pointing.label
         %span
           = article.likes.count
@@ -12,7 +12,7 @@
     .ui.labeled.button{:tabindex => "0"}
       .ui.button
         %i.heart.icon
-        %i.fa.fa-heart-o.fa-1x
+        = image_tag 'heart.png',class:"heart-10"
       %a.ui.basic.gray.left.pointing.label
         %span
           = article.likes.count

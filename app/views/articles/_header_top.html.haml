@@ -10,9 +10,24 @@
             %ul.renewal-p-buttonSet
               %li.renewal-p-buttonSet__item
                 .p-searchForm--header
-                  %i.fa.fa-search
+                  = image_tag 'megane.png',class:"icon-30"
+                  .angucomplete-holder
+                    %input{class: "searchuser",placeholder:'キーワードや作者名で検索',type: "text",id: "usersearch"}
+                    .angucomplete-dropdown
+                      .angucomplete-dropdownA
+                        .angucomplete-row-angucomplete-selected-row
+                          『aaa」で全体を検索
+                      .angucomplete-dropdownB
+                        .angucomplete-row-angucomplete-selected-row
+                          .angucomplete-image-holder
+                            %img.list-image{"ng-src" => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/6872559/profile_d227b8ba49f78d2420ed6f945630fce3.jpg", :src => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/6872559/profile_d227b8ba49f78d2420ed6f945630fce3.jpg"}/
+                          .angucomplete-title
+                            髙橋 ゆう
+
+                        .user-search
+                  = image_tag 'search.png',class: "search-10"
               %li.renewal-p-buttonSet__item
-                %i.fa.fa-bell
+                = image_tag 'bell.png',class: "bell-10"
               %li.renewal-p-buttonSet__item--mlL
                 .c-avatar-c-avatar--boxShadow
                   .c-avatar--small

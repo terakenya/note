@@ -230,9 +230,8 @@ i.fa.fa-heart-o.fa-1x{
 }
 
 .p-comments__inputMessage {
-    height: 32px;
+    height: auto;
     min-height: 32px;
-    resize: none;
     width: 100%;
     border: none;
     font-size: 14px;
@@ -562,5 +561,6 @@ input[type="text"]:focus {
   float:right;
   line-height:29px;
   margin-left:5px;
+  cursor:pointer;
 }
 

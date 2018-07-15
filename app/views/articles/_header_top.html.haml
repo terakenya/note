@@ -35,10 +35,27 @@
                     = render "mypage-bar"
               %li.renewal-c-button--navBarPostNote
                 .renewal-c-popover--postNote
-                  .renewal-p-postNoteFromNavBarList
-                    .renewal-p-postNoteFromNavBarList__item
-                    .renewal-p-postNoteFromNavBarList__item
-                    .renewal-p-postNoteFromNavBarList__item
+                  %ul.renewal-p-postNoteFromNavBarList
+                    %li.wani
+                      = link_to new_article_path(current_user) do
+                        = image_tag 'pencil.png',class:"aab"
+                      .renewal-p-icon--text
+                        テキスト
+                    %li.renewal-p-postNoteFromNavBarList__item
+                      = image_tag 'moutain.png',class:"aaa"
+                      .renewal-p-icon--textnote
+                        画像
+                    %li.renewal-p-postNoteFromNavBarList__item
+                      = image_tag 'tweet.png',class:"aaa"
+                      .renewal-p-icon--textnote
+                        つぶやき
+                    %li.renewal-p-postNoteFromNavBarList__item
+                      = image_tag 'headset.png',class:"aaa"
+                      .renewal-p-icon--textnote
+                        音声
+                    %li.renewal-p-postNoteFromNavBarList__item-last
+                      = image_tag 'movie.png',class:"aaa"
+                      .renewal-p-icon--textnote
+                        動画
                 .renewal-p-icon--postNote
-                  = link_to new_article_path(current_user) do
-                    %i.fa.fa-edit  ノートを投稿
+                  %i.fa.fa-edit  ノートを投稿

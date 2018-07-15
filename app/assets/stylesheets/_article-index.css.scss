@@ -145,9 +145,10 @@ p-articleNoteInfo__status{
 
 .renewal-p-action__comment{
   margin-right:35px;
-  margin-left: auto;
+  margin-left: 245px;
   color: #249f80;
   font-size:12px;
+  float:right;
 }
 
 .comment-suru{
@@ -164,23 +165,44 @@ p-articleNoteInfo__status{
 
 .yajirushi-10{
   width:30px;
-  height:30px;
+  height:29px;
+  float:left;
 }
 
 .plus2-10{
-  width:30px;
-  height:30px;
+  width:28px;
+  height:28px;
+  float:left;
+  margin-left:35px;
 }
 
 .menu-10{
   width:30px;
   height:30px;
+  float:left;
 }
 
 .heart-10{
-  width:30px;
-  height:30px;
+  width:27px;
+  height:27px;
+  float:left;
+  clear:both;
 }
 
+.ui.labeled.button{
+  float:left;
+  width:40px;
+  height:50px;
+  margin-right:35px;
+}
 
+.ui.basic.gray.left.pointing.label{
+  float:right;
+  line-height:31px;
+}
+
+.ui.basic.red.left.pointing.label{
+  float:right;
+  line-height:31px;
+}
 

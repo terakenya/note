@@ -22,13 +22,13 @@
         .renewal-c-card__foot
           .renewal-p-action
             %ul
-              %li
+              %li.majide
                 %span{id: "like-of-#{article.id}"}
                   = render partial: 'likes/like', locals: { article: article, likes: @likes }
                 = image_tag 'yajirushi.png',class:"yajirushi-10"
                 = image_tag 'plus2.png',class:"plus2-10"
-                = image_tag 'menu.png',class:"menu-10"
-                %i.renewal-p-action__comment
+                / = image_tag 'menu.png',class:"menu-10"
+                .renewal-p-action__comment
                   = link_to article_path(article.id), class: 'comment-suru' do
                     コメントする
 

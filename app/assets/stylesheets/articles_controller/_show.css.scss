@@ -103,7 +103,7 @@ p.p-supportFunding__heading{
 
 .renewal-c-button--primaryMedium{
     display: inline-block;
-    padding: 0.7em 1em;
+    padding: 6px 29px;
     border: 1px solid #e8eceb;
     line-height: 1;
     text-align: center;
@@ -112,10 +112,12 @@ p.p-supportFunding__heading{
     background: #2cb696;
     font-weight: bold;
     color:white;
+    border-radius: 5px;
 }
 
-.u-flexboxCenter{
-}
+// .u-flexboxCenter{
+//   height:20px;
+// }
 
 i.renewal-p-icon--present{
   width: 20px;
@@ -545,8 +547,20 @@ input[type="text"]:focus {
   height:28px;
 }
 
-.plus2-10{
+.plus2-30{
   height:28px;
   width:24px;
   margin-left:35px;
 }
+
+.present-30{
+  height:25px;
+  width:20px;
+}
+
+.supporting{
+  float:right;
+  line-height:29px;
+  margin-left:5px;
+}
+

@@ -1,0 +1,103 @@
+.header-container{
+  position: relative;
+  z-index: 11;
+}
+
+.renewal-l-header{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 1px;
+}
+
+.renewal-l-header__inner{
+  position: relative;
+  background: rgb(255, 255, 255);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.renewal-l-header__global{
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  height: 64px;
+  width: 940px;
+  margin: 0px auto;
+}
+
+.renewal-l-header__logo{
+  width: auto;
+  height: auto;
+  max-height: 25px;
+}
+
+
+.renewal-l-header__right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.renewal-p-buttonSet{
+  font-size:12px;
+}
+
+li.renewal-p-buttonSet__textLink{
+  display: flex;
+  line-height: 1;
+}
+
+
+.index-login{
+  color: #787c7b;
+}
+
+.index-signup{
+  color:white;
+}
+
+.c-button__label_login{
+  padding: 0 16px;
+  min-height: 32px;
+  height: 32px;
+  color: #787c7b;
+  border-radius: 4px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight:bold;
+}
+
+.c-button__label_regis{
+  padding: 0 16px;
+  min-height: 32px;
+  height: 32px;
+  color: #ffffff;
+  background-color: #2cb696;
+  border-radius: 4px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.renewal-p-buttonSet__item {
+    margin-left: 10px;
+    // font-size: 0;
+    cursor: pointer;
+}
+
+// .renewal-p-icon--search{
+//   width: 30px;
+//   height: 30px;
+// }
+
+
+
+
+
+
+
+
+

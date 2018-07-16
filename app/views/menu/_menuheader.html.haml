@@ -10,14 +10,41 @@
             %ul.renewal-p-buttonSet
               %li.renewal-p-buttonSet__item
                 .p-searchForm--header
-                  %i.fa.fa-search
+                  = image_tag 'megane.png',class:"icon-30"
+                  .angucomplete-holder
+                    %input{class: "searchuser",placeholder:'キーワードや作者名で検索',type: "text",id: "usersearch"}
+                    .angucomplete-dropdown
+                  = image_tag 'search.png',class: "search-10"
               %li.renewal-p-buttonSet__item
-                %i.fa.fa-bell
+                = image_tag 'bell.png',class: "bell-10"
               %li.renewal-p-buttonSet__item--mlL
                 .c-avatar-c-avatar--boxShadow
                   .c-avatar--small
                     %img.c-avatar--small{"ng-src" => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/6872559/profile_d227b8ba49f78d2420ed6f945630fce3.jpg", :src => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/6872559/profile_d227b8ba49f78d2420ed6f945630fce3.jpg"}/
+                    = render "articles/mypage-bar"
               %li.renewal-c-button--navBarPostNote
+                .renewal-c-popover--postNote
+                  %ul.renewal-p-postNoteFromNavBarList
+                    %li.wani
+                      = link_to new_article_path(current_user) do
+                        = image_tag 'pencil.png',class:"aab"
+                      .renewal-p-icon--text
+                        テキスト
+                    %li.renewal-p-postNoteFromNavBarList__item
+                      = image_tag 'moutain.png',class:"aaa"
+                      .renewal-p-icon--textnote
+                        画像
+                    %li.renewal-p-postNoteFromNavBarList__item
+                      = image_tag 'tweet.png',class:"aaa"
+                      .renewal-p-icon--textnote
+                        つぶやき
+                    %li.renewal-p-postNoteFromNavBarList__item
+                      = image_tag 'headset.png',class:"aaa"
+                      .renewal-p-icon--textnote
+                        音声
+                    %li.renewal-p-postNoteFromNavBarList__item-last
+                      = image_tag 'movie.png',class:"aaa"
+                      .renewal-p-icon--textnote
+                        動画
                 .renewal-p-icon--postNote
-                  = link_to new_article_path(current_user) do
-                    %i.fa.fa-edit  ノートを投稿
+                  %i.fa.fa-edit  ノートを投稿

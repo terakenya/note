@@ -29,12 +29,16 @@ $(function() {
     return html
   }
 
-
-
-$(document).on('turbolinks:render', function() {
-  location.reload();
-});
-
+  //戻るボタンなどで読み込まれる際もリロード
+  $(document).on('turbolinks:render', function() {
+    location.reload();
+  });
+  $(document).on('click', function() {
+    if(!$(event.target).closest('.angucomplete-dropdown').length) {
+      $(".angucomplete-dropdown").empty();
+    }
+  });
+  //キーアップされたらインクリメンタルサーチ実行
   $("#usersearch").on("keyup", function() {
     var input = $.trim($(this).val());
     $.ajax({

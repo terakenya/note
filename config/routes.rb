@@ -9,7 +9,7 @@ Rails.application.routes.draw do
     resources :likes, only: [:create, :destroy]
   end
   resources :users do
-    resources :menu, only: [:index]
+    resources :menu, only: [:index, :new]
   end
   resources :users
 

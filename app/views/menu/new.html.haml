@@ -1,0 +1,31 @@
+.renewal-p-creator.editMode
+  .renewal-p-creator__container2
+    .renewal-p-creator__header
+      .renewal-p-creator__headerImg{for: "photoimage"}
+        %input{ class: "renewal-p-creator__headerOverlayrenewal", style: "display:none", type: "file", id:"photoimage"}
+          .renewal-p-creator__headerCamera
+            .c-icon--camera
+              = image_tag 'camera.png',class:'cameco'
+          .renewal-p-creator__headerLabel
+            ヘッダー画像を変更
+          .renewal-p-creator__headerDelete
+            .c-icon--close
+              = image_tag 'close.png',class:'close'
+    .renewal-p-creator__form
+      .renewal-p-creator__content
+        .renewal-p-creator__contentInner
+          .renewal-p-creator__photo
+            = image_tag 'defaulticon.png',class:'defaulticon'
+          .renewal-p-creator__nickname
+            %input{class: "usagi", name:"name",type:"text",placeholder:"ニックネーム"}
+          .renewal-p-creator__intro
+            %textarea{class: "introduction", name:"name",type:"text",placeholder:"あなたの自己紹介を書きましょう (140文字以内)"}
+          .renewal-p-creator__editAction
+            .renewal-p-creator__cancelButton
+              .c-button.c-button--type_basic
+                .c-button__label
+                  キャンセル
+            .renewal-p-creator__hozonButton
+              .c-button.c-button--type_basic
+                .c-button__label
+                  保存

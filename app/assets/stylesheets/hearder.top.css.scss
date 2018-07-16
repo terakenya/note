@@ -1,0 +1,89 @@
+.header-container{
+  position: relative;
+  z-index: 11;
+}
+
+.renewal-l-header{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 1px;
+}
+
+.renewal-l-header__inner{
+  position: relative;
+  background: rgb(255, 255, 255);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.renewal-l-header__global{
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  height: 64px;
+  width: 940px;
+  margin: 0px auto;
+}
+
+.renewal-l-header__logo{
+    width: auto;
+    height: auto;
+    max-height: 25px;
+}
+
+.renewal-l-header__right{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.renewal-p-buttonSet{
+  display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+
+.renewal-p-buttonSet__item{
+  cursor: pointer;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.p-searchForm--header{
+  position: relative;
+  float: left;
+}
+
+.renewal-p-buttonSet__item--mlL{
+  margin-left:20px;
+}
+
+.c-avatar--small{
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+
+.renewal-c-button--navBarPostNote {
+    margin-left: 25px;
+    padding: 0px;
+    color: rgb(255, 255, 255);
+    border-color: rgb(44, 182, 150);
+    background: rgb(44, 182, 150);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 2.5;
+    text-align: center;
+    width:108px;
+    height:30px;
+}
+
+i.fa.fa-edit{
+  font-weight: bold;
+}

@@ -1,66 +1,35 @@
-= render "menuheader"
-.mainmenu
-  .renewal-p-creator
-    .renewal-p-creator__container
-      .creator-profile
-        .renewal-p-creator__container
-          .renewal-p-creator__content
-            .renewal-p-creator__contentInner
-              .renewal-p-creator__profile
-                .renewal-p-creator__avatar
-                  %img.c-avatar__img{:lightbox => "true", "lightbox-type" => "profile", "ng-src" => "https://d2l930y2yx77uc.cloudfront.net/assets/default/default_profile-2f533b6a0048b61b8d761198d14cbb4c603f89edb03577f061efc7393b85d811.png", :src => "https://d2l930y2yx77uc.cloudfront.net/assets/default/default_profile-2f533b6a0048b61b8d761198d14cbb4c603f89edb03577f061efc7393b85d811.png"}/
-
-                .renewal-p-creator__name
-                  tera
-                .renewal-p-creator__action
-              .renewal-p-creator__biography
-                自己紹介
-              .renewal-p-creator__status
-                .renewal-p-creator__follow
-                  .renewal-p-creator__followItem
-                    %a.renewal-p-creator__followLink
-                      %span.renewal-p-creator__followCount
-                        52
-                      %span.renewal-p-creator__followLabel
-                        フォロー
-                  .renewal-p-creator__followItem
-                    %a.renewal-p-creator__followLink
-                      %span.renewal-p-creator__followCount
-                        0
-                      %span.renewal-p-creator__followLabel
-                        フォロワー
-                .renewal-p-creator__snsIcon
-                  sns
-        .ng-hide
-    / .creator-contents
-    /   .creator-menus
-    /     .renewal-p-customNav
-    /       .renewal-p-customNav__inner
-    /         .renewal-p-customNav__nav
-    /           %ul.home-tab-menu
-    /             %li
-    /               %a.home-tab{:href => "#tab-home"} ホーム
-    /             %li
-    /               %a.magazine-tab{:href => "#tab-magazine"} マガジン
-    /         .renewal-p-customNav__search
-    /           %a サーチ
-    /   = render "tabhome"
-    /   = render "tabmagazine"
-
-    .creator-contents
-      .creator-menus
-        .renewal-p-customNav
-          .renewal-p-customNav__inner
-            .renewal-p-customNav__nav
-              %ul.tabs.home-tab-menu
-                %li
-                  %a.home-tab{:href => "#view1"} ホーム
-                %li
-                  %a.magazine-tab{:href => "#view2"} マガジン
-
-            .renewal-p-customNav__search
-              %a サーチ
-      #view1.tab-content
-        = render "tabhome"
-      #view2.tab-content
-        = render "tabmagazine"
+= form_for @article do |f|
+  .renewal-p-creator.editMode
+  .renewal-p-creator__container2
+    .renewal-p-creator__header
+      .renewal-p-creator__headerImg
+        .renewal-p-creator__headerOverlay
+        =f.label :image, class: "icon" do
+          = f.file_field :image, class: 'imageform', style: 'display:none'
+          z
+          .renewal-p-creator__headerCamera
+            .c-icon--camera
+              = image_tag 'camera.png',class:'cameco'
+          .renewal-p-creator__headerLabel
+            ヘッダー画像を変更
+          .renewal-p-creator__headerDelete
+            .c-icon--close
+              = image_tag 'close.png',class:'close'
+    .renewal-p-creator__form
+      .renewal-p-creator__content
+        .renewal-p-creator__contentInner
+          .renewal-p-creator__photo
+            = image_tag 'defaulticon.png',class:'defaulticon'
+          .renewal-p-creator__nickname
+            %input{class: "usagi", name:"name",type:"text",placeholder:"ニックネーム"}
+          .renewal-p-creator__intro
+            %textarea{class: "introduction", name:"name",type:"text",placeholder:"あなたの自己紹介を書きましょう (140文字以内)"}
+          .renewal-p-creator__editAction
+            .renewal-p-creator__cancelButton
+              .c-button.c-button--type_basic
+                .c-button__label
+                  キャンセル
+            .renewal-p-creator__hozonButton
+              .c-button.c-button--type_basic
+                .c-button__label
+                  保存

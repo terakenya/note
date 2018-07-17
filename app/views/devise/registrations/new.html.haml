@@ -15,14 +15,13 @@
               = f.label :ニックネーム（登録後に変更可能）
               %em
               %br/
-              = f.text_field :nickname, autofocus: true, maxlength: "6",placeholder:"例：ノート君（任意）", class:"user_nickname"
+              = f.text_field :nickname, autofocus: true, maxlength: "6",placeholder:"例：ノート君（任意）", class:"user_nickname", autocomplete:"off"
 
             .space-bottom-2
               = f.label :メールアドレス
               %br/
-              = f.email_field :email, autofocus: true, autocomplete: "email",class:"user_email",placeholder:"例：mail@note.mu",required: "required"
+              = f.email_field :email, autofocus: true, autocomplete: "off",class:"user_email",placeholder:"例：mail@note.mu",required: "required"
               %p.error-message
-                メールアドレスを入力してください。
             .space-bottom-2
               = f.label :パスワード
               - if @minimum_password_length

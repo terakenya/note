@@ -7,10 +7,9 @@
           .renewal-p-creator__content
             .renewal-p-creator__contentInner
               =image_tag "menu2.png",class:"menu2"
-
               .renewal-p-creator__actionPopover
                 .renewal-p-creator__actionPopover__inner
-                  .renewal-c-popover__item
+                  = link_to new_user_menu_path(current_user), class: "renewal-c-popover__item" do
                     プロフィールを編集する
                   .renewal-c-popover__separator
                   .renewal-c-popover__item

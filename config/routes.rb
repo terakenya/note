@@ -4,12 +4,11 @@ Rails.application.routes.draw do
   resources :articles do
     resources :comments, only: [:create]
   end
-  resources :menu, only: [:index, :show]
   resources :articles do
     resources :likes, only: [:create, :destroy]
   end
   resources :users do
-    resources :menu, only: [:index, :new]
+    resources :menu, only: [:index, :new, :create]
   end
   resources :users
 

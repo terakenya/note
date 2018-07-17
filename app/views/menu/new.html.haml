@@ -2,9 +2,13 @@
   .renewal-p-creator.editMode
     .renewal-p-creator__container2
       .renewal-p-creator__header
-        = f.label :photoimage, class: "renewal-p-creator__headerImg" do
-          = image_tag @user.photoimage ,class: 'photoimagesize'
-          = f.file_field :photoimage, class: "renewal-p-creator__headerOverlayrenewal",style: "display:none"
+        -if @user.photoimage
+          = f.label :photoimage, class: "renewal-p-creator__headerImg" do
+            = image_tag @user.photoimage ,class: 'photoimagesize'
+            = f.file_field :photoimage, class: "renewal-p-creator__headerOverlayrenewal",style: "display:none"
+        -else
+          = f.label :photoimage, class: "renewal-p-creator__headerImg" do
+            = f.file_field :photoimage, class: "renewal-p-creator__headerOverlayrenewal",style: "display:none"
           .renewal-p-creator__headerCamera
             .c-icon--camera
               = image_tag 'camera.png',class:'cameco'
@@ -17,8 +21,12 @@
         .renewal-p-creator__content
           .renewal-p-creator__contentInner
             = f.label :usericon, class: "renewal-p-creator__photo" do
-              = image_tag @user.usericon,class:'defaulticon'
-              = f.file_field :usericon, style: "display:none"
+              -if @user.usericon
+                = image_tag @user.usericon,class:'defaulticon'
+                = f.file_field :usericon, style: "display:none"
+              -else
+                = image_tag "defaulticon.png",class:'defaulticon'
+                = f.file_field :usericon, style: "display:none"
 
             .renewal-p-creator__nickname
               / %input{class: "usagi", name: "name",type: "text",placeholder: "ニックネーム"}

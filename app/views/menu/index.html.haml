@@ -1,5 +1,5 @@
 = render "menuheader"
--if @user.photoimage
+-if @user.photoimage.present?
   = image_tag @user.photoimage ,class: 'photoimagesize'
 .mainmenu
   .renewal-p-creator
@@ -20,8 +20,10 @@
               .renewal-c-popover.renewal-c-popover--action
               .renewal-p-creator__profile
                 .renewal-p-creator__avatar
-                  = image_tag @user.usericon,class:'defaulticon'
-
+                  -if @user.usericon.present?
+                    = image_tag @user.usericon,class:'defaulticon'
+                  -else
+                    = image_tag "defaulticon.png",class:'defaulticon'
                 .renewal-p-creator__name
                   tera
                 .renewal-p-creator__action

@@ -97,7 +97,7 @@
     font-weight: bold;
     color: #222;
     border-bottom: 2px solid #222;
-    padding: 24px 20px 25px 20px;
+    padding: 24px 20px 23px 20px;
     font-size: 13px;
     display: block;
     margin-right: -3px;
@@ -110,7 +110,7 @@
 
 .magazine-tab {
   color: #222;
-  padding: 24px 20px 25px 20px;
+  padding: 24px 20px 23px 20px;
   font-size: 13px;
   display: block;
 }
@@ -124,7 +124,7 @@
 .renewal-p-customNav__search {
     display: block;
     padding: 24px 20px 22px 20px;
-    border-bottom: 2px solid transparent;
+    font-size:12px;
 }
 .renewal-l-pageContainer {
     display: flex;
@@ -323,8 +323,9 @@
 
 
 
-
-
+.renewal-p-customNav__search:hover{
+  border-bottom: 2px solid #222;
+}
 
 
 

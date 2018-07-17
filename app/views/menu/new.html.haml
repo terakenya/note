@@ -25,6 +25,7 @@
             = f.label :usericon, class: "renewal-p-creator__photo" do
               -if @user.usericon.present?
                 = image_tag @user.usericon,class:'defaulticon'
+                = image_tag 'camera.png',class:'cameco2'
                 = f.file_field :usericon, style: "display:none"
               -else
                 = image_tag "defaulticon.png",class:'defaulticon'
@@ -42,7 +43,7 @@
                     キャンセル
               .renewal-p-creator__hozonButton
                 .c-button.c-button--type_basic
-                  = f.submit '保存', class: 'c-button__label'
+                  = f.submit '保存', class: 'c-button__label2'
 
 
 / = f.label for: "photoimage", class: "renewal-p-creator__headerImg" do

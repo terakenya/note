@@ -29,7 +29,7 @@
       %a
         ダッシュボード
     .renewal-p-mymenuList__item
-      %a
+      =link_to destroy_user_session_path(current_user) do
         ログアウト
     .renewal-c-popover__separator
     .renewal-p-mymenuList__item-renewal-p-mymenuList__item--button

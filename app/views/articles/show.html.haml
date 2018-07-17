@@ -39,7 +39,8 @@
           .renewal-p-action
             %ul
               %li
-                = image_tag 'heart.png',class:"heart-30"
+                %span{id: "like-of-#{@article.id}"}
+                  = render partial: 'likes/like', locals: { article: @article, likes: @likes }
                 = image_tag 'plus2.png',class:"plus2-30"
 
 

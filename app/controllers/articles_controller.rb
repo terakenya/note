@@ -9,6 +9,7 @@ class ArticlesController < ApplicationController
     @article = Article.includes(:user).find(params[:id])
     @comment = Comment.new
     @comments = @article.comments.includes(:user)
+    @likes = Like.all
   end
 
   def destroy

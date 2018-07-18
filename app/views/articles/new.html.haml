@@ -3,7 +3,8 @@
     .header-new
       .header-new__inner
         %h2.logo
-          note
+          = link_to articles_path do
+            note
         .account-menu
           %ul.inline-wrap
             %li.inline-child
@@ -40,6 +41,7 @@
                       .renewal-p-icon--eyecatchUpload
                       =f.label :image, class: "icon" do
                         = f.file_field :image, class: 'imageform', style: 'display:none'
+                        = image_tag 'screen.png',class:"imagebig",align:"center"
                         画像をアップロード
             .note-name
               %h1

@@ -40,7 +40,8 @@
               .renewal-p-creator__cancelButton
                 .c-button.c-button--type_basic
                   .c-button__label
-                    キャンセル
+                    = link_to user_menu_index_path do
+                      キャンセル
               .renewal-p-creator__hozonButton
                 .c-button.c-button--type_basic
                   = f.submit '保存', class: 'c-button__label2'

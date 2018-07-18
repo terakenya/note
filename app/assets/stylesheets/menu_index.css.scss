@@ -41,7 +41,6 @@
     font-weight: bold;
 }
 .c-avatar__img {
-    overflow: hidden;
     width: 100%;
     height: auto;
     border-radius: 50%;
@@ -327,6 +326,13 @@
   border-bottom: 2px solid #222;
 }
 
+.smileicon{
+    height: 105px;
+    width: 115px;
+    border-radius: 50%;
+}
 
-
+.renewal-p-customNav__search{
+  cursor:pointer;
+}
 

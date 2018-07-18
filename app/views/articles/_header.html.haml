@@ -19,7 +19,10 @@
                 .c-avatar-c-avatar--boxShadow
                   .c-avatar--small
                     = link_to menu_index_path do
-                      %img.c-avatar--small{"ng-src" => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/6872559/profile_d227b8ba49f78d2420ed6f945630fce3.jpg", :src => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/6872559/profile_d227b8ba49f78d2420ed6f945630fce3.jpg"}/
+                      -if @user.usericon.present?
+                        = image_tag @user.usericon,class:'usericon-10'
+                      -else
+                        = image_tag "smile.png",class:'smileicon-10'
               %li.renewal-c-button--navBarPostNote
                 .renewal-c-popover--postNote
                   .renewal-p-postNoteFromNavBarList

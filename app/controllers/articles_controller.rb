@@ -3,6 +3,7 @@ class ArticlesController < ApplicationController
   def index
     @articles = Article.all.includes(:user).order("created_at DESC")
     @likes = Like.all
+    @user = User.find(current_user)
   end
 
   def show
@@ -10,6 +11,7 @@ class ArticlesController < ApplicationController
     @comment = Comment.new
     @comments = @article.comments.includes(:user)
     @likes = Like.all
+    @user = User.find(current_user)
   end
 
   def destroy

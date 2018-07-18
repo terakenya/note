@@ -2,7 +2,10 @@
   %li
     .c-avator
       .image-class
-        %img.c-avatar--timeline{:alt => "", "data-src" => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/3476076/profile_ca83c7d69e2f0874c29f42d51dab3b7f.jpg", :src => "https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/3476076/profile_ca83c7d69e2f0874c29f42d51dab3b7f.jpg", :style => "", :title => ""}/
+        -if @user.usericon.present?
+          = image_tag @user.usericon,class:'usericon-10'
+        -else
+          = image_tag "smile.png",class:'smileicon-10'
   %li
     %p.renewal-c-card__userName
       = article.user.nickname

@@ -2,7 +2,7 @@
   .p-comments__item
     .p-comments__avatar
       .c-avatar.c-avatar--small
-        %img.c-avatar__img{:alt => "", "data-src" => "https://d2l930y2yx77uc.cloudfront.net/assets/default/default_profile-2f533b6a0048b61b8d761198d14cbb4c603f89edb03577f061efc7393b85d811.png", :src => "https://d2l930y2yx77uc.cloudfront.net/assets/default/default_profile-2f533b6a0048b61b8d761198d14cbb4c603f89edb03577f061efc7393b85d811.png", :style => "", :title => ""}
+        = image_tag @article.user.usericon,class:"commenticon"
     .p-comments__name
       .p-comments__nameLink
         = comment.user.nickname

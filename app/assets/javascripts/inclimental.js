@@ -1,11 +1,16 @@
 $(function() {
   function appendUser(user ,input) {
+    if (user.usericon) {
+      var icon = `<img class="list-image" src="${user.usericon}">`;
+    } else {
+      var icon = `<img class="list-image" src="/assets/smile-309b15228a2f723356bee21cee9f7e355c7d24ba2ac3ad3636c4bbecf3060204.png">`;
+    }
     var html = `
                 <a href="/users/${user.id}/menu">
                   <div class="angucomplete-dropdownB">
                     <div class="angucomplete-row-angucomplete-selected-row">
                       <div class="angucomplete-image-holder">
-                        <img class="list-image" src="https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/6872559/profile_d227b8ba49f78d2420ed6f945630fce3.jpg">
+                        ${icon}
                       </div>
                       <div class="angucomplete-title">
                         ${user.name}

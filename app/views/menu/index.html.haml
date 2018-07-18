@@ -8,10 +8,10 @@
         .renewal-p-creator__container
           .renewal-p-creator__content
             .renewal-p-creator__contentInner
-              =image_tag "menu2.png",class:"menu2"
+              %img#hoge.menu2{:alt => "Menu2", :src => "/assets/menu2-93ca8c76ad38f77843d68332772b727c3a7ad2384081eb49bc3180fbcd828f51.png"}
               .renewal-p-creator__actionPopover
                 .renewal-p-creator__actionPopover__inner
-                  = link_to new_user_menu_path(current_user), class: "renewal-c-popover__item" do
+                  %a.renewal-c-popover__item{:href => "/users/2/menu/new"}
                     プロフィールを編集する
                   .renewal-c-popover__separator
                   .renewal-c-popover__item
@@ -45,21 +45,6 @@
                         フォロワー
                 .renewal-p-creator__snsIcon
         .ng-hide
-    / .creator-contents
-    /   .creator-menus
-    /     .renewal-p-customNav
-    /       .renewal-p-customNav__inner
-    /         .renewal-p-customNav__nav
-    /           %ul.home-tab-menu
-    /             %li
-    /               %a.home-tab{:href => "#tab-home"} ホーム
-    /             %li
-    /               %a.magazine-tab{:href => "#tab-magazine"} マガジン
-    /         .renewal-p-customNav__search
-    /           %a サーチ
-    /   = render "tabhome"
-    /   = render "tabmagazine"
-
     .creator-contents
       .creator-menus
         .renewal-p-customNav

@@ -51,6 +51,5 @@ production:
   <<: *default
   database: note_production
   username: root
-  host: ip-172-31-47-168
   password: <%= ENV['DATABASE_PASSWORD'] %>
   socket: /var/lib/mysql/mysql.sock

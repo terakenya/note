@@ -2,7 +2,10 @@
   %li
     .c-avator
       .image-class
-        = image_tag @article.user.usericon,class:"commonicon"
+        -if @article.user.usericon.present?
+          = image_tag @user.usericon,class:'commenticon'
+        -else
+          = image_tag "smile.png",class:'smileicon-30'
   %li
     %p.renewal-c-card__userName
       = article.user.nickname

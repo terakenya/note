@@ -55,7 +55,10 @@
             .p-comments__inputAvatar
               .c-avatar--small
                 .c-avatar__img
-                  = image_tag @article.user.usericon,class:"commenticon"
+                  -if @article.user.usericon.present?
+                    = image_tag @user.usericon,class:'commenticon'
+                  -else
+                    = image_tag "smile.png",class:'smileicon-10'
             .p-comments__inputMessage
               = f.text_area :text, class: "commentform", placeholder: 'コメントする...',autocomplete: "off"
             .p-comments__inputAction

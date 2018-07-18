@@ -3,6 +3,8 @@
     .p-comments__avatar
       .c-avatar.c-avatar--small
         = image_tag @article.user.usericon,class:"commenticon"
+        / ログアウト時のアイコン画像を挿入if文
+        / jsファイルの方もいじらないとインクリメンタル同様にいじらないとダメっぽいです
     .p-comments__name
       .p-comments__nameLink
         = comment.user.nickname

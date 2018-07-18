@@ -1,7 +1,9 @@
 class MenuController < ApplicationController
   def index
     # @articles = Article.all.includes(:user).order("created_at DESC").find(current_user)
-    @user = User.find(current_user)
+    @user = User.find(params[:user_id])
+    @articles = Article.includes(:user).where(user_id: params[:user_id])
+    @likes = Like.all
   end
 
   def new

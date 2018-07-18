@@ -11,11 +11,6 @@
               %img#hoge.menu2{:alt => "Menu2", :src => "/assets/menu2-93ca8c76ad38f77843d68332772b727c3a7ad2384081eb49bc3180fbcd828f51.png"}
               .renewal-p-creator__actionPopover
                 .renewal-p-creator__actionPopover__inner
-                  %a.renewal-c-popover__item{:href => "/users/2/menu/new"}
-                    プロフィールを編集する
-                  .renewal-c-popover__separator
-                  .renewal-c-popover__item
-                    Amazonウィジェットを追加
 
               .renewal-c-popover.renewal-c-popover--action
               .renewal-p-creator__profile
@@ -25,7 +20,7 @@
                   -else
                     = image_tag "smile.png",class:'smileicon'
                 .renewal-p-creator__name
-                  tera
+                  = @user.nickname
                 .renewal-p-creator__action
               .renewal-p-creator__biography
                 = @user.bio

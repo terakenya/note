@@ -8,10 +8,11 @@
         .renewal-p-creator__container
           .renewal-p-creator__content
             .renewal-p-creator__contentInner
-              %img#hoge.menu2{:alt => "Menu2", :src => "/assets/menu2-93ca8c76ad38f77843d68332772b727c3a7ad2384081eb49bc3180fbcd828f51.png"}
+              - if current_user.id == @user.id
+                %img#hoge.menu2{:alt => "Menu2", :src => "/assets/menu2-93ca8c76ad38f77843d68332772b727c3a7ad2384081eb49bc3180fbcd828f51.png"}
+
               .renewal-p-creator__actionPopover
                 .renewal-p-creator__actionPopover__inner
-
               .renewal-c-popover.renewal-c-popover--action
               .renewal-p-creator__profile
                 .renewal-p-creator__avatar
